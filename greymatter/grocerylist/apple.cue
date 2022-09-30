@@ -84,7 +84,7 @@ Apple: {
 			mesh_id:                   mesh.metadata.name
 			service_id:                Name
 			version:                   "v1.0.0"
-			description:               "EDIT ME: service description goes here"
+			description:               "HEY THIS IS APPLE"
 			
 			api_endpoint:              "http://\(defaults.edge.endpoint)/services/grocerylist/\(Name)/"
 			api_spec_endpoint:         "http://\(defaults.edge.endpoint)/services/grocerylist/\(Name)/"
