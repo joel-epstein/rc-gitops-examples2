@@ -28,7 +28,7 @@ import (
 
 grocerylist_config:
 	grocerylist.Apple.config + grocerylist.Banana.config + grocerylist.Lettuce.config + grocerylist.Tomato.config +
-	grocerylist.kiwi_1.config
+	grocerylist.Kiwi_1.config
 
 core_config:
     core.Edge.config
