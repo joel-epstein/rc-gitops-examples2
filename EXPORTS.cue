@@ -52,32 +52,32 @@ grocerylist_config:
 		grocerylist.Kiwi_22.config +
 		grocerylist.Kiwi_23.config +
 		grocerylist.Kiwi_24.config +
-		grocerylist.Kiwi_25.config
-		// grocerylist.Kiwi_26.config +
-		// grocerylist.Kiwi_27.config +
-		// grocerylist.Kiwi_28.config +
-		// grocerylist.Kiwi_29.config +
-		// grocerylist.Kiwi_30.config +
-		// grocerylist.Kiwi_31.config +
-		// grocerylist.Kiwi_32.config +
-		// grocerylist.Kiwi_33.config +
-		// grocerylist.Kiwi_34.config +
-		// grocerylist.Kiwi_35.config +
-		// grocerylist.Kiwi_36.config +
-		// grocerylist.Kiwi_37.config +
-		// grocerylist.Kiwi_38.config +
-		// grocerylist.Kiwi_39.config +
-		// grocerylist.Kiwi_40.config +
-		// grocerylist.Kiwi_41.config +
-		// grocerylist.Kiwi_42.config +
-		// grocerylist.Kiwi_43.config +
-		// grocerylist.Kiwi_44.config +
-		// grocerylist.Kiwi_45.config +
-		// grocerylist.Kiwi_46.config +
-		// grocerylist.Kiwi_47.config +
-		// grocerylist.Kiwi_48.config +
-		// grocerylist.Kiwi_49.config +
-		// grocerylist.Kiwi_50.config +
+		grocerylist.Kiwi_25.config +
+		grocerylist.Kiwi_26.config +
+		grocerylist.Kiwi_27.config +
+		grocerylist.Kiwi_28.config +
+		grocerylist.Kiwi_29.config +
+		grocerylist.Kiwi_30.config +
+		grocerylist.Kiwi_31.config +
+		grocerylist.Kiwi_32.config +
+		grocerylist.Kiwi_33.config +
+		grocerylist.Kiwi_34.config +
+		grocerylist.Kiwi_35.config +
+		grocerylist.Kiwi_36.config +
+		grocerylist.Kiwi_37.config +
+		grocerylist.Kiwi_38.config +
+		grocerylist.Kiwi_39.config +
+		grocerylist.Kiwi_40.config +
+		grocerylist.Kiwi_41.config +
+		grocerylist.Kiwi_42.config +
+		grocerylist.Kiwi_43.config +
+		grocerylist.Kiwi_44.config +
+		grocerylist.Kiwi_45.config +
+		grocerylist.Kiwi_46.config +
+		grocerylist.Kiwi_47.config +
+		grocerylist.Kiwi_48.config +
+		grocerylist.Kiwi_49.config +
+		grocerylist.Kiwi_50.config
 		// grocerylist.Kiwi_51.config +
 		// grocerylist.Kiwi_52.config +
 		// grocerylist.Kiwi_53.config +
