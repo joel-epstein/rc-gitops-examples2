@@ -27,7 +27,7 @@ import (
 	"list"
 )
 
-kiwi: [for i in list.Range(1,3,1) {
+kiwi: [for i in list.Range(1,1,1) {
 
    grocerylist["Kiwi_\(i)"].config
 
