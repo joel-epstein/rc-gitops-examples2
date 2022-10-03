@@ -43,4 +43,4 @@ core_config:
 configs:
 	// The edge config must come first because services create routes
 	// that reference the edge domain.
-	core_config + grocerylist_config
+	core_config + list.FlattenN(grocerylist_config,1)
