@@ -29,7 +29,7 @@ import (
 
 // This code lets you specify the number of kiwi services. 2nd arg to list.Range()
 // There are 1000 services defined in the project dir
-kiwi: [for i in list.Range(1,6,1) {
+kiwi: [for i in list.Range(1,1,1) {
 
    grocerylist["Kiwi_\(i)"].config
 
