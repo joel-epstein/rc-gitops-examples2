@@ -29,7 +29,7 @@ import (
 
 kiwi: [for i in list.Range(1,3,1) {
 
-   grocerylist["Kiwi_\(i)"]
+   grocerylist["Kiwi_\(i)"].config
 
 }]
 
