@@ -25,7 +25,7 @@ spec:
           secretName: greymatter-sync-secret
       containers:
       - name: greymatter-sync
-        image: quay.io/greymatterio/cli:4.4.0-rc.7
+        image: quay.io/greymatterio/cli:4.4.0-rc.8
         imagePullPolicy: Always
         command: ["/usr/local/bin/greymatter"]
         args: [
