@@ -1,0 +1,2500 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi1
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi1
+  template:
+    metadata:
+      labels:
+        app: kiwi1
+    spec:
+      containers:
+        - name: kiwi1
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi2
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi2
+  template:
+    metadata:
+      labels:
+        app: kiwi2
+    spec:
+      containers:
+        - name: kiwi2
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi3
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi3
+  template:
+    metadata:
+      labels:
+        app: kiwi3
+    spec:
+      containers:
+        - name: kiwi3
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi4
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi4
+  template:
+    metadata:
+      labels:
+        app: kiwi4
+    spec:
+      containers:
+        - name: kiwi4
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi5
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi5
+  template:
+    metadata:
+      labels:
+        app: kiwi5
+    spec:
+      containers:
+        - name: kiwi5
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi6
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi6
+  template:
+    metadata:
+      labels:
+        app: kiwi6
+    spec:
+      containers:
+        - name: kiwi6
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi7
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi7
+  template:
+    metadata:
+      labels:
+        app: kiwi7
+    spec:
+      containers:
+        - name: kiwi7
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi8
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi8
+  template:
+    metadata:
+      labels:
+        app: kiwi8
+    spec:
+      containers:
+        - name: kiwi8
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi9
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi9
+  template:
+    metadata:
+      labels:
+        app: kiwi9
+    spec:
+      containers:
+        - name: kiwi9
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi10
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi10
+  template:
+    metadata:
+      labels:
+        app: kiwi10
+    spec:
+      containers:
+        - name: kiwi10
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi11
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi11
+  template:
+    metadata:
+      labels:
+        app: kiwi11
+    spec:
+      containers:
+        - name: kiwi11
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi12
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi12
+  template:
+    metadata:
+      labels:
+        app: kiwi12
+    spec:
+      containers:
+        - name: kiwi12
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi13
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi13
+  template:
+    metadata:
+      labels:
+        app: kiwi13
+    spec:
+      containers:
+        - name: kiwi13
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi14
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi14
+  template:
+    metadata:
+      labels:
+        app: kiwi14
+    spec:
+      containers:
+        - name: kiwi14
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi15
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi15
+  template:
+    metadata:
+      labels:
+        app: kiwi15
+    spec:
+      containers:
+        - name: kiwi15
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi16
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi16
+  template:
+    metadata:
+      labels:
+        app: kiwi16
+    spec:
+      containers:
+        - name: kiwi16
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi17
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi17
+  template:
+    metadata:
+      labels:
+        app: kiwi17
+    spec:
+      containers:
+        - name: kiwi17
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi18
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi18
+  template:
+    metadata:
+      labels:
+        app: kiwi18
+    spec:
+      containers:
+        - name: kiwi18
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi19
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi19
+  template:
+    metadata:
+      labels:
+        app: kiwi19
+    spec:
+      containers:
+        - name: kiwi19
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi20
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi20
+  template:
+    metadata:
+      labels:
+        app: kiwi20
+    spec:
+      containers:
+        - name: kiwi20
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi21
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi21
+  template:
+    metadata:
+      labels:
+        app: kiwi21
+    spec:
+      containers:
+        - name: kiwi21
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi22
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi22
+  template:
+    metadata:
+      labels:
+        app: kiwi22
+    spec:
+      containers:
+        - name: kiwi22
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi23
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi23
+  template:
+    metadata:
+      labels:
+        app: kiwi23
+    spec:
+      containers:
+        - name: kiwi23
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi24
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi24
+  template:
+    metadata:
+      labels:
+        app: kiwi24
+    spec:
+      containers:
+        - name: kiwi24
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi25
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi25
+  template:
+    metadata:
+      labels:
+        app: kiwi25
+    spec:
+      containers:
+        - name: kiwi25
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi26
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi26
+  template:
+    metadata:
+      labels:
+        app: kiwi26
+    spec:
+      containers:
+        - name: kiwi26
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi27
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi27
+  template:
+    metadata:
+      labels:
+        app: kiwi27
+    spec:
+      containers:
+        - name: kiwi27
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi28
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi28
+  template:
+    metadata:
+      labels:
+        app: kiwi28
+    spec:
+      containers:
+        - name: kiwi28
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi29
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi29
+  template:
+    metadata:
+      labels:
+        app: kiwi29
+    spec:
+      containers:
+        - name: kiwi29
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi30
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi30
+  template:
+    metadata:
+      labels:
+        app: kiwi30
+    spec:
+      containers:
+        - name: kiwi30
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi31
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi31
+  template:
+    metadata:
+      labels:
+        app: kiwi31
+    spec:
+      containers:
+        - name: kiwi31
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi32
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi32
+  template:
+    metadata:
+      labels:
+        app: kiwi32
+    spec:
+      containers:
+        - name: kiwi32
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi33
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi33
+  template:
+    metadata:
+      labels:
+        app: kiwi33
+    spec:
+      containers:
+        - name: kiwi33
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi34
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi34
+  template:
+    metadata:
+      labels:
+        app: kiwi34
+    spec:
+      containers:
+        - name: kiwi34
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi35
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi35
+  template:
+    metadata:
+      labels:
+        app: kiwi35
+    spec:
+      containers:
+        - name: kiwi35
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi36
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi36
+  template:
+    metadata:
+      labels:
+        app: kiwi36
+    spec:
+      containers:
+        - name: kiwi36
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi37
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi37
+  template:
+    metadata:
+      labels:
+        app: kiwi37
+    spec:
+      containers:
+        - name: kiwi37
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi38
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi38
+  template:
+    metadata:
+      labels:
+        app: kiwi38
+    spec:
+      containers:
+        - name: kiwi38
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi39
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi39
+  template:
+    metadata:
+      labels:
+        app: kiwi39
+    spec:
+      containers:
+        - name: kiwi39
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi40
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi40
+  template:
+    metadata:
+      labels:
+        app: kiwi40
+    spec:
+      containers:
+        - name: kiwi40
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi41
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi41
+  template:
+    metadata:
+      labels:
+        app: kiwi41
+    spec:
+      containers:
+        - name: kiwi41
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi42
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi42
+  template:
+    metadata:
+      labels:
+        app: kiwi42
+    spec:
+      containers:
+        - name: kiwi42
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi43
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi43
+  template:
+    metadata:
+      labels:
+        app: kiwi43
+    spec:
+      containers:
+        - name: kiwi43
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi44
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi44
+  template:
+    metadata:
+      labels:
+        app: kiwi44
+    spec:
+      containers:
+        - name: kiwi44
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi45
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi45
+  template:
+    metadata:
+      labels:
+        app: kiwi45
+    spec:
+      containers:
+        - name: kiwi45
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi46
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi46
+  template:
+    metadata:
+      labels:
+        app: kiwi46
+    spec:
+      containers:
+        - name: kiwi46
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi47
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi47
+  template:
+    metadata:
+      labels:
+        app: kiwi47
+    spec:
+      containers:
+        - name: kiwi47
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi48
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi48
+  template:
+    metadata:
+      labels:
+        app: kiwi48
+    spec:
+      containers:
+        - name: kiwi48
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi49
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi49
+  template:
+    metadata:
+      labels:
+        app: kiwi49
+    spec:
+      containers:
+        - name: kiwi49
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi50
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi50
+  template:
+    metadata:
+      labels:
+        app: kiwi50
+    spec:
+      containers:
+        - name: kiwi50
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi51
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi51
+  template:
+    metadata:
+      labels:
+        app: kiwi51
+    spec:
+      containers:
+        - name: kiwi51
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi52
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi52
+  template:
+    metadata:
+      labels:
+        app: kiwi52
+    spec:
+      containers:
+        - name: kiwi52
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi53
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi53
+  template:
+    metadata:
+      labels:
+        app: kiwi53
+    spec:
+      containers:
+        - name: kiwi53
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi54
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi54
+  template:
+    metadata:
+      labels:
+        app: kiwi54
+    spec:
+      containers:
+        - name: kiwi54
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi55
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi55
+  template:
+    metadata:
+      labels:
+        app: kiwi55
+    spec:
+      containers:
+        - name: kiwi55
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi56
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi56
+  template:
+    metadata:
+      labels:
+        app: kiwi56
+    spec:
+      containers:
+        - name: kiwi56
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi57
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi57
+  template:
+    metadata:
+      labels:
+        app: kiwi57
+    spec:
+      containers:
+        - name: kiwi57
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi58
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi58
+  template:
+    metadata:
+      labels:
+        app: kiwi58
+    spec:
+      containers:
+        - name: kiwi58
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi59
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi59
+  template:
+    metadata:
+      labels:
+        app: kiwi59
+    spec:
+      containers:
+        - name: kiwi59
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi60
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi60
+  template:
+    metadata:
+      labels:
+        app: kiwi60
+    spec:
+      containers:
+        - name: kiwi60
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi61
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi61
+  template:
+    metadata:
+      labels:
+        app: kiwi61
+    spec:
+      containers:
+        - name: kiwi61
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi62
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi62
+  template:
+    metadata:
+      labels:
+        app: kiwi62
+    spec:
+      containers:
+        - name: kiwi62
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi63
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi63
+  template:
+    metadata:
+      labels:
+        app: kiwi63
+    spec:
+      containers:
+        - name: kiwi63
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi64
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi64
+  template:
+    metadata:
+      labels:
+        app: kiwi64
+    spec:
+      containers:
+        - name: kiwi64
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi65
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi65
+  template:
+    metadata:
+      labels:
+        app: kiwi65
+    spec:
+      containers:
+        - name: kiwi65
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi66
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi66
+  template:
+    metadata:
+      labels:
+        app: kiwi66
+    spec:
+      containers:
+        - name: kiwi66
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi67
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi67
+  template:
+    metadata:
+      labels:
+        app: kiwi67
+    spec:
+      containers:
+        - name: kiwi67
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi68
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi68
+  template:
+    metadata:
+      labels:
+        app: kiwi68
+    spec:
+      containers:
+        - name: kiwi68
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi69
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi69
+  template:
+    metadata:
+      labels:
+        app: kiwi69
+    spec:
+      containers:
+        - name: kiwi69
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi70
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi70
+  template:
+    metadata:
+      labels:
+        app: kiwi70
+    spec:
+      containers:
+        - name: kiwi70
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi71
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi71
+  template:
+    metadata:
+      labels:
+        app: kiwi71
+    spec:
+      containers:
+        - name: kiwi71
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi72
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi72
+  template:
+    metadata:
+      labels:
+        app: kiwi72
+    spec:
+      containers:
+        - name: kiwi72
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi73
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi73
+  template:
+    metadata:
+      labels:
+        app: kiwi73
+    spec:
+      containers:
+        - name: kiwi73
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi74
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi74
+  template:
+    metadata:
+      labels:
+        app: kiwi74
+    spec:
+      containers:
+        - name: kiwi74
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi75
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi75
+  template:
+    metadata:
+      labels:
+        app: kiwi75
+    spec:
+      containers:
+        - name: kiwi75
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi76
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi76
+  template:
+    metadata:
+      labels:
+        app: kiwi76
+    spec:
+      containers:
+        - name: kiwi76
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi77
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi77
+  template:
+    metadata:
+      labels:
+        app: kiwi77
+    spec:
+      containers:
+        - name: kiwi77
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi78
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi78
+  template:
+    metadata:
+      labels:
+        app: kiwi78
+    spec:
+      containers:
+        - name: kiwi78
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi79
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi79
+  template:
+    metadata:
+      labels:
+        app: kiwi79
+    spec:
+      containers:
+        - name: kiwi79
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi80
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi80
+  template:
+    metadata:
+      labels:
+        app: kiwi80
+    spec:
+      containers:
+        - name: kiwi80
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi81
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi81
+  template:
+    metadata:
+      labels:
+        app: kiwi81
+    spec:
+      containers:
+        - name: kiwi81
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi82
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi82
+  template:
+    metadata:
+      labels:
+        app: kiwi82
+    spec:
+      containers:
+        - name: kiwi82
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi83
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi83
+  template:
+    metadata:
+      labels:
+        app: kiwi83
+    spec:
+      containers:
+        - name: kiwi83
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi84
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi84
+  template:
+    metadata:
+      labels:
+        app: kiwi84
+    spec:
+      containers:
+        - name: kiwi84
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi85
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi85
+  template:
+    metadata:
+      labels:
+        app: kiwi85
+    spec:
+      containers:
+        - name: kiwi85
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi86
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi86
+  template:
+    metadata:
+      labels:
+        app: kiwi86
+    spec:
+      containers:
+        - name: kiwi86
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi87
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi87
+  template:
+    metadata:
+      labels:
+        app: kiwi87
+    spec:
+      containers:
+        - name: kiwi87
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi88
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi88
+  template:
+    metadata:
+      labels:
+        app: kiwi88
+    spec:
+      containers:
+        - name: kiwi88
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi89
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi89
+  template:
+    metadata:
+      labels:
+        app: kiwi89
+    spec:
+      containers:
+        - name: kiwi89
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi90
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi90
+  template:
+    metadata:
+      labels:
+        app: kiwi90
+    spec:
+      containers:
+        - name: kiwi90
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi91
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi91
+  template:
+    metadata:
+      labels:
+        app: kiwi91
+    spec:
+      containers:
+        - name: kiwi91
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi92
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi92
+  template:
+    metadata:
+      labels:
+        app: kiwi92
+    spec:
+      containers:
+        - name: kiwi92
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi93
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi93
+  template:
+    metadata:
+      labels:
+        app: kiwi93
+    spec:
+      containers:
+        - name: kiwi93
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi94
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi94
+  template:
+    metadata:
+      labels:
+        app: kiwi94
+    spec:
+      containers:
+        - name: kiwi94
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi95
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi95
+  template:
+    metadata:
+      labels:
+        app: kiwi95
+    spec:
+      containers:
+        - name: kiwi95
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi96
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi96
+  template:
+    metadata:
+      labels:
+        app: kiwi96
+    spec:
+      containers:
+        - name: kiwi96
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi97
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi97
+  template:
+    metadata:
+      labels:
+        app: kiwi97
+    spec:
+      containers:
+        - name: kiwi97
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi98
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi98
+  template:
+    metadata:
+      labels:
+        app: kiwi98
+    spec:
+      containers:
+        - name: kiwi98
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi99
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi99
+  template:
+    metadata:
+      labels:
+        app: kiwi99
+    spec:
+      containers:
+        - name: kiwi99
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kiwi100
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: kiwi100
+  template:
+    metadata:
+      labels:
+        app: kiwi100
+    spec:
+      containers:
+        - name: kiwi100
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+
