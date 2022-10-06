@@ -17,7 +17,7 @@ Kiwi1: {
 		// Kiwi1 -> HTTP ingress to your container
 		#domain & {
 			domain_key: IngressName
-			_force_https: true
+			
 		},
 		#listener & {
 			listener_key:          IngressName
@@ -25,14 +25,7 @@ Kiwi1: {
 			_gm_observables_topic: Name
 			_is_ingress:           true
 			_enable_rbac:          true
-		//	_enable_impersonation: true
-		//  NOTE: this must be filled out by a user. Impersonation allows other services to act on the behalf of indentities
-		//  inside the system. Please uncomment if you wish to enable impersonation. If the servers list if left empty,
-		//  all traffic will be blocked.
-		//	http_filters: gm_impersonation: {
-		//		servers: ""
-		//		caseSensitive: false
-		//	}
+		
 		},
 		// upstream_port -> port your service is listening on.
 		// This can always remain localhost insecure since pods are
@@ -67,16 +60,7 @@ Kiwi1: {
 		#cluster & {
 			cluster_key:  Name
 			_spire_other: Name
-			ssl_config: {
-				protocols: [ "TLS_AUTO"]
-				trust_file: "/etc/proxy/tls/sidecar/ca.crt"
-				cert_key_pairs: [
-					{
-						certificate_path: "/etc/proxy/tls/sidecar/server.crt"
-						key_path:         "/etc/proxy/tls/sidecar/server.key"
-					},
-				]
-            }
+			
 		},
 		#route & {
 			domain_key: defaults.edge.key
@@ -101,8 +85,9 @@ Kiwi1: {
 			service_id:                Name
 			version:                   "v1.0.0"
 			description:               "EDIT ME: service description goes here"
-			api_endpoint:              "https://\(defaults.edge.endpoint)/services/grocerylist/\(Name)/"
-			api_spec_endpoint:         "https://\(defaults.edge.endpoint)/services/grocerylist/\(Name)/"
+			
+			api_endpoint:              "http://\(defaults.edge.endpoint)/services/grocerylist/\(Name)/"
+			api_spec_endpoint:         "http://\(defaults.edge.endpoint)/services/grocerylist/\(Name)/"
 			business_impact:           "low"
 			enable_instance_metrics:   true
 			enable_historical_metrics: false
