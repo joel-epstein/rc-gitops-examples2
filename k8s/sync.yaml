@@ -39,7 +39,7 @@ spec:
           "--interval", "10s", 
           "--git-dir", "/var/lib/greymatter/checkout", 
           "-e", "configs",
-          "--redis-addr", "redis.greymatter.svc.cluster.local:6379",
+          "--redis-addr", "greymatter-datastore.greymatter.svc.cluster.local:6379",
           "--redis-passphrase", "",
           "--redis-username", "",
           "--redis-db", "0"
