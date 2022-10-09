@@ -6,7 +6,7 @@
 # they need to be grouped for the eval within EXPORTS.cue
 # kiwi peach orange fig grape
 
-for i in {1..50}
+for i in {1..100}
 do
 #echo "kiwi${i}"
 ~/greymatter init service --insecure --type=http --dir greymatter/grocerylist --port=3000 --package=grocerylist "kiwi-${i}"
