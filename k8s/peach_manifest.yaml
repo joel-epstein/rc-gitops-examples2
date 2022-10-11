@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach1
+  name: peach-1
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach1
+      app: peach-1
   template:
     metadata:
       labels:
-        app: peach1
+        app: peach-1
     spec:
       containers:
-        - name: peach1
+        - name: peach-1
           image: python:3
           command:
             - python
@@ -26,20 +26,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach2
+  name: peach-2
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach2
+      app: peach-2
   template:
     metadata:
       labels:
-        app: peach2
+        app: peach-2
     spec:
       containers:
-        - name: peach2
+        - name: peach-2
           image: python:3
           command:
             - python
@@ -51,20 +51,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach3
+  name: peach-3
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach3
+      app: peach-3
   template:
     metadata:
       labels:
-        app: peach3
+        app: peach-3
     spec:
       containers:
-        - name: peach3
+        - name: peach-3
           image: python:3
           command:
             - python
@@ -76,20 +76,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach4
+  name: peach-4
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach4
+      app: peach-4
   template:
     metadata:
       labels:
-        app: peach4
+        app: peach-4
     spec:
       containers:
-        - name: peach4
+        - name: peach-4
           image: python:3
           command:
             - python
@@ -101,20 +101,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach5
+  name: peach-5
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach5
+      app: peach-5
   template:
     metadata:
       labels:
-        app: peach5
+        app: peach-5
     spec:
       containers:
-        - name: peach5
+        - name: peach-5
           image: python:3
           command:
             - python
@@ -126,20 +126,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach6
+  name: peach-6
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach6
+      app: peach-6
   template:
     metadata:
       labels:
-        app: peach6
+        app: peach-6
     spec:
       containers:
-        - name: peach6
+        - name: peach-6
           image: python:3
           command:
             - python
@@ -151,20 +151,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach7
+  name: peach-7
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach7
+      app: peach-7
   template:
     metadata:
       labels:
-        app: peach7
+        app: peach-7
     spec:
       containers:
-        - name: peach7
+        - name: peach-7
           image: python:3
           command:
             - python
@@ -176,20 +176,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach8
+  name: peach-8
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach8
+      app: peach-8
   template:
     metadata:
       labels:
-        app: peach8
+        app: peach-8
     spec:
       containers:
-        - name: peach8
+        - name: peach-8
           image: python:3
           command:
             - python
@@ -201,20 +201,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach9
+  name: peach-9
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach9
+      app: peach-9
   template:
     metadata:
       labels:
-        app: peach9
+        app: peach-9
     spec:
       containers:
-        - name: peach9
+        - name: peach-9
           image: python:3
           command:
             - python
@@ -226,20 +226,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach10
+  name: peach-10
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach10
+      app: peach-10
   template:
     metadata:
       labels:
-        app: peach10
+        app: peach-10
     spec:
       containers:
-        - name: peach10
+        - name: peach-10
           image: python:3
           command:
             - python
@@ -251,20 +251,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach11
+  name: peach-11
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach11
+      app: peach-11
   template:
     metadata:
       labels:
-        app: peach11
+        app: peach-11
     spec:
       containers:
-        - name: peach11
+        - name: peach-11
           image: python:3
           command:
             - python
@@ -276,20 +276,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach12
+  name: peach-12
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach12
+      app: peach-12
   template:
     metadata:
       labels:
-        app: peach12
+        app: peach-12
     spec:
       containers:
-        - name: peach12
+        - name: peach-12
           image: python:3
           command:
             - python
@@ -301,20 +301,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach13
+  name: peach-13
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach13
+      app: peach-13
   template:
     metadata:
       labels:
-        app: peach13
+        app: peach-13
     spec:
       containers:
-        - name: peach13
+        - name: peach-13
           image: python:3
           command:
             - python
@@ -326,20 +326,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach14
+  name: peach-14
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach14
+      app: peach-14
   template:
     metadata:
       labels:
-        app: peach14
+        app: peach-14
     spec:
       containers:
-        - name: peach14
+        - name: peach-14
           image: python:3
           command:
             - python
@@ -351,20 +351,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach15
+  name: peach-15
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach15
+      app: peach-15
   template:
     metadata:
       labels:
-        app: peach15
+        app: peach-15
     spec:
       containers:
-        - name: peach15
+        - name: peach-15
           image: python:3
           command:
             - python
@@ -376,20 +376,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach16
+  name: peach-16
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach16
+      app: peach-16
   template:
     metadata:
       labels:
-        app: peach16
+        app: peach-16
     spec:
       containers:
-        - name: peach16
+        - name: peach-16
           image: python:3
           command:
             - python
@@ -401,20 +401,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach17
+  name: peach-17
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach17
+      app: peach-17
   template:
     metadata:
       labels:
-        app: peach17
+        app: peach-17
     spec:
       containers:
-        - name: peach17
+        - name: peach-17
           image: python:3
           command:
             - python
@@ -426,20 +426,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach18
+  name: peach-18
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach18
+      app: peach-18
   template:
     metadata:
       labels:
-        app: peach18
+        app: peach-18
     spec:
       containers:
-        - name: peach18
+        - name: peach-18
           image: python:3
           command:
             - python
@@ -451,20 +451,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach19
+  name: peach-19
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach19
+      app: peach-19
   template:
     metadata:
       labels:
-        app: peach19
+        app: peach-19
     spec:
       containers:
-        - name: peach19
+        - name: peach-19
           image: python:3
           command:
             - python
@@ -476,20 +476,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach20
+  name: peach-20
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach20
+      app: peach-20
   template:
     metadata:
       labels:
-        app: peach20
+        app: peach-20
     spec:
       containers:
-        - name: peach20
+        - name: peach-20
           image: python:3
           command:
             - python
@@ -501,20 +501,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach21
+  name: peach-21
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach21
+      app: peach-21
   template:
     metadata:
       labels:
-        app: peach21
+        app: peach-21
     spec:
       containers:
-        - name: peach21
+        - name: peach-21
           image: python:3
           command:
             - python
@@ -526,20 +526,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach22
+  name: peach-22
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach22
+      app: peach-22
   template:
     metadata:
       labels:
-        app: peach22
+        app: peach-22
     spec:
       containers:
-        - name: peach22
+        - name: peach-22
           image: python:3
           command:
             - python
@@ -551,20 +551,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach23
+  name: peach-23
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach23
+      app: peach-23
   template:
     metadata:
       labels:
-        app: peach23
+        app: peach-23
     spec:
       containers:
-        - name: peach23
+        - name: peach-23
           image: python:3
           command:
             - python
@@ -576,20 +576,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach24
+  name: peach-24
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach24
+      app: peach-24
   template:
     metadata:
       labels:
-        app: peach24
+        app: peach-24
     spec:
       containers:
-        - name: peach24
+        - name: peach-24
           image: python:3
           command:
             - python
@@ -601,20 +601,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach25
+  name: peach-25
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach25
+      app: peach-25
   template:
     metadata:
       labels:
-        app: peach25
+        app: peach-25
     spec:
       containers:
-        - name: peach25
+        - name: peach-25
           image: python:3
           command:
             - python
@@ -626,20 +626,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach26
+  name: peach-26
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach26
+      app: peach-26
   template:
     metadata:
       labels:
-        app: peach26
+        app: peach-26
     spec:
       containers:
-        - name: peach26
+        - name: peach-26
           image: python:3
           command:
             - python
@@ -651,20 +651,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach27
+  name: peach-27
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach27
+      app: peach-27
   template:
     metadata:
       labels:
-        app: peach27
+        app: peach-27
     spec:
       containers:
-        - name: peach27
+        - name: peach-27
           image: python:3
           command:
             - python
@@ -676,20 +676,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach28
+  name: peach-28
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach28
+      app: peach-28
   template:
     metadata:
       labels:
-        app: peach28
+        app: peach-28
     spec:
       containers:
-        - name: peach28
+        - name: peach-28
           image: python:3
           command:
             - python
@@ -701,20 +701,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach29
+  name: peach-29
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach29
+      app: peach-29
   template:
     metadata:
       labels:
-        app: peach29
+        app: peach-29
     spec:
       containers:
-        - name: peach29
+        - name: peach-29
           image: python:3
           command:
             - python
@@ -726,20 +726,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach30
+  name: peach-30
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach30
+      app: peach-30
   template:
     metadata:
       labels:
-        app: peach30
+        app: peach-30
     spec:
       containers:
-        - name: peach30
+        - name: peach-30
           image: python:3
           command:
             - python
@@ -751,20 +751,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach31
+  name: peach-31
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach31
+      app: peach-31
   template:
     metadata:
       labels:
-        app: peach31
+        app: peach-31
     spec:
       containers:
-        - name: peach31
+        - name: peach-31
           image: python:3
           command:
             - python
@@ -776,20 +776,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach32
+  name: peach-32
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach32
+      app: peach-32
   template:
     metadata:
       labels:
-        app: peach32
+        app: peach-32
     spec:
       containers:
-        - name: peach32
+        - name: peach-32
           image: python:3
           command:
             - python
@@ -801,20 +801,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach33
+  name: peach-33
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach33
+      app: peach-33
   template:
     metadata:
       labels:
-        app: peach33
+        app: peach-33
     spec:
       containers:
-        - name: peach33
+        - name: peach-33
           image: python:3
           command:
             - python
@@ -826,20 +826,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach34
+  name: peach-34
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach34
+      app: peach-34
   template:
     metadata:
       labels:
-        app: peach34
+        app: peach-34
     spec:
       containers:
-        - name: peach34
+        - name: peach-34
           image: python:3
           command:
             - python
@@ -851,20 +851,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach35
+  name: peach-35
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach35
+      app: peach-35
   template:
     metadata:
       labels:
-        app: peach35
+        app: peach-35
     spec:
       containers:
-        - name: peach35
+        - name: peach-35
           image: python:3
           command:
             - python
@@ -876,20 +876,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach36
+  name: peach-36
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach36
+      app: peach-36
   template:
     metadata:
       labels:
-        app: peach36
+        app: peach-36
     spec:
       containers:
-        - name: peach36
+        - name: peach-36
           image: python:3
           command:
             - python
@@ -901,20 +901,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach37
+  name: peach-37
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach37
+      app: peach-37
   template:
     metadata:
       labels:
-        app: peach37
+        app: peach-37
     spec:
       containers:
-        - name: peach37
+        - name: peach-37
           image: python:3
           command:
             - python
@@ -926,20 +926,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach38
+  name: peach-38
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach38
+      app: peach-38
   template:
     metadata:
       labels:
-        app: peach38
+        app: peach-38
     spec:
       containers:
-        - name: peach38
+        - name: peach-38
           image: python:3
           command:
             - python
@@ -951,20 +951,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach39
+  name: peach-39
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach39
+      app: peach-39
   template:
     metadata:
       labels:
-        app: peach39
+        app: peach-39
     spec:
       containers:
-        - name: peach39
+        - name: peach-39
           image: python:3
           command:
             - python
@@ -976,20 +976,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach40
+  name: peach-40
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach40
+      app: peach-40
   template:
     metadata:
       labels:
-        app: peach40
+        app: peach-40
     spec:
       containers:
-        - name: peach40
+        - name: peach-40
           image: python:3
           command:
             - python
@@ -1001,20 +1001,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach41
+  name: peach-41
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach41
+      app: peach-41
   template:
     metadata:
       labels:
-        app: peach41
+        app: peach-41
     spec:
       containers:
-        - name: peach41
+        - name: peach-41
           image: python:3
           command:
             - python
@@ -1026,20 +1026,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach42
+  name: peach-42
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach42
+      app: peach-42
   template:
     metadata:
       labels:
-        app: peach42
+        app: peach-42
     spec:
       containers:
-        - name: peach42
+        - name: peach-42
           image: python:3
           command:
             - python
@@ -1051,20 +1051,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach43
+  name: peach-43
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach43
+      app: peach-43
   template:
     metadata:
       labels:
-        app: peach43
+        app: peach-43
     spec:
       containers:
-        - name: peach43
+        - name: peach-43
           image: python:3
           command:
             - python
@@ -1076,20 +1076,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach44
+  name: peach-44
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach44
+      app: peach-44
   template:
     metadata:
       labels:
-        app: peach44
+        app: peach-44
     spec:
       containers:
-        - name: peach44
+        - name: peach-44
           image: python:3
           command:
             - python
@@ -1101,20 +1101,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach45
+  name: peach-45
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach45
+      app: peach-45
   template:
     metadata:
       labels:
-        app: peach45
+        app: peach-45
     spec:
       containers:
-        - name: peach45
+        - name: peach-45
           image: python:3
           command:
             - python
@@ -1126,20 +1126,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach46
+  name: peach-46
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach46
+      app: peach-46
   template:
     metadata:
       labels:
-        app: peach46
+        app: peach-46
     spec:
       containers:
-        - name: peach46
+        - name: peach-46
           image: python:3
           command:
             - python
@@ -1151,20 +1151,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach47
+  name: peach-47
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach47
+      app: peach-47
   template:
     metadata:
       labels:
-        app: peach47
+        app: peach-47
     spec:
       containers:
-        - name: peach47
+        - name: peach-47
           image: python:3
           command:
             - python
@@ -1176,20 +1176,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach48
+  name: peach-48
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach48
+      app: peach-48
   template:
     metadata:
       labels:
-        app: peach48
+        app: peach-48
     spec:
       containers:
-        - name: peach48
+        - name: peach-48
           image: python:3
           command:
             - python
@@ -1201,20 +1201,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach49
+  name: peach-49
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach49
+      app: peach-49
   template:
     metadata:
       labels:
-        app: peach49
+        app: peach-49
     spec:
       containers:
-        - name: peach49
+        - name: peach-49
           image: python:3
           command:
             - python
@@ -1226,20 +1226,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach50
+  name: peach-50
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach50
+      app: peach-50
   template:
     metadata:
       labels:
-        app: peach50
+        app: peach-50
     spec:
       containers:
-        - name: peach50
+        - name: peach-50
           image: python:3
           command:
             - python
@@ -1251,20 +1251,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach51
+  name: peach-51
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach51
+      app: peach-51
   template:
     metadata:
       labels:
-        app: peach51
+        app: peach-51
     spec:
       containers:
-        - name: peach51
+        - name: peach-51
           image: python:3
           command:
             - python
@@ -1276,20 +1276,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach52
+  name: peach-52
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach52
+      app: peach-52
   template:
     metadata:
       labels:
-        app: peach52
+        app: peach-52
     spec:
       containers:
-        - name: peach52
+        - name: peach-52
           image: python:3
           command:
             - python
@@ -1301,20 +1301,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach53
+  name: peach-53
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach53
+      app: peach-53
   template:
     metadata:
       labels:
-        app: peach53
+        app: peach-53
     spec:
       containers:
-        - name: peach53
+        - name: peach-53
           image: python:3
           command:
             - python
@@ -1326,20 +1326,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach54
+  name: peach-54
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach54
+      app: peach-54
   template:
     metadata:
       labels:
-        app: peach54
+        app: peach-54
     spec:
       containers:
-        - name: peach54
+        - name: peach-54
           image: python:3
           command:
             - python
@@ -1351,20 +1351,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach55
+  name: peach-55
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach55
+      app: peach-55
   template:
     metadata:
       labels:
-        app: peach55
+        app: peach-55
     spec:
       containers:
-        - name: peach55
+        - name: peach-55
           image: python:3
           command:
             - python
@@ -1376,20 +1376,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach56
+  name: peach-56
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach56
+      app: peach-56
   template:
     metadata:
       labels:
-        app: peach56
+        app: peach-56
     spec:
       containers:
-        - name: peach56
+        - name: peach-56
           image: python:3
           command:
             - python
@@ -1401,20 +1401,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach57
+  name: peach-57
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach57
+      app: peach-57
   template:
     metadata:
       labels:
-        app: peach57
+        app: peach-57
     spec:
       containers:
-        - name: peach57
+        - name: peach-57
           image: python:3
           command:
             - python
@@ -1426,20 +1426,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach58
+  name: peach-58
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach58
+      app: peach-58
   template:
     metadata:
       labels:
-        app: peach58
+        app: peach-58
     spec:
       containers:
-        - name: peach58
+        - name: peach-58
           image: python:3
           command:
             - python
@@ -1451,20 +1451,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach59
+  name: peach-59
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach59
+      app: peach-59
   template:
     metadata:
       labels:
-        app: peach59
+        app: peach-59
     spec:
       containers:
-        - name: peach59
+        - name: peach-59
           image: python:3
           command:
             - python
@@ -1476,20 +1476,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach60
+  name: peach-60
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach60
+      app: peach-60
   template:
     metadata:
       labels:
-        app: peach60
+        app: peach-60
     spec:
       containers:
-        - name: peach60
+        - name: peach-60
           image: python:3
           command:
             - python
@@ -1501,20 +1501,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach61
+  name: peach-61
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach61
+      app: peach-61
   template:
     metadata:
       labels:
-        app: peach61
+        app: peach-61
     spec:
       containers:
-        - name: peach61
+        - name: peach-61
           image: python:3
           command:
             - python
@@ -1526,20 +1526,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach62
+  name: peach-62
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach62
+      app: peach-62
   template:
     metadata:
       labels:
-        app: peach62
+        app: peach-62
     spec:
       containers:
-        - name: peach62
+        - name: peach-62
           image: python:3
           command:
             - python
@@ -1551,20 +1551,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach63
+  name: peach-63
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach63
+      app: peach-63
   template:
     metadata:
       labels:
-        app: peach63
+        app: peach-63
     spec:
       containers:
-        - name: peach63
+        - name: peach-63
           image: python:3
           command:
             - python
@@ -1576,20 +1576,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach64
+  name: peach-64
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach64
+      app: peach-64
   template:
     metadata:
       labels:
-        app: peach64
+        app: peach-64
     spec:
       containers:
-        - name: peach64
+        - name: peach-64
           image: python:3
           command:
             - python
@@ -1601,20 +1601,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach65
+  name: peach-65
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach65
+      app: peach-65
   template:
     metadata:
       labels:
-        app: peach65
+        app: peach-65
     spec:
       containers:
-        - name: peach65
+        - name: peach-65
           image: python:3
           command:
             - python
@@ -1626,20 +1626,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach66
+  name: peach-66
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach66
+      app: peach-66
   template:
     metadata:
       labels:
-        app: peach66
+        app: peach-66
     spec:
       containers:
-        - name: peach66
+        - name: peach-66
           image: python:3
           command:
             - python
@@ -1651,20 +1651,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach67
+  name: peach-67
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach67
+      app: peach-67
   template:
     metadata:
       labels:
-        app: peach67
+        app: peach-67
     spec:
       containers:
-        - name: peach67
+        - name: peach-67
           image: python:3
           command:
             - python
@@ -1676,20 +1676,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach68
+  name: peach-68
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach68
+      app: peach-68
   template:
     metadata:
       labels:
-        app: peach68
+        app: peach-68
     spec:
       containers:
-        - name: peach68
+        - name: peach-68
           image: python:3
           command:
             - python
@@ -1701,20 +1701,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach69
+  name: peach-69
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach69
+      app: peach-69
   template:
     metadata:
       labels:
-        app: peach69
+        app: peach-69
     spec:
       containers:
-        - name: peach69
+        - name: peach-69
           image: python:3
           command:
             - python
@@ -1726,20 +1726,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach70
+  name: peach-70
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach70
+      app: peach-70
   template:
     metadata:
       labels:
-        app: peach70
+        app: peach-70
     spec:
       containers:
-        - name: peach70
+        - name: peach-70
           image: python:3
           command:
             - python
@@ -1751,20 +1751,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach71
+  name: peach-71
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach71
+      app: peach-71
   template:
     metadata:
       labels:
-        app: peach71
+        app: peach-71
     spec:
       containers:
-        - name: peach71
+        - name: peach-71
           image: python:3
           command:
             - python
@@ -1776,20 +1776,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach72
+  name: peach-72
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach72
+      app: peach-72
   template:
     metadata:
       labels:
-        app: peach72
+        app: peach-72
     spec:
       containers:
-        - name: peach72
+        - name: peach-72
           image: python:3
           command:
             - python
@@ -1801,20 +1801,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach73
+  name: peach-73
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach73
+      app: peach-73
   template:
     metadata:
       labels:
-        app: peach73
+        app: peach-73
     spec:
       containers:
-        - name: peach73
+        - name: peach-73
           image: python:3
           command:
             - python
@@ -1826,20 +1826,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach74
+  name: peach-74
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach74
+      app: peach-74
   template:
     metadata:
       labels:
-        app: peach74
+        app: peach-74
     spec:
       containers:
-        - name: peach74
+        - name: peach-74
           image: python:3
           command:
             - python
@@ -1851,20 +1851,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach75
+  name: peach-75
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach75
+      app: peach-75
   template:
     metadata:
       labels:
-        app: peach75
+        app: peach-75
     spec:
       containers:
-        - name: peach75
+        - name: peach-75
           image: python:3
           command:
             - python
@@ -1876,20 +1876,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach76
+  name: peach-76
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach76
+      app: peach-76
   template:
     metadata:
       labels:
-        app: peach76
+        app: peach-76
     spec:
       containers:
-        - name: peach76
+        - name: peach-76
           image: python:3
           command:
             - python
@@ -1901,20 +1901,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach77
+  name: peach-77
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach77
+      app: peach-77
   template:
     metadata:
       labels:
-        app: peach77
+        app: peach-77
     spec:
       containers:
-        - name: peach77
+        - name: peach-77
           image: python:3
           command:
             - python
@@ -1926,20 +1926,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach78
+  name: peach-78
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach78
+      app: peach-78
   template:
     metadata:
       labels:
-        app: peach78
+        app: peach-78
     spec:
       containers:
-        - name: peach78
+        - name: peach-78
           image: python:3
           command:
             - python
@@ -1951,20 +1951,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach79
+  name: peach-79
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach79
+      app: peach-79
   template:
     metadata:
       labels:
-        app: peach79
+        app: peach-79
     spec:
       containers:
-        - name: peach79
+        - name: peach-79
           image: python:3
           command:
             - python
@@ -1976,20 +1976,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach80
+  name: peach-80
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach80
+      app: peach-80
   template:
     metadata:
       labels:
-        app: peach80
+        app: peach-80
     spec:
       containers:
-        - name: peach80
+        - name: peach-80
           image: python:3
           command:
             - python
@@ -2001,20 +2001,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach81
+  name: peach-81
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach81
+      app: peach-81
   template:
     metadata:
       labels:
-        app: peach81
+        app: peach-81
     spec:
       containers:
-        - name: peach81
+        - name: peach-81
           image: python:3
           command:
             - python
@@ -2026,20 +2026,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach82
+  name: peach-82
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach82
+      app: peach-82
   template:
     metadata:
       labels:
-        app: peach82
+        app: peach-82
     spec:
       containers:
-        - name: peach82
+        - name: peach-82
           image: python:3
           command:
             - python
@@ -2051,20 +2051,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach83
+  name: peach-83
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach83
+      app: peach-83
   template:
     metadata:
       labels:
-        app: peach83
+        app: peach-83
     spec:
       containers:
-        - name: peach83
+        - name: peach-83
           image: python:3
           command:
             - python
@@ -2076,20 +2076,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach84
+  name: peach-84
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach84
+      app: peach-84
   template:
     metadata:
       labels:
-        app: peach84
+        app: peach-84
     spec:
       containers:
-        - name: peach84
+        - name: peach-84
           image: python:3
           command:
             - python
@@ -2101,20 +2101,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach85
+  name: peach-85
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach85
+      app: peach-85
   template:
     metadata:
       labels:
-        app: peach85
+        app: peach-85
     spec:
       containers:
-        - name: peach85
+        - name: peach-85
           image: python:3
           command:
             - python
@@ -2126,20 +2126,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach86
+  name: peach-86
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach86
+      app: peach-86
   template:
     metadata:
       labels:
-        app: peach86
+        app: peach-86
     spec:
       containers:
-        - name: peach86
+        - name: peach-86
           image: python:3
           command:
             - python
@@ -2151,20 +2151,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach87
+  name: peach-87
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach87
+      app: peach-87
   template:
     metadata:
       labels:
-        app: peach87
+        app: peach-87
     spec:
       containers:
-        - name: peach87
+        - name: peach-87
           image: python:3
           command:
             - python
@@ -2176,20 +2176,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach88
+  name: peach-88
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach88
+      app: peach-88
   template:
     metadata:
       labels:
-        app: peach88
+        app: peach-88
     spec:
       containers:
-        - name: peach88
+        - name: peach-88
           image: python:3
           command:
             - python
@@ -2201,20 +2201,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach89
+  name: peach-89
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach89
+      app: peach-89
   template:
     metadata:
       labels:
-        app: peach89
+        app: peach-89
     spec:
       containers:
-        - name: peach89
+        - name: peach-89
           image: python:3
           command:
             - python
@@ -2226,20 +2226,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach90
+  name: peach-90
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach90
+      app: peach-90
   template:
     metadata:
       labels:
-        app: peach90
+        app: peach-90
     spec:
       containers:
-        - name: peach90
+        - name: peach-90
           image: python:3
           command:
             - python
@@ -2251,20 +2251,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach91
+  name: peach-91
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach91
+      app: peach-91
   template:
     metadata:
       labels:
-        app: peach91
+        app: peach-91
     spec:
       containers:
-        - name: peach91
+        - name: peach-91
           image: python:3
           command:
             - python
@@ -2276,20 +2276,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach92
+  name: peach-92
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach92
+      app: peach-92
   template:
     metadata:
       labels:
-        app: peach92
+        app: peach-92
     spec:
       containers:
-        - name: peach92
+        - name: peach-92
           image: python:3
           command:
             - python
@@ -2301,20 +2301,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach93
+  name: peach-93
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach93
+      app: peach-93
   template:
     metadata:
       labels:
-        app: peach93
+        app: peach-93
     spec:
       containers:
-        - name: peach93
+        - name: peach-93
           image: python:3
           command:
             - python
@@ -2326,20 +2326,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach94
+  name: peach-94
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach94
+      app: peach-94
   template:
     metadata:
       labels:
-        app: peach94
+        app: peach-94
     spec:
       containers:
-        - name: peach94
+        - name: peach-94
           image: python:3
           command:
             - python
@@ -2351,20 +2351,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach95
+  name: peach-95
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach95
+      app: peach-95
   template:
     metadata:
       labels:
-        app: peach95
+        app: peach-95
     spec:
       containers:
-        - name: peach95
+        - name: peach-95
           image: python:3
           command:
             - python
@@ -2376,20 +2376,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach96
+  name: peach-96
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach96
+      app: peach-96
   template:
     metadata:
       labels:
-        app: peach96
+        app: peach-96
     spec:
       containers:
-        - name: peach96
+        - name: peach-96
           image: python:3
           command:
             - python
@@ -2401,20 +2401,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach97
+  name: peach-97
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach97
+      app: peach-97
   template:
     metadata:
       labels:
-        app: peach97
+        app: peach-97
     spec:
       containers:
-        - name: peach97
+        - name: peach-97
           image: python:3
           command:
             - python
@@ -2426,20 +2426,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach98
+  name: peach-98
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach98
+      app: peach-98
   template:
     metadata:
       labels:
-        app: peach98
+        app: peach-98
     spec:
       containers:
-        - name: peach98
+        - name: peach-98
           image: python:3
           command:
             - python
@@ -2451,20 +2451,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach99
+  name: peach-99
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach99
+      app: peach-99
   template:
     metadata:
       labels:
-        app: peach99
+        app: peach-99
     spec:
       containers:
-        - name: peach99
+        - name: peach-99
           image: python:3
           command:
             - python
@@ -2476,20 +2476,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: peach100
+  name: peach-100
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: peach100
+      app: peach-100
   template:
     metadata:
       labels:
-        app: peach100
+        app: peach-100
     spec:
       containers:
-        - name: peach100
+        - name: peach-100
           image: python:3
           command:
             - python

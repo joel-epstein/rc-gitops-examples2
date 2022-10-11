@@ -20,11 +20,11 @@ defaults: {
 		metrics:         8081
 	}
 
-	// greymatter.io edge_grocerylist input configurations.
+	// greymatter.io edge_grocerylist2 input configurations.
 	// These configs will manipulate the behavior of accessing your services
 	// from the outside world.
 	edge: {
-		key:        "edge_grocerylist"
+		key:        "edge_grocerylist2"
 		
 		enable_tls: false
 

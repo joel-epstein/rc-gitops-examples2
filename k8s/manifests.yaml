@@ -1,23 +1,18 @@
 ---
-apiVersion: v1
-kind: Namespace
-metadata:
-  name: examples
----
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: edge-grocerylist
-  namespace: examples
+  name: edge-grocerylist2
+  namespace: foobar-2
 spec:
   replicas: 1
   selector:
     matchLabels:
-      greymatter.io/cluster: edge_grocerylist
+      greymatter.io/cluster: edge_grocerylist2
   template:
     metadata:
       labels:
-        greymatter.io/cluster: edge_grocerylist
+        greymatter.io/cluster: edge_grocerylist2
     spec:
       containers:
         - name: sidecar
@@ -28,7 +23,7 @@ spec:
             name: proxy
           env:
             - name: XDS_CLUSTER
-              value: edge_grocerylist
+              value: edge_grocerylist2
             - name: ENVOY_ADMIN_LOG_PATH
               value: /dev/stdout
             - name: PROXY_DYNAMIC
@@ -53,7 +48,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: edge-grocerylist
-  namespace: examples
+  namespace: foobar-2
 spec:
   ports:
   - name: ingress
@@ -61,157 +56,6 @@ spec:
     protocol: TCP
     targetPort: 10810
   selector:
-    greymatter.io/cluster: edge_grocerylist
+    greymatter.io/cluster: edge_grocerylist2
   type: LoadBalancer
 
----
-apiVersion: v1
-data:
-  index.html: I'm an API in the greymatter.io mesh!
-kind: ConfigMap
-metadata:
-  name: apple-web
-  namespace: examples
----
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: apple
-  namespace: examples
-  annotations:
-    greymatter.io/inject-sidecar-to: "8080"
-spec:
-  selector:
-    matchLabels:
-      app: apple
-  template:
-    metadata:
-      labels:
-        app: apple
-    spec:
-      containers:
-        - name: apple
-          image: python:3
-          command: ["python"]
-          args: ["-m", "http.server", "8080", "--directory", "web"]
-          volumeMounts:
-            - name: web-volume
-              mountPath: /web
-      volumes:
-        - name: web-volume
-          configMap:
-            name: apple-web
-
----
-apiVersion: v1
-data:
-  index.html: I'm an API in the greymatter.io mesh!
-kind: ConfigMap
-metadata:
-  name: banana-web
-  namespace: examples
----
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: banana
-  namespace: examples
-  annotations:
-    greymatter.io/inject-sidecar-to: "8080"
-spec:
-  selector:
-    matchLabels:
-      app: banana
-  template:
-    metadata:
-      labels:
-        app: banana
-    spec:
-      containers:
-        - name: banana
-          image: python:3
-          command: ["python"]
-          args: ["-m", "http.server", "8080", "--directory", "web"]
-          volumeMounts:
-            - name: web-volume
-              mountPath: /web
-      volumes:
-        - name: web-volume
-          configMap:
-            name: banana-web
-
----
-apiVersion: v1
-data:
-  index.html: I'm an API in the greymatter.io mesh!
-kind: ConfigMap
-metadata:
-  name: lettuce-web
-  namespace: examples
----
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: lettuce
-  namespace: examples
-  annotations:
-    greymatter.io/inject-sidecar-to: "8080"
-spec:
-  selector:
-    matchLabels:
-      app: lettuce
-  template:
-    metadata:
-      labels:
-        app: lettuce
-    spec:
-      containers:
-        - name: lettuce
-          image: python:3
-          command: ["python"]
-          args: ["-m", "http.server", "8080", "--directory", "web"]
-          volumeMounts:
-            - name: web-volume
-              mountPath: /web
-      volumes:
-        - name: web-volume
-          configMap:
-            name: lettuce-web
-
----
-apiVersion: v1
-data:
-  index.html: I'm an API in the greymatter.io mesh!
-kind: ConfigMap
-metadata:
-  name: tomato-web
-  namespace: examples
----
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: tomato
-  namespace: examples
-  annotations:
-    greymatter.io/inject-sidecar-to: "8080"
-spec:
-  selector:
-    matchLabels:
-      app: tomato
-  template:
-    metadata:
-      labels:
-        app: tomato
-    spec:
-      containers:
-        - name: tomato
-          image: python:3
-          command: ["python"]
-          args: ["-m", "http.server", "8080", "--directory", "web"]
-          volumeMounts:
-            - name: web-volume
-              mountPath: /web
-      volumes:
-        - name: web-volume
-          configMap:
-            name: tomato-web
