@@ -9,7 +9,7 @@
 for i in {1..100}
 do
 #echo "kiwi${i}"
-~/greymatter init service --insecure --type=http --dir greymatter/grocerylist --port=3000 --package=grocerylist "kiwi-${i}"
+greymatter init service --insecure --type=http --dir greymatter/grocerylist --port=3000 --package=grocerylist "kiwi-${i}"
 #~/greymatter init service --insecure --type=http --dir greymatter/grocerylist --port=3000 --package=grocerylist "peach-${i}"
 #~/greymatter init service --insecure --type=http --dir greymatter/grocerylist --port=3000 --package=grocerylist "orange-${i}"
 #~/greymatter init service --insecure --type=http --dir greymatter/grocerylist --port=3000 --package=grocerylist "fig-${i}"
