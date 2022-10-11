@@ -24,7 +24,7 @@ spec:
           image: quay.io/greymatterio/gm-proxy:1.7.1
           imagePullPolicy: Always
           ports:
-          - containerPort: 10809
+          - containerPort: 10810
             name: proxy
           env:
             - name: XDS_CLUSTER
@@ -57,9 +57,9 @@ metadata:
 spec:
   ports:
   - name: ingress
-    port: 10809
+    port: 10810
     protocol: TCP
-    targetPort: 10809
+    targetPort: 10810
   selector:
     greymatter.io/cluster: edge_grocerylist
   type: LoadBalancer
