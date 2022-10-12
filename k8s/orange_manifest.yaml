@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange1
+  name: orange-1
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange1
+      app: orange-1
   template:
     metadata:
       labels:
-        app: orange1
+        app: orange-1
     spec:
       containers:
-        - name: orange1
+        - name: orange-1
           image: python:3
           command:
             - python
@@ -26,20 +26,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange2
+  name: orange-2
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange2
+      app: orange-2
   template:
     metadata:
       labels:
-        app: orange2
+        app: orange-2
     spec:
       containers:
-        - name: orange2
+        - name: orange-2
           image: python:3
           command:
             - python
@@ -51,20 +51,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange3
+  name: orange-3
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange3
+      app: orange-3
   template:
     metadata:
       labels:
-        app: orange3
+        app: orange-3
     spec:
       containers:
-        - name: orange3
+        - name: orange-3
           image: python:3
           command:
             - python
@@ -76,20 +76,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange4
+  name: orange-4
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange4
+      app: orange-4
   template:
     metadata:
       labels:
-        app: orange4
+        app: orange-4
     spec:
       containers:
-        - name: orange4
+        - name: orange-4
           image: python:3
           command:
             - python
@@ -101,20 +101,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange5
+  name: orange-5
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange5
+      app: orange-5
   template:
     metadata:
       labels:
-        app: orange5
+        app: orange-5
     spec:
       containers:
-        - name: orange5
+        - name: orange-5
           image: python:3
           command:
             - python
@@ -126,20 +126,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange6
+  name: orange-6
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange6
+      app: orange-6
   template:
     metadata:
       labels:
-        app: orange6
+        app: orange-6
     spec:
       containers:
-        - name: orange6
+        - name: orange-6
           image: python:3
           command:
             - python
@@ -151,20 +151,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange7
+  name: orange-7
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange7
+      app: orange-7
   template:
     metadata:
       labels:
-        app: orange7
+        app: orange-7
     spec:
       containers:
-        - name: orange7
+        - name: orange-7
           image: python:3
           command:
             - python
@@ -176,20 +176,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange8
+  name: orange-8
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange8
+      app: orange-8
   template:
     metadata:
       labels:
-        app: orange8
+        app: orange-8
     spec:
       containers:
-        - name: orange8
+        - name: orange-8
           image: python:3
           command:
             - python
@@ -201,20 +201,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange9
+  name: orange-9
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange9
+      app: orange-9
   template:
     metadata:
       labels:
-        app: orange9
+        app: orange-9
     spec:
       containers:
-        - name: orange9
+        - name: orange-9
           image: python:3
           command:
             - python
@@ -226,20 +226,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange10
+  name: orange-10
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange10
+      app: orange-10
   template:
     metadata:
       labels:
-        app: orange10
+        app: orange-10
     spec:
       containers:
-        - name: orange10
+        - name: orange-10
           image: python:3
           command:
             - python
@@ -251,20 +251,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange11
+  name: orange-11
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange11
+      app: orange-11
   template:
     metadata:
       labels:
-        app: orange11
+        app: orange-11
     spec:
       containers:
-        - name: orange11
+        - name: orange-11
           image: python:3
           command:
             - python
@@ -276,20 +276,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange12
+  name: orange-12
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange12
+      app: orange-12
   template:
     metadata:
       labels:
-        app: orange12
+        app: orange-12
     spec:
       containers:
-        - name: orange12
+        - name: orange-12
           image: python:3
           command:
             - python
@@ -301,20 +301,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange13
+  name: orange-13
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange13
+      app: orange-13
   template:
     metadata:
       labels:
-        app: orange13
+        app: orange-13
     spec:
       containers:
-        - name: orange13
+        - name: orange-13
           image: python:3
           command:
             - python
@@ -326,20 +326,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange14
+  name: orange-14
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange14
+      app: orange-14
   template:
     metadata:
       labels:
-        app: orange14
+        app: orange-14
     spec:
       containers:
-        - name: orange14
+        - name: orange-14
           image: python:3
           command:
             - python
@@ -351,20 +351,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange15
+  name: orange-15
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange15
+      app: orange-15
   template:
     metadata:
       labels:
-        app: orange15
+        app: orange-15
     spec:
       containers:
-        - name: orange15
+        - name: orange-15
           image: python:3
           command:
             - python
@@ -376,20 +376,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange16
+  name: orange-16
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange16
+      app: orange-16
   template:
     metadata:
       labels:
-        app: orange16
+        app: orange-16
     spec:
       containers:
-        - name: orange16
+        - name: orange-16
           image: python:3
           command:
             - python
@@ -401,20 +401,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange17
+  name: orange-17
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange17
+      app: orange-17
   template:
     metadata:
       labels:
-        app: orange17
+        app: orange-17
     spec:
       containers:
-        - name: orange17
+        - name: orange-17
           image: python:3
           command:
             - python
@@ -426,20 +426,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange18
+  name: orange-18
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange18
+      app: orange-18
   template:
     metadata:
       labels:
-        app: orange18
+        app: orange-18
     spec:
       containers:
-        - name: orange18
+        - name: orange-18
           image: python:3
           command:
             - python
@@ -451,20 +451,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange19
+  name: orange-19
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange19
+      app: orange-19
   template:
     metadata:
       labels:
-        app: orange19
+        app: orange-19
     spec:
       containers:
-        - name: orange19
+        - name: orange-19
           image: python:3
           command:
             - python
@@ -476,20 +476,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange20
+  name: orange-20
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange20
+      app: orange-20
   template:
     metadata:
       labels:
-        app: orange20
+        app: orange-20
     spec:
       containers:
-        - name: orange20
+        - name: orange-20
           image: python:3
           command:
             - python
@@ -501,20 +501,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange21
+  name: orange-21
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange21
+      app: orange-21
   template:
     metadata:
       labels:
-        app: orange21
+        app: orange-21
     spec:
       containers:
-        - name: orange21
+        - name: orange-21
           image: python:3
           command:
             - python
@@ -526,20 +526,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange22
+  name: orange-22
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange22
+      app: orange-22
   template:
     metadata:
       labels:
-        app: orange22
+        app: orange-22
     spec:
       containers:
-        - name: orange22
+        - name: orange-22
           image: python:3
           command:
             - python
@@ -551,20 +551,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange23
+  name: orange-23
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange23
+      app: orange-23
   template:
     metadata:
       labels:
-        app: orange23
+        app: orange-23
     spec:
       containers:
-        - name: orange23
+        - name: orange-23
           image: python:3
           command:
             - python
@@ -576,20 +576,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange24
+  name: orange-24
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange24
+      app: orange-24
   template:
     metadata:
       labels:
-        app: orange24
+        app: orange-24
     spec:
       containers:
-        - name: orange24
+        - name: orange-24
           image: python:3
           command:
             - python
@@ -601,20 +601,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange25
+  name: orange-25
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange25
+      app: orange-25
   template:
     metadata:
       labels:
-        app: orange25
+        app: orange-25
     spec:
       containers:
-        - name: orange25
+        - name: orange-25
           image: python:3
           command:
             - python
@@ -626,20 +626,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange26
+  name: orange-26
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange26
+      app: orange-26
   template:
     metadata:
       labels:
-        app: orange26
+        app: orange-26
     spec:
       containers:
-        - name: orange26
+        - name: orange-26
           image: python:3
           command:
             - python
@@ -651,20 +651,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange27
+  name: orange-27
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange27
+      app: orange-27
   template:
     metadata:
       labels:
-        app: orange27
+        app: orange-27
     spec:
       containers:
-        - name: orange27
+        - name: orange-27
           image: python:3
           command:
             - python
@@ -676,20 +676,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange28
+  name: orange-28
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange28
+      app: orange-28
   template:
     metadata:
       labels:
-        app: orange28
+        app: orange-28
     spec:
       containers:
-        - name: orange28
+        - name: orange-28
           image: python:3
           command:
             - python
@@ -701,20 +701,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange29
+  name: orange-29
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange29
+      app: orange-29
   template:
     metadata:
       labels:
-        app: orange29
+        app: orange-29
     spec:
       containers:
-        - name: orange29
+        - name: orange-29
           image: python:3
           command:
             - python
@@ -726,20 +726,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange30
+  name: orange-30
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange30
+      app: orange-30
   template:
     metadata:
       labels:
-        app: orange30
+        app: orange-30
     spec:
       containers:
-        - name: orange30
+        - name: orange-30
           image: python:3
           command:
             - python
@@ -751,20 +751,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange31
+  name: orange-31
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange31
+      app: orange-31
   template:
     metadata:
       labels:
-        app: orange31
+        app: orange-31
     spec:
       containers:
-        - name: orange31
+        - name: orange-31
           image: python:3
           command:
             - python
@@ -776,20 +776,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange32
+  name: orange-32
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange32
+      app: orange-32
   template:
     metadata:
       labels:
-        app: orange32
+        app: orange-32
     spec:
       containers:
-        - name: orange32
+        - name: orange-32
           image: python:3
           command:
             - python
@@ -801,20 +801,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange33
+  name: orange-33
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange33
+      app: orange-33
   template:
     metadata:
       labels:
-        app: orange33
+        app: orange-33
     spec:
       containers:
-        - name: orange33
+        - name: orange-33
           image: python:3
           command:
             - python
@@ -826,20 +826,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange34
+  name: orange-34
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange34
+      app: orange-34
   template:
     metadata:
       labels:
-        app: orange34
+        app: orange-34
     spec:
       containers:
-        - name: orange34
+        - name: orange-34
           image: python:3
           command:
             - python
@@ -851,20 +851,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange35
+  name: orange-35
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange35
+      app: orange-35
   template:
     metadata:
       labels:
-        app: orange35
+        app: orange-35
     spec:
       containers:
-        - name: orange35
+        - name: orange-35
           image: python:3
           command:
             - python
@@ -876,20 +876,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange36
+  name: orange-36
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange36
+      app: orange-36
   template:
     metadata:
       labels:
-        app: orange36
+        app: orange-36
     spec:
       containers:
-        - name: orange36
+        - name: orange-36
           image: python:3
           command:
             - python
@@ -901,20 +901,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange37
+  name: orange-37
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange37
+      app: orange-37
   template:
     metadata:
       labels:
-        app: orange37
+        app: orange-37
     spec:
       containers:
-        - name: orange37
+        - name: orange-37
           image: python:3
           command:
             - python
@@ -926,20 +926,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange38
+  name: orange-38
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange38
+      app: orange-38
   template:
     metadata:
       labels:
-        app: orange38
+        app: orange-38
     spec:
       containers:
-        - name: orange38
+        - name: orange-38
           image: python:3
           command:
             - python
@@ -951,20 +951,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange39
+  name: orange-39
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange39
+      app: orange-39
   template:
     metadata:
       labels:
-        app: orange39
+        app: orange-39
     spec:
       containers:
-        - name: orange39
+        - name: orange-39
           image: python:3
           command:
             - python
@@ -976,20 +976,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange40
+  name: orange-40
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange40
+      app: orange-40
   template:
     metadata:
       labels:
-        app: orange40
+        app: orange-40
     spec:
       containers:
-        - name: orange40
+        - name: orange-40
           image: python:3
           command:
             - python
@@ -1001,20 +1001,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange41
+  name: orange-41
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange41
+      app: orange-41
   template:
     metadata:
       labels:
-        app: orange41
+        app: orange-41
     spec:
       containers:
-        - name: orange41
+        - name: orange-41
           image: python:3
           command:
             - python
@@ -1026,20 +1026,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange42
+  name: orange-42
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange42
+      app: orange-42
   template:
     metadata:
       labels:
-        app: orange42
+        app: orange-42
     spec:
       containers:
-        - name: orange42
+        - name: orange-42
           image: python:3
           command:
             - python
@@ -1051,20 +1051,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange43
+  name: orange-43
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange43
+      app: orange-43
   template:
     metadata:
       labels:
-        app: orange43
+        app: orange-43
     spec:
       containers:
-        - name: orange43
+        - name: orange-43
           image: python:3
           command:
             - python
@@ -1076,20 +1076,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange44
+  name: orange-44
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange44
+      app: orange-44
   template:
     metadata:
       labels:
-        app: orange44
+        app: orange-44
     spec:
       containers:
-        - name: orange44
+        - name: orange-44
           image: python:3
           command:
             - python
@@ -1101,20 +1101,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange45
+  name: orange-45
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange45
+      app: orange-45
   template:
     metadata:
       labels:
-        app: orange45
+        app: orange-45
     spec:
       containers:
-        - name: orange45
+        - name: orange-45
           image: python:3
           command:
             - python
@@ -1126,20 +1126,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange46
+  name: orange-46
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange46
+      app: orange-46
   template:
     metadata:
       labels:
-        app: orange46
+        app: orange-46
     spec:
       containers:
-        - name: orange46
+        - name: orange-46
           image: python:3
           command:
             - python
@@ -1151,20 +1151,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange47
+  name: orange-47
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange47
+      app: orange-47
   template:
     metadata:
       labels:
-        app: orange47
+        app: orange-47
     spec:
       containers:
-        - name: orange47
+        - name: orange-47
           image: python:3
           command:
             - python
@@ -1176,20 +1176,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange48
+  name: orange-48
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange48
+      app: orange-48
   template:
     metadata:
       labels:
-        app: orange48
+        app: orange-48
     spec:
       containers:
-        - name: orange48
+        - name: orange-48
           image: python:3
           command:
             - python
@@ -1201,20 +1201,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange49
+  name: orange-49
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange49
+      app: orange-49
   template:
     metadata:
       labels:
-        app: orange49
+        app: orange-49
     spec:
       containers:
-        - name: orange49
+        - name: orange-49
           image: python:3
           command:
             - python
@@ -1226,20 +1226,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange50
+  name: orange-50
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange50
+      app: orange-50
   template:
     metadata:
       labels:
-        app: orange50
+        app: orange-50
     spec:
       containers:
-        - name: orange50
+        - name: orange-50
           image: python:3
           command:
             - python
@@ -1251,20 +1251,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange51
+  name: orange-51
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange51
+      app: orange-51
   template:
     metadata:
       labels:
-        app: orange51
+        app: orange-51
     spec:
       containers:
-        - name: orange51
+        - name: orange-51
           image: python:3
           command:
             - python
@@ -1276,20 +1276,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange52
+  name: orange-52
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange52
+      app: orange-52
   template:
     metadata:
       labels:
-        app: orange52
+        app: orange-52
     spec:
       containers:
-        - name: orange52
+        - name: orange-52
           image: python:3
           command:
             - python
@@ -1301,20 +1301,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange53
+  name: orange-53
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange53
+      app: orange-53
   template:
     metadata:
       labels:
-        app: orange53
+        app: orange-53
     spec:
       containers:
-        - name: orange53
+        - name: orange-53
           image: python:3
           command:
             - python
@@ -1326,20 +1326,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange54
+  name: orange-54
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange54
+      app: orange-54
   template:
     metadata:
       labels:
-        app: orange54
+        app: orange-54
     spec:
       containers:
-        - name: orange54
+        - name: orange-54
           image: python:3
           command:
             - python
@@ -1351,20 +1351,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange55
+  name: orange-55
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange55
+      app: orange-55
   template:
     metadata:
       labels:
-        app: orange55
+        app: orange-55
     spec:
       containers:
-        - name: orange55
+        - name: orange-55
           image: python:3
           command:
             - python
@@ -1376,20 +1376,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange56
+  name: orange-56
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange56
+      app: orange-56
   template:
     metadata:
       labels:
-        app: orange56
+        app: orange-56
     spec:
       containers:
-        - name: orange56
+        - name: orange-56
           image: python:3
           command:
             - python
@@ -1401,20 +1401,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange57
+  name: orange-57
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange57
+      app: orange-57
   template:
     metadata:
       labels:
-        app: orange57
+        app: orange-57
     spec:
       containers:
-        - name: orange57
+        - name: orange-57
           image: python:3
           command:
             - python
@@ -1426,20 +1426,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange58
+  name: orange-58
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange58
+      app: orange-58
   template:
     metadata:
       labels:
-        app: orange58
+        app: orange-58
     spec:
       containers:
-        - name: orange58
+        - name: orange-58
           image: python:3
           command:
             - python
@@ -1451,20 +1451,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange59
+  name: orange-59
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange59
+      app: orange-59
   template:
     metadata:
       labels:
-        app: orange59
+        app: orange-59
     spec:
       containers:
-        - name: orange59
+        - name: orange-59
           image: python:3
           command:
             - python
@@ -1476,20 +1476,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange60
+  name: orange-60
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange60
+      app: orange-60
   template:
     metadata:
       labels:
-        app: orange60
+        app: orange-60
     spec:
       containers:
-        - name: orange60
+        - name: orange-60
           image: python:3
           command:
             - python
@@ -1501,20 +1501,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange61
+  name: orange-61
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange61
+      app: orange-61
   template:
     metadata:
       labels:
-        app: orange61
+        app: orange-61
     spec:
       containers:
-        - name: orange61
+        - name: orange-61
           image: python:3
           command:
             - python
@@ -1526,20 +1526,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange62
+  name: orange-62
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange62
+      app: orange-62
   template:
     metadata:
       labels:
-        app: orange62
+        app: orange-62
     spec:
       containers:
-        - name: orange62
+        - name: orange-62
           image: python:3
           command:
             - python
@@ -1551,20 +1551,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange63
+  name: orange-63
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange63
+      app: orange-63
   template:
     metadata:
       labels:
-        app: orange63
+        app: orange-63
     spec:
       containers:
-        - name: orange63
+        - name: orange-63
           image: python:3
           command:
             - python
@@ -1576,20 +1576,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange64
+  name: orange-64
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange64
+      app: orange-64
   template:
     metadata:
       labels:
-        app: orange64
+        app: orange-64
     spec:
       containers:
-        - name: orange64
+        - name: orange-64
           image: python:3
           command:
             - python
@@ -1601,20 +1601,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange65
+  name: orange-65
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange65
+      app: orange-65
   template:
     metadata:
       labels:
-        app: orange65
+        app: orange-65
     spec:
       containers:
-        - name: orange65
+        - name: orange-65
           image: python:3
           command:
             - python
@@ -1626,20 +1626,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange66
+  name: orange-66
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange66
+      app: orange-66
   template:
     metadata:
       labels:
-        app: orange66
+        app: orange-66
     spec:
       containers:
-        - name: orange66
+        - name: orange-66
           image: python:3
           command:
             - python
@@ -1651,20 +1651,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange67
+  name: orange-67
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange67
+      app: orange-67
   template:
     metadata:
       labels:
-        app: orange67
+        app: orange-67
     spec:
       containers:
-        - name: orange67
+        - name: orange-67
           image: python:3
           command:
             - python
@@ -1676,20 +1676,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange68
+  name: orange-68
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange68
+      app: orange-68
   template:
     metadata:
       labels:
-        app: orange68
+        app: orange-68
     spec:
       containers:
-        - name: orange68
+        - name: orange-68
           image: python:3
           command:
             - python
@@ -1701,20 +1701,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange69
+  name: orange-69
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange69
+      app: orange-69
   template:
     metadata:
       labels:
-        app: orange69
+        app: orange-69
     spec:
       containers:
-        - name: orange69
+        - name: orange-69
           image: python:3
           command:
             - python
@@ -1726,20 +1726,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange70
+  name: orange-70
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange70
+      app: orange-70
   template:
     metadata:
       labels:
-        app: orange70
+        app: orange-70
     spec:
       containers:
-        - name: orange70
+        - name: orange-70
           image: python:3
           command:
             - python
@@ -1751,20 +1751,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange71
+  name: orange-71
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange71
+      app: orange-71
   template:
     metadata:
       labels:
-        app: orange71
+        app: orange-71
     spec:
       containers:
-        - name: orange71
+        - name: orange-71
           image: python:3
           command:
             - python
@@ -1776,20 +1776,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange72
+  name: orange-72
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange72
+      app: orange-72
   template:
     metadata:
       labels:
-        app: orange72
+        app: orange-72
     spec:
       containers:
-        - name: orange72
+        - name: orange-72
           image: python:3
           command:
             - python
@@ -1801,20 +1801,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange73
+  name: orange-73
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange73
+      app: orange-73
   template:
     metadata:
       labels:
-        app: orange73
+        app: orange-73
     spec:
       containers:
-        - name: orange73
+        - name: orange-73
           image: python:3
           command:
             - python
@@ -1826,20 +1826,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange74
+  name: orange-74
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange74
+      app: orange-74
   template:
     metadata:
       labels:
-        app: orange74
+        app: orange-74
     spec:
       containers:
-        - name: orange74
+        - name: orange-74
           image: python:3
           command:
             - python
@@ -1851,20 +1851,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange75
+  name: orange-75
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange75
+      app: orange-75
   template:
     metadata:
       labels:
-        app: orange75
+        app: orange-75
     spec:
       containers:
-        - name: orange75
+        - name: orange-75
           image: python:3
           command:
             - python
@@ -1876,20 +1876,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange76
+  name: orange-76
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange76
+      app: orange-76
   template:
     metadata:
       labels:
-        app: orange76
+        app: orange-76
     spec:
       containers:
-        - name: orange76
+        - name: orange-76
           image: python:3
           command:
             - python
@@ -1901,20 +1901,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange77
+  name: orange-77
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange77
+      app: orange-77
   template:
     metadata:
       labels:
-        app: orange77
+        app: orange-77
     spec:
       containers:
-        - name: orange77
+        - name: orange-77
           image: python:3
           command:
             - python
@@ -1926,20 +1926,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange78
+  name: orange-78
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange78
+      app: orange-78
   template:
     metadata:
       labels:
-        app: orange78
+        app: orange-78
     spec:
       containers:
-        - name: orange78
+        - name: orange-78
           image: python:3
           command:
             - python
@@ -1951,20 +1951,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange79
+  name: orange-79
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange79
+      app: orange-79
   template:
     metadata:
       labels:
-        app: orange79
+        app: orange-79
     spec:
       containers:
-        - name: orange79
+        - name: orange-79
           image: python:3
           command:
             - python
@@ -1976,20 +1976,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange80
+  name: orange-80
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange80
+      app: orange-80
   template:
     metadata:
       labels:
-        app: orange80
+        app: orange-80
     spec:
       containers:
-        - name: orange80
+        - name: orange-80
           image: python:3
           command:
             - python
@@ -2001,20 +2001,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange81
+  name: orange-81
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange81
+      app: orange-81
   template:
     metadata:
       labels:
-        app: orange81
+        app: orange-81
     spec:
       containers:
-        - name: orange81
+        - name: orange-81
           image: python:3
           command:
             - python
@@ -2026,20 +2026,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange82
+  name: orange-82
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange82
+      app: orange-82
   template:
     metadata:
       labels:
-        app: orange82
+        app: orange-82
     spec:
       containers:
-        - name: orange82
+        - name: orange-82
           image: python:3
           command:
             - python
@@ -2051,20 +2051,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange83
+  name: orange-83
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange83
+      app: orange-83
   template:
     metadata:
       labels:
-        app: orange83
+        app: orange-83
     spec:
       containers:
-        - name: orange83
+        - name: orange-83
           image: python:3
           command:
             - python
@@ -2076,20 +2076,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange84
+  name: orange-84
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange84
+      app: orange-84
   template:
     metadata:
       labels:
-        app: orange84
+        app: orange-84
     spec:
       containers:
-        - name: orange84
+        - name: orange-84
           image: python:3
           command:
             - python
@@ -2101,20 +2101,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange85
+  name: orange-85
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange85
+      app: orange-85
   template:
     metadata:
       labels:
-        app: orange85
+        app: orange-85
     spec:
       containers:
-        - name: orange85
+        - name: orange-85
           image: python:3
           command:
             - python
@@ -2126,20 +2126,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange86
+  name: orange-86
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange86
+      app: orange-86
   template:
     metadata:
       labels:
-        app: orange86
+        app: orange-86
     spec:
       containers:
-        - name: orange86
+        - name: orange-86
           image: python:3
           command:
             - python
@@ -2151,20 +2151,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange87
+  name: orange-87
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange87
+      app: orange-87
   template:
     metadata:
       labels:
-        app: orange87
+        app: orange-87
     spec:
       containers:
-        - name: orange87
+        - name: orange-87
           image: python:3
           command:
             - python
@@ -2176,20 +2176,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange88
+  name: orange-88
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange88
+      app: orange-88
   template:
     metadata:
       labels:
-        app: orange88
+        app: orange-88
     spec:
       containers:
-        - name: orange88
+        - name: orange-88
           image: python:3
           command:
             - python
@@ -2201,20 +2201,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange89
+  name: orange-89
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange89
+      app: orange-89
   template:
     metadata:
       labels:
-        app: orange89
+        app: orange-89
     spec:
       containers:
-        - name: orange89
+        - name: orange-89
           image: python:3
           command:
             - python
@@ -2226,20 +2226,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange90
+  name: orange-90
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange90
+      app: orange-90
   template:
     metadata:
       labels:
-        app: orange90
+        app: orange-90
     spec:
       containers:
-        - name: orange90
+        - name: orange-90
           image: python:3
           command:
             - python
@@ -2251,20 +2251,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange91
+  name: orange-91
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange91
+      app: orange-91
   template:
     metadata:
       labels:
-        app: orange91
+        app: orange-91
     spec:
       containers:
-        - name: orange91
+        - name: orange-91
           image: python:3
           command:
             - python
@@ -2276,20 +2276,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange92
+  name: orange-92
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange92
+      app: orange-92
   template:
     metadata:
       labels:
-        app: orange92
+        app: orange-92
     spec:
       containers:
-        - name: orange92
+        - name: orange-92
           image: python:3
           command:
             - python
@@ -2301,20 +2301,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange93
+  name: orange-93
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange93
+      app: orange-93
   template:
     metadata:
       labels:
-        app: orange93
+        app: orange-93
     spec:
       containers:
-        - name: orange93
+        - name: orange-93
           image: python:3
           command:
             - python
@@ -2326,20 +2326,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange94
+  name: orange-94
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange94
+      app: orange-94
   template:
     metadata:
       labels:
-        app: orange94
+        app: orange-94
     spec:
       containers:
-        - name: orange94
+        - name: orange-94
           image: python:3
           command:
             - python
@@ -2351,20 +2351,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange95
+  name: orange-95
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange95
+      app: orange-95
   template:
     metadata:
       labels:
-        app: orange95
+        app: orange-95
     spec:
       containers:
-        - name: orange95
+        - name: orange-95
           image: python:3
           command:
             - python
@@ -2376,20 +2376,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange96
+  name: orange-96
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange96
+      app: orange-96
   template:
     metadata:
       labels:
-        app: orange96
+        app: orange-96
     spec:
       containers:
-        - name: orange96
+        - name: orange-96
           image: python:3
           command:
             - python
@@ -2401,20 +2401,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange97
+  name: orange-97
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange97
+      app: orange-97
   template:
     metadata:
       labels:
-        app: orange97
+        app: orange-97
     spec:
       containers:
-        - name: orange97
+        - name: orange-97
           image: python:3
           command:
             - python
@@ -2426,20 +2426,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange98
+  name: orange-98
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange98
+      app: orange-98
   template:
     metadata:
       labels:
-        app: orange98
+        app: orange-98
     spec:
       containers:
-        - name: orange98
+        - name: orange-98
           image: python:3
           command:
             - python
@@ -2451,20 +2451,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange99
+  name: orange-99
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange99
+      app: orange-99
   template:
     metadata:
       labels:
-        app: orange99
+        app: orange-99
     spec:
       containers:
-        - name: orange99
+        - name: orange-99
           image: python:3
           command:
             - python
@@ -2476,20 +2476,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: orange100
+  name: orange-100
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: orange100
+      app: orange-100
   template:
     metadata:
       labels:
-        app: orange100
+        app: orange-100
     spec:
       containers:
-        - name: orange100
+        - name: orange-100
           image: python:3
           command:
             - python
