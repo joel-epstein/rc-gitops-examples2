@@ -11,7 +11,7 @@ mesh: {
 }
 
 defaults: {
-	redis_cluster_name: "redis"
+	redis_cluster_name: "greymatter-datastore"
 
 	ports: {
 		default_ingress: 10808
@@ -24,7 +24,7 @@ defaults: {
 	// These configs will manipulate the behavior of accessing your services
 	// from the outside world.
 	edge: {
-		key:        "edge_grocerylist"
+		key:        "edge_grocerylist4"
 		
 		enable_tls: false
 
