@@ -24,7 +24,7 @@ defaults: {
 	// These configs will manipulate the behavior of accessing your services
 	// from the outside world.
 	edge: {
-		key:        "edge_grocerylist"
+		key:        "edge_grocerylist3"
 		
 		enable_tls: false
 
@@ -36,7 +36,7 @@ defaults: {
 		// - different environments/infra may require different config.
 		// This can be retrieved on kubernetes by running:
 		// kubectl get svc edge-grocerylist -n $MY_NAMESPACE
-		endpoint: "ac8b24f85ef4645e4bd36e796e2a57a8-478306398.us-east-1.elb.amazonaws.com:10811"
+		endpoint: "af9bfa2c31fb74d69883556694bcc216-2078969349.us-east-1.elb.amazonaws.com:10811"
 		
 		// OIDC block
 		oidc: {
