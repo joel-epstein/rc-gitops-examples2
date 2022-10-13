@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape1
+  name: grape-1
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape1
+      app: grape-1
   template:
     metadata:
       labels:
-        app: grape1
+        app: grape-1
     spec:
       containers:
-        - name: grape1
+        - name: grape-1
           image: python:3
           command:
             - python
@@ -26,20 +26,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape2
+  name: grape-2
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape2
+      app: grape-2
   template:
     metadata:
       labels:
-        app: grape2
+        app: grape-2
     spec:
       containers:
-        - name: grape2
+        - name: grape-2
           image: python:3
           command:
             - python
@@ -51,20 +51,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape3
+  name: grape-3
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape3
+      app: grape-3
   template:
     metadata:
       labels:
-        app: grape3
+        app: grape-3
     spec:
       containers:
-        - name: grape3
+        - name: grape-3
           image: python:3
           command:
             - python
@@ -76,20 +76,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape4
+  name: grape-4
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape4
+      app: grape-4
   template:
     metadata:
       labels:
-        app: grape4
+        app: grape-4
     spec:
       containers:
-        - name: grape4
+        - name: grape-4
           image: python:3
           command:
             - python
@@ -101,20 +101,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape5
+  name: grape-5
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape5
+      app: grape-5
   template:
     metadata:
       labels:
-        app: grape5
+        app: grape-5
     spec:
       containers:
-        - name: grape5
+        - name: grape-5
           image: python:3
           command:
             - python
@@ -126,20 +126,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape6
+  name: grape-6
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape6
+      app: grape-6
   template:
     metadata:
       labels:
-        app: grape6
+        app: grape-6
     spec:
       containers:
-        - name: grape6
+        - name: grape-6
           image: python:3
           command:
             - python
@@ -151,20 +151,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape7
+  name: grape-7
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape7
+      app: grape-7
   template:
     metadata:
       labels:
-        app: grape7
+        app: grape-7
     spec:
       containers:
-        - name: grape7
+        - name: grape-7
           image: python:3
           command:
             - python
@@ -176,20 +176,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape8
+  name: grape-8
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape8
+      app: grape-8
   template:
     metadata:
       labels:
-        app: grape8
+        app: grape-8
     spec:
       containers:
-        - name: grape8
+        - name: grape-8
           image: python:3
           command:
             - python
@@ -201,20 +201,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape9
+  name: grape-9
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape9
+      app: grape-9
   template:
     metadata:
       labels:
-        app: grape9
+        app: grape-9
     spec:
       containers:
-        - name: grape9
+        - name: grape-9
           image: python:3
           command:
             - python
@@ -226,20 +226,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape10
+  name: grape-10
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape10
+      app: grape-10
   template:
     metadata:
       labels:
-        app: grape10
+        app: grape-10
     spec:
       containers:
-        - name: grape10
+        - name: grape-10
           image: python:3
           command:
             - python
@@ -251,20 +251,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape11
+  name: grape-11
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape11
+      app: grape-11
   template:
     metadata:
       labels:
-        app: grape11
+        app: grape-11
     spec:
       containers:
-        - name: grape11
+        - name: grape-11
           image: python:3
           command:
             - python
@@ -276,20 +276,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape12
+  name: grape-12
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape12
+      app: grape-12
   template:
     metadata:
       labels:
-        app: grape12
+        app: grape-12
     spec:
       containers:
-        - name: grape12
+        - name: grape-12
           image: python:3
           command:
             - python
@@ -301,20 +301,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape13
+  name: grape-13
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape13
+      app: grape-13
   template:
     metadata:
       labels:
-        app: grape13
+        app: grape-13
     spec:
       containers:
-        - name: grape13
+        - name: grape-13
           image: python:3
           command:
             - python
@@ -326,20 +326,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape14
+  name: grape-14
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape14
+      app: grape-14
   template:
     metadata:
       labels:
-        app: grape14
+        app: grape-14
     spec:
       containers:
-        - name: grape14
+        - name: grape-14
           image: python:3
           command:
             - python
@@ -351,20 +351,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape15
+  name: grape-15
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape15
+      app: grape-15
   template:
     metadata:
       labels:
-        app: grape15
+        app: grape-15
     spec:
       containers:
-        - name: grape15
+        - name: grape-15
           image: python:3
           command:
             - python
@@ -376,20 +376,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape16
+  name: grape-16
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape16
+      app: grape-16
   template:
     metadata:
       labels:
-        app: grape16
+        app: grape-16
     spec:
       containers:
-        - name: grape16
+        - name: grape-16
           image: python:3
           command:
             - python
@@ -401,20 +401,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape17
+  name: grape-17
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape17
+      app: grape-17
   template:
     metadata:
       labels:
-        app: grape17
+        app: grape-17
     spec:
       containers:
-        - name: grape17
+        - name: grape-17
           image: python:3
           command:
             - python
@@ -426,20 +426,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape18
+  name: grape-18
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape18
+      app: grape-18
   template:
     metadata:
       labels:
-        app: grape18
+        app: grape-18
     spec:
       containers:
-        - name: grape18
+        - name: grape-18
           image: python:3
           command:
             - python
@@ -451,20 +451,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape19
+  name: grape-19
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape19
+      app: grape-19
   template:
     metadata:
       labels:
-        app: grape19
+        app: grape-19
     spec:
       containers:
-        - name: grape19
+        - name: grape-19
           image: python:3
           command:
             - python
@@ -476,20 +476,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape20
+  name: grape-20
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape20
+      app: grape-20
   template:
     metadata:
       labels:
-        app: grape20
+        app: grape-20
     spec:
       containers:
-        - name: grape20
+        - name: grape-20
           image: python:3
           command:
             - python
@@ -501,20 +501,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape21
+  name: grape-21
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape21
+      app: grape-21
   template:
     metadata:
       labels:
-        app: grape21
+        app: grape-21
     spec:
       containers:
-        - name: grape21
+        - name: grape-21
           image: python:3
           command:
             - python
@@ -526,20 +526,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape22
+  name: grape-22
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape22
+      app: grape-22
   template:
     metadata:
       labels:
-        app: grape22
+        app: grape-22
     spec:
       containers:
-        - name: grape22
+        - name: grape-22
           image: python:3
           command:
             - python
@@ -551,20 +551,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape23
+  name: grape-23
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape23
+      app: grape-23
   template:
     metadata:
       labels:
-        app: grape23
+        app: grape-23
     spec:
       containers:
-        - name: grape23
+        - name: grape-23
           image: python:3
           command:
             - python
@@ -576,20 +576,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape24
+  name: grape-24
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape24
+      app: grape-24
   template:
     metadata:
       labels:
-        app: grape24
+        app: grape-24
     spec:
       containers:
-        - name: grape24
+        - name: grape-24
           image: python:3
           command:
             - python
@@ -601,20 +601,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape25
+  name: grape-25
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape25
+      app: grape-25
   template:
     metadata:
       labels:
-        app: grape25
+        app: grape-25
     spec:
       containers:
-        - name: grape25
+        - name: grape-25
           image: python:3
           command:
             - python
@@ -626,20 +626,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape26
+  name: grape-26
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape26
+      app: grape-26
   template:
     metadata:
       labels:
-        app: grape26
+        app: grape-26
     spec:
       containers:
-        - name: grape26
+        - name: grape-26
           image: python:3
           command:
             - python
@@ -651,20 +651,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape27
+  name: grape-27
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape27
+      app: grape-27
   template:
     metadata:
       labels:
-        app: grape27
+        app: grape-27
     spec:
       containers:
-        - name: grape27
+        - name: grape-27
           image: python:3
           command:
             - python
@@ -676,20 +676,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape28
+  name: grape-28
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape28
+      app: grape-28
   template:
     metadata:
       labels:
-        app: grape28
+        app: grape-28
     spec:
       containers:
-        - name: grape28
+        - name: grape-28
           image: python:3
           command:
             - python
@@ -701,20 +701,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape29
+  name: grape-29
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape29
+      app: grape-29
   template:
     metadata:
       labels:
-        app: grape29
+        app: grape-29
     spec:
       containers:
-        - name: grape29
+        - name: grape-29
           image: python:3
           command:
             - python
@@ -726,20 +726,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape30
+  name: grape-30
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape30
+      app: grape-30
   template:
     metadata:
       labels:
-        app: grape30
+        app: grape-30
     spec:
       containers:
-        - name: grape30
+        - name: grape-30
           image: python:3
           command:
             - python
@@ -751,20 +751,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape31
+  name: grape-31
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape31
+      app: grape-31
   template:
     metadata:
       labels:
-        app: grape31
+        app: grape-31
     spec:
       containers:
-        - name: grape31
+        - name: grape-31
           image: python:3
           command:
             - python
@@ -776,20 +776,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape32
+  name: grape-32
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape32
+      app: grape-32
   template:
     metadata:
       labels:
-        app: grape32
+        app: grape-32
     spec:
       containers:
-        - name: grape32
+        - name: grape-32
           image: python:3
           command:
             - python
@@ -801,20 +801,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape33
+  name: grape-33
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape33
+      app: grape-33
   template:
     metadata:
       labels:
-        app: grape33
+        app: grape-33
     spec:
       containers:
-        - name: grape33
+        - name: grape-33
           image: python:3
           command:
             - python
@@ -826,20 +826,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape34
+  name: grape-34
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape34
+      app: grape-34
   template:
     metadata:
       labels:
-        app: grape34
+        app: grape-34
     spec:
       containers:
-        - name: grape34
+        - name: grape-34
           image: python:3
           command:
             - python
@@ -851,20 +851,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape35
+  name: grape-35
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape35
+      app: grape-35
   template:
     metadata:
       labels:
-        app: grape35
+        app: grape-35
     spec:
       containers:
-        - name: grape35
+        - name: grape-35
           image: python:3
           command:
             - python
@@ -876,20 +876,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape36
+  name: grape-36
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape36
+      app: grape-36
   template:
     metadata:
       labels:
-        app: grape36
+        app: grape-36
     spec:
       containers:
-        - name: grape36
+        - name: grape-36
           image: python:3
           command:
             - python
@@ -901,20 +901,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape37
+  name: grape-37
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape37
+      app: grape-37
   template:
     metadata:
       labels:
-        app: grape37
+        app: grape-37
     spec:
       containers:
-        - name: grape37
+        - name: grape-37
           image: python:3
           command:
             - python
@@ -926,20 +926,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape38
+  name: grape-38
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape38
+      app: grape-38
   template:
     metadata:
       labels:
-        app: grape38
+        app: grape-38
     spec:
       containers:
-        - name: grape38
+        - name: grape-38
           image: python:3
           command:
             - python
@@ -951,20 +951,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape39
+  name: grape-39
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape39
+      app: grape-39
   template:
     metadata:
       labels:
-        app: grape39
+        app: grape-39
     spec:
       containers:
-        - name: grape39
+        - name: grape-39
           image: python:3
           command:
             - python
@@ -976,20 +976,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape40
+  name: grape-40
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape40
+      app: grape-40
   template:
     metadata:
       labels:
-        app: grape40
+        app: grape-40
     spec:
       containers:
-        - name: grape40
+        - name: grape-40
           image: python:3
           command:
             - python
@@ -1001,20 +1001,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape41
+  name: grape-41
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape41
+      app: grape-41
   template:
     metadata:
       labels:
-        app: grape41
+        app: grape-41
     spec:
       containers:
-        - name: grape41
+        - name: grape-41
           image: python:3
           command:
             - python
@@ -1026,20 +1026,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape42
+  name: grape-42
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape42
+      app: grape-42
   template:
     metadata:
       labels:
-        app: grape42
+        app: grape-42
     spec:
       containers:
-        - name: grape42
+        - name: grape-42
           image: python:3
           command:
             - python
@@ -1051,20 +1051,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape43
+  name: grape-43
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape43
+      app: grape-43
   template:
     metadata:
       labels:
-        app: grape43
+        app: grape-43
     spec:
       containers:
-        - name: grape43
+        - name: grape-43
           image: python:3
           command:
             - python
@@ -1076,20 +1076,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape44
+  name: grape-44
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape44
+      app: grape-44
   template:
     metadata:
       labels:
-        app: grape44
+        app: grape-44
     spec:
       containers:
-        - name: grape44
+        - name: grape-44
           image: python:3
           command:
             - python
@@ -1101,20 +1101,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape45
+  name: grape-45
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape45
+      app: grape-45
   template:
     metadata:
       labels:
-        app: grape45
+        app: grape-45
     spec:
       containers:
-        - name: grape45
+        - name: grape-45
           image: python:3
           command:
             - python
@@ -1126,20 +1126,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape46
+  name: grape-46
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape46
+      app: grape-46
   template:
     metadata:
       labels:
-        app: grape46
+        app: grape-46
     spec:
       containers:
-        - name: grape46
+        - name: grape-46
           image: python:3
           command:
             - python
@@ -1151,20 +1151,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape47
+  name: grape-47
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape47
+      app: grape-47
   template:
     metadata:
       labels:
-        app: grape47
+        app: grape-47
     spec:
       containers:
-        - name: grape47
+        - name: grape-47
           image: python:3
           command:
             - python
@@ -1176,20 +1176,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape48
+  name: grape-48
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape48
+      app: grape-48
   template:
     metadata:
       labels:
-        app: grape48
+        app: grape-48
     spec:
       containers:
-        - name: grape48
+        - name: grape-48
           image: python:3
           command:
             - python
@@ -1201,20 +1201,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape49
+  name: grape-49
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape49
+      app: grape-49
   template:
     metadata:
       labels:
-        app: grape49
+        app: grape-49
     spec:
       containers:
-        - name: grape49
+        - name: grape-49
           image: python:3
           command:
             - python
@@ -1226,20 +1226,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape50
+  name: grape-50
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape50
+      app: grape-50
   template:
     metadata:
       labels:
-        app: grape50
+        app: grape-50
     spec:
       containers:
-        - name: grape50
+        - name: grape-50
           image: python:3
           command:
             - python
@@ -1251,20 +1251,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape51
+  name: grape-51
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape51
+      app: grape-51
   template:
     metadata:
       labels:
-        app: grape51
+        app: grape-51
     spec:
       containers:
-        - name: grape51
+        - name: grape-51
           image: python:3
           command:
             - python
@@ -1276,20 +1276,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape52
+  name: grape-52
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape52
+      app: grape-52
   template:
     metadata:
       labels:
-        app: grape52
+        app: grape-52
     spec:
       containers:
-        - name: grape52
+        - name: grape-52
           image: python:3
           command:
             - python
@@ -1301,20 +1301,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape53
+  name: grape-53
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape53
+      app: grape-53
   template:
     metadata:
       labels:
-        app: grape53
+        app: grape-53
     spec:
       containers:
-        - name: grape53
+        - name: grape-53
           image: python:3
           command:
             - python
@@ -1326,20 +1326,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape54
+  name: grape-54
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape54
+      app: grape-54
   template:
     metadata:
       labels:
-        app: grape54
+        app: grape-54
     spec:
       containers:
-        - name: grape54
+        - name: grape-54
           image: python:3
           command:
             - python
@@ -1351,20 +1351,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape55
+  name: grape-55
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape55
+      app: grape-55
   template:
     metadata:
       labels:
-        app: grape55
+        app: grape-55
     spec:
       containers:
-        - name: grape55
+        - name: grape-55
           image: python:3
           command:
             - python
@@ -1376,20 +1376,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape56
+  name: grape-56
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape56
+      app: grape-56
   template:
     metadata:
       labels:
-        app: grape56
+        app: grape-56
     spec:
       containers:
-        - name: grape56
+        - name: grape-56
           image: python:3
           command:
             - python
@@ -1401,20 +1401,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape57
+  name: grape-57
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape57
+      app: grape-57
   template:
     metadata:
       labels:
-        app: grape57
+        app: grape-57
     spec:
       containers:
-        - name: grape57
+        - name: grape-57
           image: python:3
           command:
             - python
@@ -1426,20 +1426,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape58
+  name: grape-58
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape58
+      app: grape-58
   template:
     metadata:
       labels:
-        app: grape58
+        app: grape-58
     spec:
       containers:
-        - name: grape58
+        - name: grape-58
           image: python:3
           command:
             - python
@@ -1451,20 +1451,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape59
+  name: grape-59
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape59
+      app: grape-59
   template:
     metadata:
       labels:
-        app: grape59
+        app: grape-59
     spec:
       containers:
-        - name: grape59
+        - name: grape-59
           image: python:3
           command:
             - python
@@ -1476,20 +1476,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape60
+  name: grape-60
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape60
+      app: grape-60
   template:
     metadata:
       labels:
-        app: grape60
+        app: grape-60
     spec:
       containers:
-        - name: grape60
+        - name: grape-60
           image: python:3
           command:
             - python
@@ -1501,20 +1501,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape61
+  name: grape-61
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape61
+      app: grape-61
   template:
     metadata:
       labels:
-        app: grape61
+        app: grape-61
     spec:
       containers:
-        - name: grape61
+        - name: grape-61
           image: python:3
           command:
             - python
@@ -1526,20 +1526,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape62
+  name: grape-62
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape62
+      app: grape-62
   template:
     metadata:
       labels:
-        app: grape62
+        app: grape-62
     spec:
       containers:
-        - name: grape62
+        - name: grape-62
           image: python:3
           command:
             - python
@@ -1551,20 +1551,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape63
+  name: grape-63
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape63
+      app: grape-63
   template:
     metadata:
       labels:
-        app: grape63
+        app: grape-63
     spec:
       containers:
-        - name: grape63
+        - name: grape-63
           image: python:3
           command:
             - python
@@ -1576,20 +1576,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape64
+  name: grape-64
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape64
+      app: grape-64
   template:
     metadata:
       labels:
-        app: grape64
+        app: grape-64
     spec:
       containers:
-        - name: grape64
+        - name: grape-64
           image: python:3
           command:
             - python
@@ -1601,20 +1601,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape65
+  name: grape-65
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape65
+      app: grape-65
   template:
     metadata:
       labels:
-        app: grape65
+        app: grape-65
     spec:
       containers:
-        - name: grape65
+        - name: grape-65
           image: python:3
           command:
             - python
@@ -1626,20 +1626,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape66
+  name: grape-66
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape66
+      app: grape-66
   template:
     metadata:
       labels:
-        app: grape66
+        app: grape-66
     spec:
       containers:
-        - name: grape66
+        - name: grape-66
           image: python:3
           command:
             - python
@@ -1651,20 +1651,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape67
+  name: grape-67
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape67
+      app: grape-67
   template:
     metadata:
       labels:
-        app: grape67
+        app: grape-67
     spec:
       containers:
-        - name: grape67
+        - name: grape-67
           image: python:3
           command:
             - python
@@ -1676,20 +1676,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape68
+  name: grape-68
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape68
+      app: grape-68
   template:
     metadata:
       labels:
-        app: grape68
+        app: grape-68
     spec:
       containers:
-        - name: grape68
+        - name: grape-68
           image: python:3
           command:
             - python
@@ -1701,20 +1701,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape69
+  name: grape-69
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape69
+      app: grape-69
   template:
     metadata:
       labels:
-        app: grape69
+        app: grape-69
     spec:
       containers:
-        - name: grape69
+        - name: grape-69
           image: python:3
           command:
             - python
@@ -1726,20 +1726,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape70
+  name: grape-70
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape70
+      app: grape-70
   template:
     metadata:
       labels:
-        app: grape70
+        app: grape-70
     spec:
       containers:
-        - name: grape70
+        - name: grape-70
           image: python:3
           command:
             - python
@@ -1751,20 +1751,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape71
+  name: grape-71
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape71
+      app: grape-71
   template:
     metadata:
       labels:
-        app: grape71
+        app: grape-71
     spec:
       containers:
-        - name: grape71
+        - name: grape-71
           image: python:3
           command:
             - python
@@ -1776,20 +1776,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape72
+  name: grape-72
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape72
+      app: grape-72
   template:
     metadata:
       labels:
-        app: grape72
+        app: grape-72
     spec:
       containers:
-        - name: grape72
+        - name: grape-72
           image: python:3
           command:
             - python
@@ -1801,20 +1801,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape73
+  name: grape-73
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape73
+      app: grape-73
   template:
     metadata:
       labels:
-        app: grape73
+        app: grape-73
     spec:
       containers:
-        - name: grape73
+        - name: grape-73
           image: python:3
           command:
             - python
@@ -1826,20 +1826,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape74
+  name: grape-74
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape74
+      app: grape-74
   template:
     metadata:
       labels:
-        app: grape74
+        app: grape-74
     spec:
       containers:
-        - name: grape74
+        - name: grape-74
           image: python:3
           command:
             - python
@@ -1851,20 +1851,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape75
+  name: grape-75
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape75
+      app: grape-75
   template:
     metadata:
       labels:
-        app: grape75
+        app: grape-75
     spec:
       containers:
-        - name: grape75
+        - name: grape-75
           image: python:3
           command:
             - python
@@ -1876,20 +1876,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape76
+  name: grape-76
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape76
+      app: grape-76
   template:
     metadata:
       labels:
-        app: grape76
+        app: grape-76
     spec:
       containers:
-        - name: grape76
+        - name: grape-76
           image: python:3
           command:
             - python
@@ -1901,20 +1901,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape77
+  name: grape-77
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape77
+      app: grape-77
   template:
     metadata:
       labels:
-        app: grape77
+        app: grape-77
     spec:
       containers:
-        - name: grape77
+        - name: grape-77
           image: python:3
           command:
             - python
@@ -1926,20 +1926,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape78
+  name: grape-78
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape78
+      app: grape-78
   template:
     metadata:
       labels:
-        app: grape78
+        app: grape-78
     spec:
       containers:
-        - name: grape78
+        - name: grape-78
           image: python:3
           command:
             - python
@@ -1951,20 +1951,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape79
+  name: grape-79
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape79
+      app: grape-79
   template:
     metadata:
       labels:
-        app: grape79
+        app: grape-79
     spec:
       containers:
-        - name: grape79
+        - name: grape-79
           image: python:3
           command:
             - python
@@ -1976,20 +1976,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape80
+  name: grape-80
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape80
+      app: grape-80
   template:
     metadata:
       labels:
-        app: grape80
+        app: grape-80
     spec:
       containers:
-        - name: grape80
+        - name: grape-80
           image: python:3
           command:
             - python
@@ -2001,20 +2001,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape81
+  name: grape-81
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape81
+      app: grape-81
   template:
     metadata:
       labels:
-        app: grape81
+        app: grape-81
     spec:
       containers:
-        - name: grape81
+        - name: grape-81
           image: python:3
           command:
             - python
@@ -2026,20 +2026,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape82
+  name: grape-82
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape82
+      app: grape-82
   template:
     metadata:
       labels:
-        app: grape82
+        app: grape-82
     spec:
       containers:
-        - name: grape82
+        - name: grape-82
           image: python:3
           command:
             - python
@@ -2051,20 +2051,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape83
+  name: grape-83
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape83
+      app: grape-83
   template:
     metadata:
       labels:
-        app: grape83
+        app: grape-83
     spec:
       containers:
-        - name: grape83
+        - name: grape-83
           image: python:3
           command:
             - python
@@ -2076,20 +2076,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape84
+  name: grape-84
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape84
+      app: grape-84
   template:
     metadata:
       labels:
-        app: grape84
+        app: grape-84
     spec:
       containers:
-        - name: grape84
+        - name: grape-84
           image: python:3
           command:
             - python
@@ -2101,20 +2101,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape85
+  name: grape-85
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape85
+      app: grape-85
   template:
     metadata:
       labels:
-        app: grape85
+        app: grape-85
     spec:
       containers:
-        - name: grape85
+        - name: grape-85
           image: python:3
           command:
             - python
@@ -2126,20 +2126,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape86
+  name: grape-86
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape86
+      app: grape-86
   template:
     metadata:
       labels:
-        app: grape86
+        app: grape-86
     spec:
       containers:
-        - name: grape86
+        - name: grape-86
           image: python:3
           command:
             - python
@@ -2151,20 +2151,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape87
+  name: grape-87
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape87
+      app: grape-87
   template:
     metadata:
       labels:
-        app: grape87
+        app: grape-87
     spec:
       containers:
-        - name: grape87
+        - name: grape-87
           image: python:3
           command:
             - python
@@ -2176,20 +2176,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape88
+  name: grape-88
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape88
+      app: grape-88
   template:
     metadata:
       labels:
-        app: grape88
+        app: grape-88
     spec:
       containers:
-        - name: grape88
+        - name: grape-88
           image: python:3
           command:
             - python
@@ -2201,20 +2201,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape89
+  name: grape-89
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape89
+      app: grape-89
   template:
     metadata:
       labels:
-        app: grape89
+        app: grape-89
     spec:
       containers:
-        - name: grape89
+        - name: grape-89
           image: python:3
           command:
             - python
@@ -2226,20 +2226,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape90
+  name: grape-90
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape90
+      app: grape-90
   template:
     metadata:
       labels:
-        app: grape90
+        app: grape-90
     spec:
       containers:
-        - name: grape90
+        - name: grape-90
           image: python:3
           command:
             - python
@@ -2251,20 +2251,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape91
+  name: grape-91
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape91
+      app: grape-91
   template:
     metadata:
       labels:
-        app: grape91
+        app: grape-91
     spec:
       containers:
-        - name: grape91
+        - name: grape-91
           image: python:3
           command:
             - python
@@ -2276,20 +2276,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape92
+  name: grape-92
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape92
+      app: grape-92
   template:
     metadata:
       labels:
-        app: grape92
+        app: grape-92
     spec:
       containers:
-        - name: grape92
+        - name: grape-92
           image: python:3
           command:
             - python
@@ -2301,20 +2301,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape93
+  name: grape-93
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape93
+      app: grape-93
   template:
     metadata:
       labels:
-        app: grape93
+        app: grape-93
     spec:
       containers:
-        - name: grape93
+        - name: grape-93
           image: python:3
           command:
             - python
@@ -2326,20 +2326,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape94
+  name: grape-94
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape94
+      app: grape-94
   template:
     metadata:
       labels:
-        app: grape94
+        app: grape-94
     spec:
       containers:
-        - name: grape94
+        - name: grape-94
           image: python:3
           command:
             - python
@@ -2351,20 +2351,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape95
+  name: grape-95
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape95
+      app: grape-95
   template:
     metadata:
       labels:
-        app: grape95
+        app: grape-95
     spec:
       containers:
-        - name: grape95
+        - name: grape-95
           image: python:3
           command:
             - python
@@ -2376,20 +2376,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape96
+  name: grape-96
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape96
+      app: grape-96
   template:
     metadata:
       labels:
-        app: grape96
+        app: grape-96
     spec:
       containers:
-        - name: grape96
+        - name: grape-96
           image: python:3
           command:
             - python
@@ -2401,20 +2401,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape97
+  name: grape-97
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape97
+      app: grape-97
   template:
     metadata:
       labels:
-        app: grape97
+        app: grape-97
     spec:
       containers:
-        - name: grape97
+        - name: grape-97
           image: python:3
           command:
             - python
@@ -2426,20 +2426,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape98
+  name: grape-98
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape98
+      app: grape-98
   template:
     metadata:
       labels:
-        app: grape98
+        app: grape-98
     spec:
       containers:
-        - name: grape98
+        - name: grape-98
           image: python:3
           command:
             - python
@@ -2451,20 +2451,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape99
+  name: grape-99
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape99
+      app: grape-99
   template:
     metadata:
       labels:
-        app: grape99
+        app: grape-99
     spec:
       containers:
-        - name: grape99
+        - name: grape-99
           image: python:3
           command:
             - python
@@ -2476,20 +2476,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: grape100
+  name: grape-100
   annotations:
     greymatter.io/inject-sidecar-to: "3000"
 spec:
   selector:
     matchLabels:
-      app: grape100
+      app: grape-100
   template:
     metadata:
       labels:
-        app: grape100
+        app: grape-100
     spec:
       containers:
-        - name: grape100
+        - name: grape-100
           image: python:3
           command:
             - python
