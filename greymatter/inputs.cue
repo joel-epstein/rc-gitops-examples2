@@ -15,7 +15,7 @@ defaults: {
 
 	ports: {
 		default_ingress: 10808
-		edge_ingress:    10809
+		edge_ingress:    10815
 		redis_ingress:   10910
 		metrics:         8081
 	}
@@ -24,7 +24,7 @@ defaults: {
 	// These configs will manipulate the behavior of accessing your services
 	// from the outside world.
 	edge: {
-		key:        "edge_grocerylist"
+		key:        "edge_grocerylist7"
 		
 		enable_tls: false
 
