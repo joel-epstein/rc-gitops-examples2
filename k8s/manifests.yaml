@@ -13,11 +13,11 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      greymatter.io/cluster: edge_grocerylist
+      greymatter.io/cluster: edge_grocerylist9
   template:
     metadata:
       labels:
-        greymatter.io/cluster: edge_grocerylist
+        greymatter.io/cluster: edge_grocerylist9
     spec:
       containers:
         - name: sidecar
@@ -28,7 +28,7 @@ spec:
             name: proxy
           env:
             - name: XDS_CLUSTER
-              value: edge_grocerylist
+              value: edge_grocerylist9
             - name: ENVOY_ADMIN_LOG_PATH
               value: /dev/stdout
             - name: PROXY_DYNAMIC
@@ -61,6 +61,6 @@ spec:
     protocol: TCP
     targetPort: 10817
   selector:
-    greymatter.io/cluster: edge_grocerylist
+    greymatter.io/cluster: edge_grocerylist9
   type: LoadBalancer
 
