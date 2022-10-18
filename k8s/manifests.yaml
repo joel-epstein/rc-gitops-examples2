@@ -63,3 +63,4 @@ spec:
   selector:
     greymatter.io/cluster: edge_grocerylist
   type: LoadBalancer
+
