@@ -18,6 +18,6 @@ do
 #~/greymatter init service --insecure --type=http --dir greymatter/grocerylist --port=3000 --package=grocerylist "cranberry${i}"
 #~/greymatter init service --insecure --type=http --dir greymatter/grocerylist --port=3000 --package=grocerylist "star${i}"
 #~/greymatter init service --insecure --type=http --dir greymatter/grocerylist --port=3000 --package=grocerylist "tangerine${i}"
-~/greymatter init service --insecure --type=http --dir greymatter/grocerylist --port=3000 --package=grocerylist "blueberry${i}"
+~/greymatter init service --insecure --type=http --dir greymatter/grocerylist --port=3000 --package=grocerylist "blueberry-${i}"
 done
 
