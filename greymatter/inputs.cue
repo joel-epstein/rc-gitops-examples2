@@ -11,7 +11,7 @@ mesh: {
 }
 
 defaults: {
-	redis_cluster_name: "redis"
+	redis_cluster_name: "greymatter-datastore"
 
 	ports: {
 		default_ingress: 10808
