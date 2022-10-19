@@ -14,7 +14,7 @@ do
 #~/greymatter init service --insecure --type=http --dir greymatter/grocerylist --port=3000 --package=grocerylist "orange${i}"
 #~/greymatter init service --insecure --type=http --dir greymatter/grocerylist --port=3000 --package=grocerylist "fig${i}"
 #~/greymatter init service --insecure --type=http --dir greymatter/grocerylist --port=3000 --package=grocerylist "grape${i}"
-~/greymatter init service --insecure --type=http --dir greymatter/grocerylist --port=3000 --package=grocerylist "melon${i}"
+~/greymatter init service --insecure --type=http --dir greymatter/grocerylist --port=3000 --package=grocerylist "melon-${i}"
 #~/greymatter init service --insecure --type=http --dir greymatter/grocerylist --port=3000 --package=grocerylist "cranberry${i}"
 #~/greymatter init service --insecure --type=http --dir greymatter/grocerylist --port=3000 --package=grocerylist "star${i}"
 #~/greymatter init service --insecure --type=http --dir greymatter/grocerylist --port=3000 --package=grocerylist "tangerine${i}"
