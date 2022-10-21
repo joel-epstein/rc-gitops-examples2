@@ -1247,4 +1247,1254 @@ spec:
             - -m
             - http.server
             - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cranberry-51
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: cranberry-51
+  template:
+    metadata:
+      labels:
+        app: cranberry-51
+    spec:
+      containers:
+        - name: cranberry-51
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cranberry-52
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: cranberry-52
+  template:
+    metadata:
+      labels:
+        app: cranberry-52
+    spec:
+      containers:
+        - name: cranberry-52
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cranberry-53
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: cranberry-53
+  template:
+    metadata:
+      labels:
+        app: cranberry-53
+    spec:
+      containers:
+        - name: cranberry-53
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cranberry-54
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: cranberry-54
+  template:
+    metadata:
+      labels:
+        app: cranberry-54
+    spec:
+      containers:
+        - name: cranberry-54
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cranberry-55
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: cranberry-55
+  template:
+    metadata:
+      labels:
+        app: cranberry-55
+    spec:
+      containers:
+        - name: cranberry-55
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cranberry-56
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: cranberry-56
+  template:
+    metadata:
+      labels:
+        app: cranberry-56
+    spec:
+      containers:
+        - name: cranberry-56
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cranberry-57
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: cranberry-57
+  template:
+    metadata:
+      labels:
+        app: cranberry-57
+    spec:
+      containers:
+        - name: cranberry-57
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cranberry-58
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: cranberry-58
+  template:
+    metadata:
+      labels:
+        app: cranberry-58
+    spec:
+      containers:
+        - name: cranberry-58
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cranberry-59
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: cranberry-59
+  template:
+    metadata:
+      labels:
+        app: cranberry-59
+    spec:
+      containers:
+        - name: cranberry-59
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cranberry-60
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: cranberry-60
+  template:
+    metadata:
+      labels:
+        app: cranberry-60
+    spec:
+      containers:
+        - name: cranberry-60
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cranberry-61
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: cranberry-61
+  template:
+    metadata:
+      labels:
+        app: cranberry-61
+    spec:
+      containers:
+        - name: cranberry-61
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cranberry-62
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: cranberry-62
+  template:
+    metadata:
+      labels:
+        app: cranberry-62
+    spec:
+      containers:
+        - name: cranberry-62
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cranberry-63
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: cranberry-63
+  template:
+    metadata:
+      labels:
+        app: cranberry-63
+    spec:
+      containers:
+        - name: cranberry-63
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cranberry-64
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: cranberry-64
+  template:
+    metadata:
+      labels:
+        app: cranberry-64
+    spec:
+      containers:
+        - name: cranberry-64
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cranberry-65
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: cranberry-65
+  template:
+    metadata:
+      labels:
+        app: cranberry-65
+    spec:
+      containers:
+        - name: cranberry-65
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cranberry-66
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: cranberry-66
+  template:
+    metadata:
+      labels:
+        app: cranberry-66
+    spec:
+      containers:
+        - name: cranberry-66
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cranberry-67
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: cranberry-67
+  template:
+    metadata:
+      labels:
+        app: cranberry-67
+    spec:
+      containers:
+        - name: cranberry-67
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cranberry-68
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: cranberry-68
+  template:
+    metadata:
+      labels:
+        app: cranberry-68
+    spec:
+      containers:
+        - name: cranberry-68
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cranberry-69
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: cranberry-69
+  template:
+    metadata:
+      labels:
+        app: cranberry-69
+    spec:
+      containers:
+        - name: cranberry-69
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cranberry-70
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: cranberry-70
+  template:
+    metadata:
+      labels:
+        app: cranberry-70
+    spec:
+      containers:
+        - name: cranberry-70
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cranberry-71
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: cranberry-71
+  template:
+    metadata:
+      labels:
+        app: cranberry-71
+    spec:
+      containers:
+        - name: cranberry-71
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cranberry-72
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: cranberry-72
+  template:
+    metadata:
+      labels:
+        app: cranberry-72
+    spec:
+      containers:
+        - name: cranberry-72
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cranberry-73
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: cranberry-73
+  template:
+    metadata:
+      labels:
+        app: cranberry-73
+    spec:
+      containers:
+        - name: cranberry-73
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cranberry-74
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: cranberry-74
+  template:
+    metadata:
+      labels:
+        app: cranberry-74
+    spec:
+      containers:
+        - name: cranberry-74
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cranberry-75
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: cranberry-75
+  template:
+    metadata:
+      labels:
+        app: cranberry-75
+    spec:
+      containers:
+        - name: cranberry-75
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cranberry-76
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: cranberry-76
+  template:
+    metadata:
+      labels:
+        app: cranberry-76
+    spec:
+      containers:
+        - name: cranberry-76
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cranberry-77
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: cranberry-77
+  template:
+    metadata:
+      labels:
+        app: cranberry-77
+    spec:
+      containers:
+        - name: cranberry-77
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cranberry-78
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: cranberry-78
+  template:
+    metadata:
+      labels:
+        app: cranberry-78
+    spec:
+      containers:
+        - name: cranberry-78
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cranberry-79
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: cranberry-79
+  template:
+    metadata:
+      labels:
+        app: cranberry-79
+    spec:
+      containers:
+        - name: cranberry-79
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cranberry-80
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: cranberry-80
+  template:
+    metadata:
+      labels:
+        app: cranberry-80
+    spec:
+      containers:
+        - name: cranberry-80
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cranberry-81
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: cranberry-81
+  template:
+    metadata:
+      labels:
+        app: cranberry-81
+    spec:
+      containers:
+        - name: cranberry-81
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cranberry-82
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: cranberry-82
+  template:
+    metadata:
+      labels:
+        app: cranberry-82
+    spec:
+      containers:
+        - name: cranberry-82
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cranberry-83
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: cranberry-83
+  template:
+    metadata:
+      labels:
+        app: cranberry-83
+    spec:
+      containers:
+        - name: cranberry-83
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cranberry-84
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: cranberry-84
+  template:
+    metadata:
+      labels:
+        app: cranberry-84
+    spec:
+      containers:
+        - name: cranberry-84
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cranberry-85
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: cranberry-85
+  template:
+    metadata:
+      labels:
+        app: cranberry-85
+    spec:
+      containers:
+        - name: cranberry-85
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cranberry-86
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: cranberry-86
+  template:
+    metadata:
+      labels:
+        app: cranberry-86
+    spec:
+      containers:
+        - name: cranberry-86
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cranberry-87
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: cranberry-87
+  template:
+    metadata:
+      labels:
+        app: cranberry-87
+    spec:
+      containers:
+        - name: cranberry-87
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cranberry-88
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: cranberry-88
+  template:
+    metadata:
+      labels:
+        app: cranberry-88
+    spec:
+      containers:
+        - name: cranberry-88
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cranberry-89
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: cranberry-89
+  template:
+    metadata:
+      labels:
+        app: cranberry-89
+    spec:
+      containers:
+        - name: cranberry-89
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cranberry-90
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: cranberry-90
+  template:
+    metadata:
+      labels:
+        app: cranberry-90
+    spec:
+      containers:
+        - name: cranberry-90
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cranberry-91
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: cranberry-91
+  template:
+    metadata:
+      labels:
+        app: cranberry-91
+    spec:
+      containers:
+        - name: cranberry-91
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cranberry-92
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: cranberry-92
+  template:
+    metadata:
+      labels:
+        app: cranberry-92
+    spec:
+      containers:
+        - name: cranberry-92
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cranberry-93
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: cranberry-93
+  template:
+    metadata:
+      labels:
+        app: cranberry-93
+    spec:
+      containers:
+        - name: cranberry-93
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cranberry-94
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: cranberry-94
+  template:
+    metadata:
+      labels:
+        app: cranberry-94
+    spec:
+      containers:
+        - name: cranberry-94
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cranberry-95
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: cranberry-95
+  template:
+    metadata:
+      labels:
+        app: cranberry-95
+    spec:
+      containers:
+        - name: cranberry-95
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cranberry-96
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: cranberry-96
+  template:
+    metadata:
+      labels:
+        app: cranberry-96
+    spec:
+      containers:
+        - name: cranberry-96
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cranberry-97
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: cranberry-97
+  template:
+    metadata:
+      labels:
+        app: cranberry-97
+    spec:
+      containers:
+        - name: cranberry-97
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cranberry-98
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: cranberry-98
+  template:
+    metadata:
+      labels:
+        app: cranberry-98
+    spec:
+      containers:
+        - name: cranberry-98
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cranberry-99
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: cranberry-99
+  template:
+    metadata:
+      labels:
+        app: cranberry-99
+    spec:
+      containers:
+        - name: cranberry-99
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cranberry-100
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: cranberry-100
+  template:
+    metadata:
+      labels:
+        app: cranberry-100
+    spec:
+      containers:
+        - name: cranberry-100
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
 
