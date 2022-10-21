@@ -1247,4 +1247,1254 @@ spec:
             - -m
             - http.server
             - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-51
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-51
+  template:
+    metadata:
+      labels:
+        app: blueberry-51
+    spec:
+      containers:
+        - name: blueberry-51
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-52
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-52
+  template:
+    metadata:
+      labels:
+        app: blueberry-52
+    spec:
+      containers:
+        - name: blueberry-52
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-53
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-53
+  template:
+    metadata:
+      labels:
+        app: blueberry-53
+    spec:
+      containers:
+        - name: blueberry-53
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-54
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-54
+  template:
+    metadata:
+      labels:
+        app: blueberry-54
+    spec:
+      containers:
+        - name: blueberry-54
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-55
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-55
+  template:
+    metadata:
+      labels:
+        app: blueberry-55
+    spec:
+      containers:
+        - name: blueberry-55
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-56
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-56
+  template:
+    metadata:
+      labels:
+        app: blueberry-56
+    spec:
+      containers:
+        - name: blueberry-56
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-57
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-57
+  template:
+    metadata:
+      labels:
+        app: blueberry-57
+    spec:
+      containers:
+        - name: blueberry-57
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-58
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-58
+  template:
+    metadata:
+      labels:
+        app: blueberry-58
+    spec:
+      containers:
+        - name: blueberry-58
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-59
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-59
+  template:
+    metadata:
+      labels:
+        app: blueberry-59
+    spec:
+      containers:
+        - name: blueberry-59
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-60
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-60
+  template:
+    metadata:
+      labels:
+        app: blueberry-60
+    spec:
+      containers:
+        - name: blueberry-60
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-61
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-61
+  template:
+    metadata:
+      labels:
+        app: blueberry-61
+    spec:
+      containers:
+        - name: blueberry-61
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-62
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-62
+  template:
+    metadata:
+      labels:
+        app: blueberry-62
+    spec:
+      containers:
+        - name: blueberry-62
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-63
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-63
+  template:
+    metadata:
+      labels:
+        app: blueberry-63
+    spec:
+      containers:
+        - name: blueberry-63
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-64
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-64
+  template:
+    metadata:
+      labels:
+        app: blueberry-64
+    spec:
+      containers:
+        - name: blueberry-64
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-65
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-65
+  template:
+    metadata:
+      labels:
+        app: blueberry-65
+    spec:
+      containers:
+        - name: blueberry-65
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-66
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-66
+  template:
+    metadata:
+      labels:
+        app: blueberry-66
+    spec:
+      containers:
+        - name: blueberry-66
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-67
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-67
+  template:
+    metadata:
+      labels:
+        app: blueberry-67
+    spec:
+      containers:
+        - name: blueberry-67
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-68
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-68
+  template:
+    metadata:
+      labels:
+        app: blueberry-68
+    spec:
+      containers:
+        - name: blueberry-68
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-69
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-69
+  template:
+    metadata:
+      labels:
+        app: blueberry-69
+    spec:
+      containers:
+        - name: blueberry-69
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-70
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-70
+  template:
+    metadata:
+      labels:
+        app: blueberry-70
+    spec:
+      containers:
+        - name: blueberry-70
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-71
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-71
+  template:
+    metadata:
+      labels:
+        app: blueberry-71
+    spec:
+      containers:
+        - name: blueberry-71
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-72
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-72
+  template:
+    metadata:
+      labels:
+        app: blueberry-72
+    spec:
+      containers:
+        - name: blueberry-72
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-73
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-73
+  template:
+    metadata:
+      labels:
+        app: blueberry-73
+    spec:
+      containers:
+        - name: blueberry-73
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-74
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-74
+  template:
+    metadata:
+      labels:
+        app: blueberry-74
+    spec:
+      containers:
+        - name: blueberry-74
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-75
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-75
+  template:
+    metadata:
+      labels:
+        app: blueberry-75
+    spec:
+      containers:
+        - name: blueberry-75
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-76
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-76
+  template:
+    metadata:
+      labels:
+        app: blueberry-76
+    spec:
+      containers:
+        - name: blueberry-76
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-77
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-77
+  template:
+    metadata:
+      labels:
+        app: blueberry-77
+    spec:
+      containers:
+        - name: blueberry-77
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-78
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-78
+  template:
+    metadata:
+      labels:
+        app: blueberry-78
+    spec:
+      containers:
+        - name: blueberry-78
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-79
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-79
+  template:
+    metadata:
+      labels:
+        app: blueberry-79
+    spec:
+      containers:
+        - name: blueberry-79
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-80
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-80
+  template:
+    metadata:
+      labels:
+        app: blueberry-80
+    spec:
+      containers:
+        - name: blueberry-80
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-81
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-81
+  template:
+    metadata:
+      labels:
+        app: blueberry-81
+    spec:
+      containers:
+        - name: blueberry-81
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-82
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-82
+  template:
+    metadata:
+      labels:
+        app: blueberry-82
+    spec:
+      containers:
+        - name: blueberry-82
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-83
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-83
+  template:
+    metadata:
+      labels:
+        app: blueberry-83
+    spec:
+      containers:
+        - name: blueberry-83
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-84
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-84
+  template:
+    metadata:
+      labels:
+        app: blueberry-84
+    spec:
+      containers:
+        - name: blueberry-84
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-85
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-85
+  template:
+    metadata:
+      labels:
+        app: blueberry-85
+    spec:
+      containers:
+        - name: blueberry-85
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-86
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-86
+  template:
+    metadata:
+      labels:
+        app: blueberry-86
+    spec:
+      containers:
+        - name: blueberry-86
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-87
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-87
+  template:
+    metadata:
+      labels:
+        app: blueberry-87
+    spec:
+      containers:
+        - name: blueberry-87
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-88
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-88
+  template:
+    metadata:
+      labels:
+        app: blueberry-88
+    spec:
+      containers:
+        - name: blueberry-88
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-89
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-89
+  template:
+    metadata:
+      labels:
+        app: blueberry-89
+    spec:
+      containers:
+        - name: blueberry-89
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-90
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-90
+  template:
+    metadata:
+      labels:
+        app: blueberry-90
+    spec:
+      containers:
+        - name: blueberry-90
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-91
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-91
+  template:
+    metadata:
+      labels:
+        app: blueberry-91
+    spec:
+      containers:
+        - name: blueberry-91
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-92
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-92
+  template:
+    metadata:
+      labels:
+        app: blueberry-92
+    spec:
+      containers:
+        - name: blueberry-92
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-93
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-93
+  template:
+    metadata:
+      labels:
+        app: blueberry-93
+    spec:
+      containers:
+        - name: blueberry-93
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-94
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-94
+  template:
+    metadata:
+      labels:
+        app: blueberry-94
+    spec:
+      containers:
+        - name: blueberry-94
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-95
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-95
+  template:
+    metadata:
+      labels:
+        app: blueberry-95
+    spec:
+      containers:
+        - name: blueberry-95
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-96
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-96
+  template:
+    metadata:
+      labels:
+        app: blueberry-96
+    spec:
+      containers:
+        - name: blueberry-96
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-97
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-97
+  template:
+    metadata:
+      labels:
+        app: blueberry-97
+    spec:
+      containers:
+        - name: blueberry-97
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-98
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-98
+  template:
+    metadata:
+      labels:
+        app: blueberry-98
+    spec:
+      containers:
+        - name: blueberry-98
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-99
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-99
+  template:
+    metadata:
+      labels:
+        app: blueberry-99
+    spec:
+      containers:
+        - name: blueberry-99
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blueberry-100
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: blueberry-100
+  template:
+    metadata:
+      labels:
+        app: blueberry-100
+    spec:
+      containers:
+        - name: blueberry-100
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
 
