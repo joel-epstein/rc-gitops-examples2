@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: kiwi-1
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -15,13 +15,12 @@ spec:
     spec:
       containers:
         - name: kiwi-1
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
