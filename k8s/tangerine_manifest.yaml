@@ -1247,4 +1247,1254 @@ spec:
             - -m
             - http.server
             - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-51
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-51
+  template:
+    metadata:
+      labels:
+        app: tangerine-51
+    spec:
+      containers:
+        - name: tangerine-51
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-52
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-52
+  template:
+    metadata:
+      labels:
+        app: tangerine-52
+    spec:
+      containers:
+        - name: tangerine-52
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-53
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-53
+  template:
+    metadata:
+      labels:
+        app: tangerine-53
+    spec:
+      containers:
+        - name: tangerine-53
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-54
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-54
+  template:
+    metadata:
+      labels:
+        app: tangerine-54
+    spec:
+      containers:
+        - name: tangerine-54
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-55
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-55
+  template:
+    metadata:
+      labels:
+        app: tangerine-55
+    spec:
+      containers:
+        - name: tangerine-55
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-56
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-56
+  template:
+    metadata:
+      labels:
+        app: tangerine-56
+    spec:
+      containers:
+        - name: tangerine-56
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-57
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-57
+  template:
+    metadata:
+      labels:
+        app: tangerine-57
+    spec:
+      containers:
+        - name: tangerine-57
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-58
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-58
+  template:
+    metadata:
+      labels:
+        app: tangerine-58
+    spec:
+      containers:
+        - name: tangerine-58
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-59
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-59
+  template:
+    metadata:
+      labels:
+        app: tangerine-59
+    spec:
+      containers:
+        - name: tangerine-59
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-60
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-60
+  template:
+    metadata:
+      labels:
+        app: tangerine-60
+    spec:
+      containers:
+        - name: tangerine-60
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-61
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-61
+  template:
+    metadata:
+      labels:
+        app: tangerine-61
+    spec:
+      containers:
+        - name: tangerine-61
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-62
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-62
+  template:
+    metadata:
+      labels:
+        app: tangerine-62
+    spec:
+      containers:
+        - name: tangerine-62
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-63
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-63
+  template:
+    metadata:
+      labels:
+        app: tangerine-63
+    spec:
+      containers:
+        - name: tangerine-63
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-64
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-64
+  template:
+    metadata:
+      labels:
+        app: tangerine-64
+    spec:
+      containers:
+        - name: tangerine-64
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-65
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-65
+  template:
+    metadata:
+      labels:
+        app: tangerine-65
+    spec:
+      containers:
+        - name: tangerine-65
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-66
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-66
+  template:
+    metadata:
+      labels:
+        app: tangerine-66
+    spec:
+      containers:
+        - name: tangerine-66
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-67
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-67
+  template:
+    metadata:
+      labels:
+        app: tangerine-67
+    spec:
+      containers:
+        - name: tangerine-67
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-68
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-68
+  template:
+    metadata:
+      labels:
+        app: tangerine-68
+    spec:
+      containers:
+        - name: tangerine-68
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-69
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-69
+  template:
+    metadata:
+      labels:
+        app: tangerine-69
+    spec:
+      containers:
+        - name: tangerine-69
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-70
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-70
+  template:
+    metadata:
+      labels:
+        app: tangerine-70
+    spec:
+      containers:
+        - name: tangerine-70
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-71
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-71
+  template:
+    metadata:
+      labels:
+        app: tangerine-71
+    spec:
+      containers:
+        - name: tangerine-71
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-72
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-72
+  template:
+    metadata:
+      labels:
+        app: tangerine-72
+    spec:
+      containers:
+        - name: tangerine-72
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-73
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-73
+  template:
+    metadata:
+      labels:
+        app: tangerine-73
+    spec:
+      containers:
+        - name: tangerine-73
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-74
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-74
+  template:
+    metadata:
+      labels:
+        app: tangerine-74
+    spec:
+      containers:
+        - name: tangerine-74
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-75
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-75
+  template:
+    metadata:
+      labels:
+        app: tangerine-75
+    spec:
+      containers:
+        - name: tangerine-75
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-76
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-76
+  template:
+    metadata:
+      labels:
+        app: tangerine-76
+    spec:
+      containers:
+        - name: tangerine-76
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-77
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-77
+  template:
+    metadata:
+      labels:
+        app: tangerine-77
+    spec:
+      containers:
+        - name: tangerine-77
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-78
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-78
+  template:
+    metadata:
+      labels:
+        app: tangerine-78
+    spec:
+      containers:
+        - name: tangerine-78
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-79
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-79
+  template:
+    metadata:
+      labels:
+        app: tangerine-79
+    spec:
+      containers:
+        - name: tangerine-79
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-80
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-80
+  template:
+    metadata:
+      labels:
+        app: tangerine-80
+    spec:
+      containers:
+        - name: tangerine-80
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-81
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-81
+  template:
+    metadata:
+      labels:
+        app: tangerine-81
+    spec:
+      containers:
+        - name: tangerine-81
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-82
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-82
+  template:
+    metadata:
+      labels:
+        app: tangerine-82
+    spec:
+      containers:
+        - name: tangerine-82
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-83
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-83
+  template:
+    metadata:
+      labels:
+        app: tangerine-83
+    spec:
+      containers:
+        - name: tangerine-83
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-84
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-84
+  template:
+    metadata:
+      labels:
+        app: tangerine-84
+    spec:
+      containers:
+        - name: tangerine-84
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-85
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-85
+  template:
+    metadata:
+      labels:
+        app: tangerine-85
+    spec:
+      containers:
+        - name: tangerine-85
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-86
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-86
+  template:
+    metadata:
+      labels:
+        app: tangerine-86
+    spec:
+      containers:
+        - name: tangerine-86
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-87
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-87
+  template:
+    metadata:
+      labels:
+        app: tangerine-87
+    spec:
+      containers:
+        - name: tangerine-87
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-88
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-88
+  template:
+    metadata:
+      labels:
+        app: tangerine-88
+    spec:
+      containers:
+        - name: tangerine-88
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-89
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-89
+  template:
+    metadata:
+      labels:
+        app: tangerine-89
+    spec:
+      containers:
+        - name: tangerine-89
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-90
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-90
+  template:
+    metadata:
+      labels:
+        app: tangerine-90
+    spec:
+      containers:
+        - name: tangerine-90
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-91
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-91
+  template:
+    metadata:
+      labels:
+        app: tangerine-91
+    spec:
+      containers:
+        - name: tangerine-91
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-92
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-92
+  template:
+    metadata:
+      labels:
+        app: tangerine-92
+    spec:
+      containers:
+        - name: tangerine-92
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-93
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-93
+  template:
+    metadata:
+      labels:
+        app: tangerine-93
+    spec:
+      containers:
+        - name: tangerine-93
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-94
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-94
+  template:
+    metadata:
+      labels:
+        app: tangerine-94
+    spec:
+      containers:
+        - name: tangerine-94
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-95
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-95
+  template:
+    metadata:
+      labels:
+        app: tangerine-95
+    spec:
+      containers:
+        - name: tangerine-95
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-96
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-96
+  template:
+    metadata:
+      labels:
+        app: tangerine-96
+    spec:
+      containers:
+        - name: tangerine-96
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-97
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-97
+  template:
+    metadata:
+      labels:
+        app: tangerine-97
+    spec:
+      containers:
+        - name: tangerine-97
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-98
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-98
+  template:
+    metadata:
+      labels:
+        app: tangerine-98
+    spec:
+      containers:
+        - name: tangerine-98
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-99
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-99
+  template:
+    metadata:
+      labels:
+        app: tangerine-99
+    spec:
+      containers:
+        - name: tangerine-99
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tangerine-100
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: tangerine-100
+  template:
+    metadata:
+      labels:
+        app: tangerine-100
+    spec:
+      containers:
+        - name: tangerine-100
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
 
