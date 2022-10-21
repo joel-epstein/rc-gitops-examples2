@@ -1247,4 +1247,1254 @@ spec:
             - -m
             - http.server
             - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-51
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: star-51
+  template:
+    metadata:
+      labels:
+        app: star-51
+    spec:
+      containers:
+        - name: star-51
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-52
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: star-52
+  template:
+    metadata:
+      labels:
+        app: star-52
+    spec:
+      containers:
+        - name: star-52
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-53
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: star-53
+  template:
+    metadata:
+      labels:
+        app: star-53
+    spec:
+      containers:
+        - name: star-53
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-54
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: star-54
+  template:
+    metadata:
+      labels:
+        app: star-54
+    spec:
+      containers:
+        - name: star-54
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-55
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: star-55
+  template:
+    metadata:
+      labels:
+        app: star-55
+    spec:
+      containers:
+        - name: star-55
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-56
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: star-56
+  template:
+    metadata:
+      labels:
+        app: star-56
+    spec:
+      containers:
+        - name: star-56
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-57
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: star-57
+  template:
+    metadata:
+      labels:
+        app: star-57
+    spec:
+      containers:
+        - name: star-57
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-58
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: star-58
+  template:
+    metadata:
+      labels:
+        app: star-58
+    spec:
+      containers:
+        - name: star-58
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-59
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: star-59
+  template:
+    metadata:
+      labels:
+        app: star-59
+    spec:
+      containers:
+        - name: star-59
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-60
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: star-60
+  template:
+    metadata:
+      labels:
+        app: star-60
+    spec:
+      containers:
+        - name: star-60
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-61
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: star-61
+  template:
+    metadata:
+      labels:
+        app: star-61
+    spec:
+      containers:
+        - name: star-61
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-62
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: star-62
+  template:
+    metadata:
+      labels:
+        app: star-62
+    spec:
+      containers:
+        - name: star-62
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-63
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: star-63
+  template:
+    metadata:
+      labels:
+        app: star-63
+    spec:
+      containers:
+        - name: star-63
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-64
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: star-64
+  template:
+    metadata:
+      labels:
+        app: star-64
+    spec:
+      containers:
+        - name: star-64
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-65
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: star-65
+  template:
+    metadata:
+      labels:
+        app: star-65
+    spec:
+      containers:
+        - name: star-65
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-66
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: star-66
+  template:
+    metadata:
+      labels:
+        app: star-66
+    spec:
+      containers:
+        - name: star-66
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-67
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: star-67
+  template:
+    metadata:
+      labels:
+        app: star-67
+    spec:
+      containers:
+        - name: star-67
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-68
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: star-68
+  template:
+    metadata:
+      labels:
+        app: star-68
+    spec:
+      containers:
+        - name: star-68
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-69
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: star-69
+  template:
+    metadata:
+      labels:
+        app: star-69
+    spec:
+      containers:
+        - name: star-69
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-70
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: star-70
+  template:
+    metadata:
+      labels:
+        app: star-70
+    spec:
+      containers:
+        - name: star-70
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-71
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: star-71
+  template:
+    metadata:
+      labels:
+        app: star-71
+    spec:
+      containers:
+        - name: star-71
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-72
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: star-72
+  template:
+    metadata:
+      labels:
+        app: star-72
+    spec:
+      containers:
+        - name: star-72
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-73
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: star-73
+  template:
+    metadata:
+      labels:
+        app: star-73
+    spec:
+      containers:
+        - name: star-73
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-74
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: star-74
+  template:
+    metadata:
+      labels:
+        app: star-74
+    spec:
+      containers:
+        - name: star-74
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-75
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: star-75
+  template:
+    metadata:
+      labels:
+        app: star-75
+    spec:
+      containers:
+        - name: star-75
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-76
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: star-76
+  template:
+    metadata:
+      labels:
+        app: star-76
+    spec:
+      containers:
+        - name: star-76
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-77
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: star-77
+  template:
+    metadata:
+      labels:
+        app: star-77
+    spec:
+      containers:
+        - name: star-77
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-78
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: star-78
+  template:
+    metadata:
+      labels:
+        app: star-78
+    spec:
+      containers:
+        - name: star-78
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-79
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: star-79
+  template:
+    metadata:
+      labels:
+        app: star-79
+    spec:
+      containers:
+        - name: star-79
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-80
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: star-80
+  template:
+    metadata:
+      labels:
+        app: star-80
+    spec:
+      containers:
+        - name: star-80
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-81
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: star-81
+  template:
+    metadata:
+      labels:
+        app: star-81
+    spec:
+      containers:
+        - name: star-81
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-82
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: star-82
+  template:
+    metadata:
+      labels:
+        app: star-82
+    spec:
+      containers:
+        - name: star-82
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-83
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: star-83
+  template:
+    metadata:
+      labels:
+        app: star-83
+    spec:
+      containers:
+        - name: star-83
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-84
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: star-84
+  template:
+    metadata:
+      labels:
+        app: star-84
+    spec:
+      containers:
+        - name: star-84
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-85
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: star-85
+  template:
+    metadata:
+      labels:
+        app: star-85
+    spec:
+      containers:
+        - name: star-85
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-86
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: star-86
+  template:
+    metadata:
+      labels:
+        app: star-86
+    spec:
+      containers:
+        - name: star-86
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-87
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: star-87
+  template:
+    metadata:
+      labels:
+        app: star-87
+    spec:
+      containers:
+        - name: star-87
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-88
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: star-88
+  template:
+    metadata:
+      labels:
+        app: star-88
+    spec:
+      containers:
+        - name: star-88
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-89
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: star-89
+  template:
+    metadata:
+      labels:
+        app: star-89
+    spec:
+      containers:
+        - name: star-89
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-90
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: star-90
+  template:
+    metadata:
+      labels:
+        app: star-90
+    spec:
+      containers:
+        - name: star-90
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-91
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: star-91
+  template:
+    metadata:
+      labels:
+        app: star-91
+    spec:
+      containers:
+        - name: star-91
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-92
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: star-92
+  template:
+    metadata:
+      labels:
+        app: star-92
+    spec:
+      containers:
+        - name: star-92
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-93
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: star-93
+  template:
+    metadata:
+      labels:
+        app: star-93
+    spec:
+      containers:
+        - name: star-93
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-94
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: star-94
+  template:
+    metadata:
+      labels:
+        app: star-94
+    spec:
+      containers:
+        - name: star-94
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-95
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: star-95
+  template:
+    metadata:
+      labels:
+        app: star-95
+    spec:
+      containers:
+        - name: star-95
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-96
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: star-96
+  template:
+    metadata:
+      labels:
+        app: star-96
+    spec:
+      containers:
+        - name: star-96
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-97
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: star-97
+  template:
+    metadata:
+      labels:
+        app: star-97
+    spec:
+      containers:
+        - name: star-97
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-98
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: star-98
+  template:
+    metadata:
+      labels:
+        app: star-98
+    spec:
+      containers:
+        - name: star-98
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-99
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: star-99
+  template:
+    metadata:
+      labels:
+        app: star-99
+    spec:
+      containers:
+        - name: star-99
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-100
+  annotations:
+    greymatter.io/inject-sidecar-to: "3000"
+spec:
+  selector:
+    matchLabels:
+      app: star-100
+  template:
+    metadata:
+      labels:
+        app: star-100
+    spec:
+      containers:
+        - name: star-100
+          image: python:3
+          command:
+            - python
+          args:
+            - -m
+            - http.server
+            - "3000"
 
