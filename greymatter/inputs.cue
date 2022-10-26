@@ -24,7 +24,7 @@ defaults: {
 	// These configs will manipulate the behavior of accessing your services
 	// from the outside world.
 	edge: {
-		key:        "edge_grocerylist"
+		key:        "edge_grocerylist1"
 		
 		enable_tls: false
 

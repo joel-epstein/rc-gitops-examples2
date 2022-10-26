@@ -37,10 +37,6 @@ import (
 
 grocerylist_config:
 	list.Concat([
-		grocerylist.Apple.config,
-		grocerylist.Banana.config,
-		grocerylist.Lettuce.config,
-		grocerylist.Tomato.config,
 		grocerylist.Kiwi_1.config,
 		grocerylist.Kiwi_2.config,
 		grocerylist.Kiwi_3.config,
