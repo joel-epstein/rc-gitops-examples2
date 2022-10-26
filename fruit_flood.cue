@@ -16,7 +16,7 @@ _fruit_template: {
 	kind:       "Deployment"
 	metadata: {
 		name: _name
-		annotations: "greymatter.io/inject-sidecar-to": "3000"
+		annotations: "greymatter.io/inject-sidecar-to": "9090"
 	}
 	spec: {
 		selector: matchLabels: app: _name
@@ -24,9 +24,11 @@ _fruit_template: {
 			metadata: labels: app: _name
 			spec: containers: [{
 				name:  _name
-				image: "python:3"
-				command: ["python"]
-				args: ["-m", "http.server", "3000"]
+				image: "quay.io/greymatterio/fake-service:v0.24.2"
+        env: [
+          {name: "ERROR_RATE", value: "0.1"},
+          {name: "ERROR_CODE", value: "501"},
+        ]
 			}]
 		}
 	}

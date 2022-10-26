@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: peach-1
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -15,20 +15,19 @@ spec:
     spec:
       containers:
         - name: peach-1
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-2
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -40,20 +39,19 @@ spec:
     spec:
       containers:
         - name: peach-2
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-3
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -65,20 +63,19 @@ spec:
     spec:
       containers:
         - name: peach-3
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-4
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -90,20 +87,19 @@ spec:
     spec:
       containers:
         - name: peach-4
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-5
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -115,20 +111,19 @@ spec:
     spec:
       containers:
         - name: peach-5
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-6
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -140,20 +135,19 @@ spec:
     spec:
       containers:
         - name: peach-6
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-7
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -165,20 +159,19 @@ spec:
     spec:
       containers:
         - name: peach-7
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-8
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -190,20 +183,19 @@ spec:
     spec:
       containers:
         - name: peach-8
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-9
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -215,20 +207,19 @@ spec:
     spec:
       containers:
         - name: peach-9
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-10
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -240,20 +231,19 @@ spec:
     spec:
       containers:
         - name: peach-10
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-11
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -265,20 +255,19 @@ spec:
     spec:
       containers:
         - name: peach-11
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-12
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -290,20 +279,19 @@ spec:
     spec:
       containers:
         - name: peach-12
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-13
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -315,20 +303,19 @@ spec:
     spec:
       containers:
         - name: peach-13
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-14
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -340,20 +327,19 @@ spec:
     spec:
       containers:
         - name: peach-14
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-15
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -365,20 +351,19 @@ spec:
     spec:
       containers:
         - name: peach-15
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-16
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -390,20 +375,19 @@ spec:
     spec:
       containers:
         - name: peach-16
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-17
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -415,20 +399,19 @@ spec:
     spec:
       containers:
         - name: peach-17
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-18
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -440,20 +423,19 @@ spec:
     spec:
       containers:
         - name: peach-18
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-19
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -465,20 +447,19 @@ spec:
     spec:
       containers:
         - name: peach-19
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-20
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -490,20 +471,19 @@ spec:
     spec:
       containers:
         - name: peach-20
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-21
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -515,20 +495,19 @@ spec:
     spec:
       containers:
         - name: peach-21
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-22
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -540,20 +519,19 @@ spec:
     spec:
       containers:
         - name: peach-22
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-23
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -565,20 +543,19 @@ spec:
     spec:
       containers:
         - name: peach-23
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-24
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -590,20 +567,19 @@ spec:
     spec:
       containers:
         - name: peach-24
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-25
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -615,20 +591,19 @@ spec:
     spec:
       containers:
         - name: peach-25
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-26
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -640,20 +615,19 @@ spec:
     spec:
       containers:
         - name: peach-26
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-27
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -665,20 +639,19 @@ spec:
     spec:
       containers:
         - name: peach-27
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-28
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -690,20 +663,19 @@ spec:
     spec:
       containers:
         - name: peach-28
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-29
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -715,20 +687,19 @@ spec:
     spec:
       containers:
         - name: peach-29
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-30
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -740,20 +711,19 @@ spec:
     spec:
       containers:
         - name: peach-30
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-31
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -765,20 +735,19 @@ spec:
     spec:
       containers:
         - name: peach-31
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-32
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -790,20 +759,19 @@ spec:
     spec:
       containers:
         - name: peach-32
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-33
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -815,20 +783,19 @@ spec:
     spec:
       containers:
         - name: peach-33
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-34
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -840,20 +807,19 @@ spec:
     spec:
       containers:
         - name: peach-34
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-35
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -865,20 +831,19 @@ spec:
     spec:
       containers:
         - name: peach-35
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-36
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -890,20 +855,19 @@ spec:
     spec:
       containers:
         - name: peach-36
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-37
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -915,20 +879,19 @@ spec:
     spec:
       containers:
         - name: peach-37
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-38
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -940,20 +903,19 @@ spec:
     spec:
       containers:
         - name: peach-38
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-39
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -965,20 +927,19 @@ spec:
     spec:
       containers:
         - name: peach-39
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-40
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -990,20 +951,19 @@ spec:
     spec:
       containers:
         - name: peach-40
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-41
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1015,20 +975,19 @@ spec:
     spec:
       containers:
         - name: peach-41
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-42
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1040,20 +999,19 @@ spec:
     spec:
       containers:
         - name: peach-42
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-43
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1065,20 +1023,19 @@ spec:
     spec:
       containers:
         - name: peach-43
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-44
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1090,20 +1047,19 @@ spec:
     spec:
       containers:
         - name: peach-44
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-45
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1115,20 +1071,19 @@ spec:
     spec:
       containers:
         - name: peach-45
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-46
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1140,20 +1095,19 @@ spec:
     spec:
       containers:
         - name: peach-46
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-47
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1165,20 +1119,19 @@ spec:
     spec:
       containers:
         - name: peach-47
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-48
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1190,20 +1143,19 @@ spec:
     spec:
       containers:
         - name: peach-48
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-49
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1215,20 +1167,19 @@ spec:
     spec:
       containers:
         - name: peach-49
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-50
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1240,20 +1191,19 @@ spec:
     spec:
       containers:
         - name: peach-50
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-51
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1265,20 +1215,19 @@ spec:
     spec:
       containers:
         - name: peach-51
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-52
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1290,20 +1239,19 @@ spec:
     spec:
       containers:
         - name: peach-52
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-53
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1315,20 +1263,19 @@ spec:
     spec:
       containers:
         - name: peach-53
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-54
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1340,20 +1287,19 @@ spec:
     spec:
       containers:
         - name: peach-54
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-55
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1365,20 +1311,19 @@ spec:
     spec:
       containers:
         - name: peach-55
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-56
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1390,20 +1335,19 @@ spec:
     spec:
       containers:
         - name: peach-56
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-57
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1415,20 +1359,19 @@ spec:
     spec:
       containers:
         - name: peach-57
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-58
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1440,20 +1383,19 @@ spec:
     spec:
       containers:
         - name: peach-58
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-59
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1465,20 +1407,19 @@ spec:
     spec:
       containers:
         - name: peach-59
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-60
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1490,20 +1431,19 @@ spec:
     spec:
       containers:
         - name: peach-60
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-61
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1515,20 +1455,19 @@ spec:
     spec:
       containers:
         - name: peach-61
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-62
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1540,20 +1479,19 @@ spec:
     spec:
       containers:
         - name: peach-62
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-63
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1565,20 +1503,19 @@ spec:
     spec:
       containers:
         - name: peach-63
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-64
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1590,20 +1527,19 @@ spec:
     spec:
       containers:
         - name: peach-64
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-65
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1615,20 +1551,19 @@ spec:
     spec:
       containers:
         - name: peach-65
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-66
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1640,20 +1575,19 @@ spec:
     spec:
       containers:
         - name: peach-66
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-67
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1665,20 +1599,19 @@ spec:
     spec:
       containers:
         - name: peach-67
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-68
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1690,20 +1623,19 @@ spec:
     spec:
       containers:
         - name: peach-68
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-69
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1715,20 +1647,19 @@ spec:
     spec:
       containers:
         - name: peach-69
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-70
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1740,20 +1671,19 @@ spec:
     spec:
       containers:
         - name: peach-70
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-71
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1765,20 +1695,19 @@ spec:
     spec:
       containers:
         - name: peach-71
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-72
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1790,20 +1719,19 @@ spec:
     spec:
       containers:
         - name: peach-72
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-73
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1815,20 +1743,19 @@ spec:
     spec:
       containers:
         - name: peach-73
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-74
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1840,20 +1767,19 @@ spec:
     spec:
       containers:
         - name: peach-74
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-75
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1865,20 +1791,19 @@ spec:
     spec:
       containers:
         - name: peach-75
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-76
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1890,20 +1815,19 @@ spec:
     spec:
       containers:
         - name: peach-76
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-77
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1915,20 +1839,19 @@ spec:
     spec:
       containers:
         - name: peach-77
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-78
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1940,20 +1863,19 @@ spec:
     spec:
       containers:
         - name: peach-78
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-79
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1965,20 +1887,19 @@ spec:
     spec:
       containers:
         - name: peach-79
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-80
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1990,20 +1911,19 @@ spec:
     spec:
       containers:
         - name: peach-80
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-81
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2015,20 +1935,19 @@ spec:
     spec:
       containers:
         - name: peach-81
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-82
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2040,20 +1959,19 @@ spec:
     spec:
       containers:
         - name: peach-82
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-83
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2065,20 +1983,19 @@ spec:
     spec:
       containers:
         - name: peach-83
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-84
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2090,20 +2007,19 @@ spec:
     spec:
       containers:
         - name: peach-84
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-85
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2115,20 +2031,19 @@ spec:
     spec:
       containers:
         - name: peach-85
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-86
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2140,20 +2055,19 @@ spec:
     spec:
       containers:
         - name: peach-86
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-87
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2165,20 +2079,19 @@ spec:
     spec:
       containers:
         - name: peach-87
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-88
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2190,20 +2103,19 @@ spec:
     spec:
       containers:
         - name: peach-88
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-89
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2215,20 +2127,19 @@ spec:
     spec:
       containers:
         - name: peach-89
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-90
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2240,20 +2151,19 @@ spec:
     spec:
       containers:
         - name: peach-90
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-91
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2265,20 +2175,19 @@ spec:
     spec:
       containers:
         - name: peach-91
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-92
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2290,20 +2199,19 @@ spec:
     spec:
       containers:
         - name: peach-92
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-93
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2315,20 +2223,19 @@ spec:
     spec:
       containers:
         - name: peach-93
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-94
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2340,20 +2247,19 @@ spec:
     spec:
       containers:
         - name: peach-94
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-95
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2365,20 +2271,19 @@ spec:
     spec:
       containers:
         - name: peach-95
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-96
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2390,20 +2295,19 @@ spec:
     spec:
       containers:
         - name: peach-96
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-97
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2415,20 +2319,19 @@ spec:
     spec:
       containers:
         - name: peach-97
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-98
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2440,20 +2343,19 @@ spec:
     spec:
       containers:
         - name: peach-98
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-99
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2465,20 +2367,19 @@ spec:
     spec:
       containers:
         - name: peach-99
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: peach-100
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2490,11 +2391,1210 @@ spec:
     spec:
       containers:
         - name: peach-100
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-101
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: peach-101
+  template:
+    metadata:
+      labels:
+        app: peach-101
+    spec:
+      containers:
+        - name: peach-101
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-102
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: peach-102
+  template:
+    metadata:
+      labels:
+        app: peach-102
+    spec:
+      containers:
+        - name: peach-102
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-103
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: peach-103
+  template:
+    metadata:
+      labels:
+        app: peach-103
+    spec:
+      containers:
+        - name: peach-103
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-104
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: peach-104
+  template:
+    metadata:
+      labels:
+        app: peach-104
+    spec:
+      containers:
+        - name: peach-104
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-105
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: peach-105
+  template:
+    metadata:
+      labels:
+        app: peach-105
+    spec:
+      containers:
+        - name: peach-105
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-106
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: peach-106
+  template:
+    metadata:
+      labels:
+        app: peach-106
+    spec:
+      containers:
+        - name: peach-106
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-107
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: peach-107
+  template:
+    metadata:
+      labels:
+        app: peach-107
+    spec:
+      containers:
+        - name: peach-107
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-108
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: peach-108
+  template:
+    metadata:
+      labels:
+        app: peach-108
+    spec:
+      containers:
+        - name: peach-108
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-109
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: peach-109
+  template:
+    metadata:
+      labels:
+        app: peach-109
+    spec:
+      containers:
+        - name: peach-109
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-110
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: peach-110
+  template:
+    metadata:
+      labels:
+        app: peach-110
+    spec:
+      containers:
+        - name: peach-110
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-111
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: peach-111
+  template:
+    metadata:
+      labels:
+        app: peach-111
+    spec:
+      containers:
+        - name: peach-111
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-112
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: peach-112
+  template:
+    metadata:
+      labels:
+        app: peach-112
+    spec:
+      containers:
+        - name: peach-112
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-113
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: peach-113
+  template:
+    metadata:
+      labels:
+        app: peach-113
+    spec:
+      containers:
+        - name: peach-113
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-114
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: peach-114
+  template:
+    metadata:
+      labels:
+        app: peach-114
+    spec:
+      containers:
+        - name: peach-114
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-115
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: peach-115
+  template:
+    metadata:
+      labels:
+        app: peach-115
+    spec:
+      containers:
+        - name: peach-115
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-116
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: peach-116
+  template:
+    metadata:
+      labels:
+        app: peach-116
+    spec:
+      containers:
+        - name: peach-116
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-117
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: peach-117
+  template:
+    metadata:
+      labels:
+        app: peach-117
+    spec:
+      containers:
+        - name: peach-117
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-118
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: peach-118
+  template:
+    metadata:
+      labels:
+        app: peach-118
+    spec:
+      containers:
+        - name: peach-118
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-119
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: peach-119
+  template:
+    metadata:
+      labels:
+        app: peach-119
+    spec:
+      containers:
+        - name: peach-119
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-120
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: peach-120
+  template:
+    metadata:
+      labels:
+        app: peach-120
+    spec:
+      containers:
+        - name: peach-120
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-121
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: peach-121
+  template:
+    metadata:
+      labels:
+        app: peach-121
+    spec:
+      containers:
+        - name: peach-121
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-122
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: peach-122
+  template:
+    metadata:
+      labels:
+        app: peach-122
+    spec:
+      containers:
+        - name: peach-122
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-123
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: peach-123
+  template:
+    metadata:
+      labels:
+        app: peach-123
+    spec:
+      containers:
+        - name: peach-123
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-124
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: peach-124
+  template:
+    metadata:
+      labels:
+        app: peach-124
+    spec:
+      containers:
+        - name: peach-124
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-125
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: peach-125
+  template:
+    metadata:
+      labels:
+        app: peach-125
+    spec:
+      containers:
+        - name: peach-125
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-126
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: peach-126
+  template:
+    metadata:
+      labels:
+        app: peach-126
+    spec:
+      containers:
+        - name: peach-126
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-127
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: peach-127
+  template:
+    metadata:
+      labels:
+        app: peach-127
+    spec:
+      containers:
+        - name: peach-127
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-128
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: peach-128
+  template:
+    metadata:
+      labels:
+        app: peach-128
+    spec:
+      containers:
+        - name: peach-128
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-129
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: peach-129
+  template:
+    metadata:
+      labels:
+        app: peach-129
+    spec:
+      containers:
+        - name: peach-129
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-130
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: peach-130
+  template:
+    metadata:
+      labels:
+        app: peach-130
+    spec:
+      containers:
+        - name: peach-130
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-131
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: peach-131
+  template:
+    metadata:
+      labels:
+        app: peach-131
+    spec:
+      containers:
+        - name: peach-131
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-132
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: peach-132
+  template:
+    metadata:
+      labels:
+        app: peach-132
+    spec:
+      containers:
+        - name: peach-132
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-133
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: peach-133
+  template:
+    metadata:
+      labels:
+        app: peach-133
+    spec:
+      containers:
+        - name: peach-133
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-134
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: peach-134
+  template:
+    metadata:
+      labels:
+        app: peach-134
+    spec:
+      containers:
+        - name: peach-134
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-135
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: peach-135
+  template:
+    metadata:
+      labels:
+        app: peach-135
+    spec:
+      containers:
+        - name: peach-135
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-136
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: peach-136
+  template:
+    metadata:
+      labels:
+        app: peach-136
+    spec:
+      containers:
+        - name: peach-136
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-137
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: peach-137
+  template:
+    metadata:
+      labels:
+        app: peach-137
+    spec:
+      containers:
+        - name: peach-137
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-138
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: peach-138
+  template:
+    metadata:
+      labels:
+        app: peach-138
+    spec:
+      containers:
+        - name: peach-138
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-139
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: peach-139
+  template:
+    metadata:
+      labels:
+        app: peach-139
+    spec:
+      containers:
+        - name: peach-139
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-140
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: peach-140
+  template:
+    metadata:
+      labels:
+        app: peach-140
+    spec:
+      containers:
+        - name: peach-140
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-141
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: peach-141
+  template:
+    metadata:
+      labels:
+        app: peach-141
+    spec:
+      containers:
+        - name: peach-141
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-142
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: peach-142
+  template:
+    metadata:
+      labels:
+        app: peach-142
+    spec:
+      containers:
+        - name: peach-142
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-143
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: peach-143
+  template:
+    metadata:
+      labels:
+        app: peach-143
+    spec:
+      containers:
+        - name: peach-143
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-144
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: peach-144
+  template:
+    metadata:
+      labels:
+        app: peach-144
+    spec:
+      containers:
+        - name: peach-144
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-145
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: peach-145
+  template:
+    metadata:
+      labels:
+        app: peach-145
+    spec:
+      containers:
+        - name: peach-145
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-146
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: peach-146
+  template:
+    metadata:
+      labels:
+        app: peach-146
+    spec:
+      containers:
+        - name: peach-146
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-147
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: peach-147
+  template:
+    metadata:
+      labels:
+        app: peach-147
+    spec:
+      containers:
+        - name: peach-147
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-148
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: peach-148
+  template:
+    metadata:
+      labels:
+        app: peach-148
+    spec:
+      containers:
+        - name: peach-148
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-149
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: peach-149
+  template:
+    metadata:
+      labels:
+        app: peach-149
+    spec:
+      containers:
+        - name: peach-149
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: peach-150
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: peach-150
+  template:
+    metadata:
+      labels:
+        app: peach-150
+    spec:
+      containers:
+        - name: peach-150
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 
