@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: star-1
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -15,20 +15,19 @@ spec:
     spec:
       containers:
         - name: star-1
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-2
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -40,20 +39,19 @@ spec:
     spec:
       containers:
         - name: star-2
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-3
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -65,20 +63,19 @@ spec:
     spec:
       containers:
         - name: star-3
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-4
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -90,20 +87,19 @@ spec:
     spec:
       containers:
         - name: star-4
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-5
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -115,20 +111,19 @@ spec:
     spec:
       containers:
         - name: star-5
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-6
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -140,20 +135,19 @@ spec:
     spec:
       containers:
         - name: star-6
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-7
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -165,20 +159,19 @@ spec:
     spec:
       containers:
         - name: star-7
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-8
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -190,20 +183,19 @@ spec:
     spec:
       containers:
         - name: star-8
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-9
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -215,20 +207,19 @@ spec:
     spec:
       containers:
         - name: star-9
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-10
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -240,20 +231,19 @@ spec:
     spec:
       containers:
         - name: star-10
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-11
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -265,20 +255,19 @@ spec:
     spec:
       containers:
         - name: star-11
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-12
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -290,20 +279,19 @@ spec:
     spec:
       containers:
         - name: star-12
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-13
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -315,20 +303,19 @@ spec:
     spec:
       containers:
         - name: star-13
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-14
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -340,20 +327,19 @@ spec:
     spec:
       containers:
         - name: star-14
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-15
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -365,20 +351,19 @@ spec:
     spec:
       containers:
         - name: star-15
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-16
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -390,20 +375,19 @@ spec:
     spec:
       containers:
         - name: star-16
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-17
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -415,20 +399,19 @@ spec:
     spec:
       containers:
         - name: star-17
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-18
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -440,20 +423,19 @@ spec:
     spec:
       containers:
         - name: star-18
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-19
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -465,20 +447,19 @@ spec:
     spec:
       containers:
         - name: star-19
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-20
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -490,20 +471,19 @@ spec:
     spec:
       containers:
         - name: star-20
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-21
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -515,20 +495,19 @@ spec:
     spec:
       containers:
         - name: star-21
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-22
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -540,20 +519,19 @@ spec:
     spec:
       containers:
         - name: star-22
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-23
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -565,20 +543,19 @@ spec:
     spec:
       containers:
         - name: star-23
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-24
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -590,20 +567,19 @@ spec:
     spec:
       containers:
         - name: star-24
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-25
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -615,20 +591,19 @@ spec:
     spec:
       containers:
         - name: star-25
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-26
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -640,20 +615,19 @@ spec:
     spec:
       containers:
         - name: star-26
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-27
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -665,20 +639,19 @@ spec:
     spec:
       containers:
         - name: star-27
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-28
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -690,20 +663,19 @@ spec:
     spec:
       containers:
         - name: star-28
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-29
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -715,20 +687,19 @@ spec:
     spec:
       containers:
         - name: star-29
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-30
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -740,20 +711,19 @@ spec:
     spec:
       containers:
         - name: star-30
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-31
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -765,20 +735,19 @@ spec:
     spec:
       containers:
         - name: star-31
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-32
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -790,20 +759,19 @@ spec:
     spec:
       containers:
         - name: star-32
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-33
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -815,20 +783,19 @@ spec:
     spec:
       containers:
         - name: star-33
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-34
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -840,20 +807,19 @@ spec:
     spec:
       containers:
         - name: star-34
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-35
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -865,20 +831,19 @@ spec:
     spec:
       containers:
         - name: star-35
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-36
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -890,20 +855,19 @@ spec:
     spec:
       containers:
         - name: star-36
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-37
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -915,20 +879,19 @@ spec:
     spec:
       containers:
         - name: star-37
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-38
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -940,20 +903,19 @@ spec:
     spec:
       containers:
         - name: star-38
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-39
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -965,20 +927,19 @@ spec:
     spec:
       containers:
         - name: star-39
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-40
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -990,20 +951,19 @@ spec:
     spec:
       containers:
         - name: star-40
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-41
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1015,20 +975,19 @@ spec:
     spec:
       containers:
         - name: star-41
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-42
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1040,20 +999,19 @@ spec:
     spec:
       containers:
         - name: star-42
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-43
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1065,20 +1023,19 @@ spec:
     spec:
       containers:
         - name: star-43
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-44
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1090,20 +1047,19 @@ spec:
     spec:
       containers:
         - name: star-44
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-45
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1115,20 +1071,19 @@ spec:
     spec:
       containers:
         - name: star-45
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-46
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1140,20 +1095,19 @@ spec:
     spec:
       containers:
         - name: star-46
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-47
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1165,20 +1119,19 @@ spec:
     spec:
       containers:
         - name: star-47
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-48
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1190,20 +1143,19 @@ spec:
     spec:
       containers:
         - name: star-48
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-49
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1215,20 +1167,19 @@ spec:
     spec:
       containers:
         - name: star-49
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-50
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1240,20 +1191,19 @@ spec:
     spec:
       containers:
         - name: star-50
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-51
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1265,20 +1215,19 @@ spec:
     spec:
       containers:
         - name: star-51
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-52
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1290,20 +1239,19 @@ spec:
     spec:
       containers:
         - name: star-52
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-53
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1315,20 +1263,19 @@ spec:
     spec:
       containers:
         - name: star-53
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-54
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1340,20 +1287,19 @@ spec:
     spec:
       containers:
         - name: star-54
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-55
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1365,20 +1311,19 @@ spec:
     spec:
       containers:
         - name: star-55
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-56
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1390,20 +1335,19 @@ spec:
     spec:
       containers:
         - name: star-56
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-57
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1415,20 +1359,19 @@ spec:
     spec:
       containers:
         - name: star-57
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-58
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1440,20 +1383,19 @@ spec:
     spec:
       containers:
         - name: star-58
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-59
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1465,20 +1407,19 @@ spec:
     spec:
       containers:
         - name: star-59
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-60
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1490,20 +1431,19 @@ spec:
     spec:
       containers:
         - name: star-60
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-61
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1515,20 +1455,19 @@ spec:
     spec:
       containers:
         - name: star-61
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-62
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1540,20 +1479,19 @@ spec:
     spec:
       containers:
         - name: star-62
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-63
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1565,20 +1503,19 @@ spec:
     spec:
       containers:
         - name: star-63
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-64
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1590,20 +1527,19 @@ spec:
     spec:
       containers:
         - name: star-64
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-65
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1615,20 +1551,19 @@ spec:
     spec:
       containers:
         - name: star-65
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-66
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1640,20 +1575,19 @@ spec:
     spec:
       containers:
         - name: star-66
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-67
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1665,20 +1599,19 @@ spec:
     spec:
       containers:
         - name: star-67
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-68
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1690,20 +1623,19 @@ spec:
     spec:
       containers:
         - name: star-68
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-69
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1715,20 +1647,19 @@ spec:
     spec:
       containers:
         - name: star-69
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-70
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1740,20 +1671,19 @@ spec:
     spec:
       containers:
         - name: star-70
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-71
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1765,20 +1695,19 @@ spec:
     spec:
       containers:
         - name: star-71
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-72
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1790,20 +1719,19 @@ spec:
     spec:
       containers:
         - name: star-72
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-73
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1815,20 +1743,19 @@ spec:
     spec:
       containers:
         - name: star-73
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-74
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1840,20 +1767,19 @@ spec:
     spec:
       containers:
         - name: star-74
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-75
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1865,20 +1791,19 @@ spec:
     spec:
       containers:
         - name: star-75
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-76
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1890,20 +1815,19 @@ spec:
     spec:
       containers:
         - name: star-76
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-77
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1915,20 +1839,19 @@ spec:
     spec:
       containers:
         - name: star-77
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-78
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1940,20 +1863,19 @@ spec:
     spec:
       containers:
         - name: star-78
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-79
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1965,20 +1887,19 @@ spec:
     spec:
       containers:
         - name: star-79
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-80
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1990,20 +1911,19 @@ spec:
     spec:
       containers:
         - name: star-80
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-81
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2015,20 +1935,19 @@ spec:
     spec:
       containers:
         - name: star-81
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-82
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2040,20 +1959,19 @@ spec:
     spec:
       containers:
         - name: star-82
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-83
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2065,20 +1983,19 @@ spec:
     spec:
       containers:
         - name: star-83
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-84
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2090,20 +2007,19 @@ spec:
     spec:
       containers:
         - name: star-84
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-85
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2115,20 +2031,19 @@ spec:
     spec:
       containers:
         - name: star-85
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-86
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2140,20 +2055,19 @@ spec:
     spec:
       containers:
         - name: star-86
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-87
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2165,20 +2079,19 @@ spec:
     spec:
       containers:
         - name: star-87
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-88
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2190,20 +2103,19 @@ spec:
     spec:
       containers:
         - name: star-88
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-89
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2215,20 +2127,19 @@ spec:
     spec:
       containers:
         - name: star-89
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-90
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2240,20 +2151,19 @@ spec:
     spec:
       containers:
         - name: star-90
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-91
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2265,20 +2175,19 @@ spec:
     spec:
       containers:
         - name: star-91
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-92
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2290,20 +2199,19 @@ spec:
     spec:
       containers:
         - name: star-92
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-93
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2315,20 +2223,19 @@ spec:
     spec:
       containers:
         - name: star-93
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-94
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2340,20 +2247,19 @@ spec:
     spec:
       containers:
         - name: star-94
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-95
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2365,20 +2271,19 @@ spec:
     spec:
       containers:
         - name: star-95
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-96
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2390,20 +2295,19 @@ spec:
     spec:
       containers:
         - name: star-96
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-97
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2415,20 +2319,19 @@ spec:
     spec:
       containers:
         - name: star-97
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-98
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2440,20 +2343,19 @@ spec:
     spec:
       containers:
         - name: star-98
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-99
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2465,20 +2367,19 @@ spec:
     spec:
       containers:
         - name: star-99
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: star-100
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2490,11 +2391,1210 @@ spec:
     spec:
       containers:
         - name: star-100
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-101
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: star-101
+  template:
+    metadata:
+      labels:
+        app: star-101
+    spec:
+      containers:
+        - name: star-101
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-102
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: star-102
+  template:
+    metadata:
+      labels:
+        app: star-102
+    spec:
+      containers:
+        - name: star-102
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-103
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: star-103
+  template:
+    metadata:
+      labels:
+        app: star-103
+    spec:
+      containers:
+        - name: star-103
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-104
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: star-104
+  template:
+    metadata:
+      labels:
+        app: star-104
+    spec:
+      containers:
+        - name: star-104
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-105
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: star-105
+  template:
+    metadata:
+      labels:
+        app: star-105
+    spec:
+      containers:
+        - name: star-105
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-106
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: star-106
+  template:
+    metadata:
+      labels:
+        app: star-106
+    spec:
+      containers:
+        - name: star-106
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-107
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: star-107
+  template:
+    metadata:
+      labels:
+        app: star-107
+    spec:
+      containers:
+        - name: star-107
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-108
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: star-108
+  template:
+    metadata:
+      labels:
+        app: star-108
+    spec:
+      containers:
+        - name: star-108
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-109
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: star-109
+  template:
+    metadata:
+      labels:
+        app: star-109
+    spec:
+      containers:
+        - name: star-109
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-110
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: star-110
+  template:
+    metadata:
+      labels:
+        app: star-110
+    spec:
+      containers:
+        - name: star-110
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-111
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: star-111
+  template:
+    metadata:
+      labels:
+        app: star-111
+    spec:
+      containers:
+        - name: star-111
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-112
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: star-112
+  template:
+    metadata:
+      labels:
+        app: star-112
+    spec:
+      containers:
+        - name: star-112
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-113
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: star-113
+  template:
+    metadata:
+      labels:
+        app: star-113
+    spec:
+      containers:
+        - name: star-113
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-114
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: star-114
+  template:
+    metadata:
+      labels:
+        app: star-114
+    spec:
+      containers:
+        - name: star-114
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-115
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: star-115
+  template:
+    metadata:
+      labels:
+        app: star-115
+    spec:
+      containers:
+        - name: star-115
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-116
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: star-116
+  template:
+    metadata:
+      labels:
+        app: star-116
+    spec:
+      containers:
+        - name: star-116
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-117
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: star-117
+  template:
+    metadata:
+      labels:
+        app: star-117
+    spec:
+      containers:
+        - name: star-117
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-118
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: star-118
+  template:
+    metadata:
+      labels:
+        app: star-118
+    spec:
+      containers:
+        - name: star-118
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-119
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: star-119
+  template:
+    metadata:
+      labels:
+        app: star-119
+    spec:
+      containers:
+        - name: star-119
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-120
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: star-120
+  template:
+    metadata:
+      labels:
+        app: star-120
+    spec:
+      containers:
+        - name: star-120
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-121
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: star-121
+  template:
+    metadata:
+      labels:
+        app: star-121
+    spec:
+      containers:
+        - name: star-121
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-122
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: star-122
+  template:
+    metadata:
+      labels:
+        app: star-122
+    spec:
+      containers:
+        - name: star-122
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-123
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: star-123
+  template:
+    metadata:
+      labels:
+        app: star-123
+    spec:
+      containers:
+        - name: star-123
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-124
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: star-124
+  template:
+    metadata:
+      labels:
+        app: star-124
+    spec:
+      containers:
+        - name: star-124
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-125
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: star-125
+  template:
+    metadata:
+      labels:
+        app: star-125
+    spec:
+      containers:
+        - name: star-125
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-126
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: star-126
+  template:
+    metadata:
+      labels:
+        app: star-126
+    spec:
+      containers:
+        - name: star-126
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-127
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: star-127
+  template:
+    metadata:
+      labels:
+        app: star-127
+    spec:
+      containers:
+        - name: star-127
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-128
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: star-128
+  template:
+    metadata:
+      labels:
+        app: star-128
+    spec:
+      containers:
+        - name: star-128
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-129
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: star-129
+  template:
+    metadata:
+      labels:
+        app: star-129
+    spec:
+      containers:
+        - name: star-129
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-130
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: star-130
+  template:
+    metadata:
+      labels:
+        app: star-130
+    spec:
+      containers:
+        - name: star-130
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-131
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: star-131
+  template:
+    metadata:
+      labels:
+        app: star-131
+    spec:
+      containers:
+        - name: star-131
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-132
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: star-132
+  template:
+    metadata:
+      labels:
+        app: star-132
+    spec:
+      containers:
+        - name: star-132
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-133
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: star-133
+  template:
+    metadata:
+      labels:
+        app: star-133
+    spec:
+      containers:
+        - name: star-133
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-134
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: star-134
+  template:
+    metadata:
+      labels:
+        app: star-134
+    spec:
+      containers:
+        - name: star-134
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-135
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: star-135
+  template:
+    metadata:
+      labels:
+        app: star-135
+    spec:
+      containers:
+        - name: star-135
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-136
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: star-136
+  template:
+    metadata:
+      labels:
+        app: star-136
+    spec:
+      containers:
+        - name: star-136
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-137
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: star-137
+  template:
+    metadata:
+      labels:
+        app: star-137
+    spec:
+      containers:
+        - name: star-137
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-138
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: star-138
+  template:
+    metadata:
+      labels:
+        app: star-138
+    spec:
+      containers:
+        - name: star-138
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-139
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: star-139
+  template:
+    metadata:
+      labels:
+        app: star-139
+    spec:
+      containers:
+        - name: star-139
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-140
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: star-140
+  template:
+    metadata:
+      labels:
+        app: star-140
+    spec:
+      containers:
+        - name: star-140
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-141
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: star-141
+  template:
+    metadata:
+      labels:
+        app: star-141
+    spec:
+      containers:
+        - name: star-141
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-142
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: star-142
+  template:
+    metadata:
+      labels:
+        app: star-142
+    spec:
+      containers:
+        - name: star-142
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-143
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: star-143
+  template:
+    metadata:
+      labels:
+        app: star-143
+    spec:
+      containers:
+        - name: star-143
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-144
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: star-144
+  template:
+    metadata:
+      labels:
+        app: star-144
+    spec:
+      containers:
+        - name: star-144
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-145
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: star-145
+  template:
+    metadata:
+      labels:
+        app: star-145
+    spec:
+      containers:
+        - name: star-145
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-146
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: star-146
+  template:
+    metadata:
+      labels:
+        app: star-146
+    spec:
+      containers:
+        - name: star-146
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-147
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: star-147
+  template:
+    metadata:
+      labels:
+        app: star-147
+    spec:
+      containers:
+        - name: star-147
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-148
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: star-148
+  template:
+    metadata:
+      labels:
+        app: star-148
+    spec:
+      containers:
+        - name: star-148
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-149
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: star-149
+  template:
+    metadata:
+      labels:
+        app: star-149
+    spec:
+      containers:
+        - name: star-149
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: star-150
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: star-150
+  template:
+    metadata:
+      labels:
+        app: star-150
+    spec:
+      containers:
+        - name: star-150
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 
