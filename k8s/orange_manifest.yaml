@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: orange-1
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -15,20 +15,19 @@ spec:
     spec:
       containers:
         - name: orange-1
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-2
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -40,20 +39,19 @@ spec:
     spec:
       containers:
         - name: orange-2
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-3
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -65,20 +63,19 @@ spec:
     spec:
       containers:
         - name: orange-3
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-4
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -90,20 +87,19 @@ spec:
     spec:
       containers:
         - name: orange-4
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-5
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -115,20 +111,19 @@ spec:
     spec:
       containers:
         - name: orange-5
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-6
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -140,20 +135,19 @@ spec:
     spec:
       containers:
         - name: orange-6
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-7
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -165,20 +159,19 @@ spec:
     spec:
       containers:
         - name: orange-7
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-8
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -190,20 +183,19 @@ spec:
     spec:
       containers:
         - name: orange-8
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-9
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -215,20 +207,19 @@ spec:
     spec:
       containers:
         - name: orange-9
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-10
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -240,20 +231,19 @@ spec:
     spec:
       containers:
         - name: orange-10
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-11
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -265,20 +255,19 @@ spec:
     spec:
       containers:
         - name: orange-11
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-12
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -290,20 +279,19 @@ spec:
     spec:
       containers:
         - name: orange-12
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-13
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -315,20 +303,19 @@ spec:
     spec:
       containers:
         - name: orange-13
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-14
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -340,20 +327,19 @@ spec:
     spec:
       containers:
         - name: orange-14
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-15
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -365,20 +351,19 @@ spec:
     spec:
       containers:
         - name: orange-15
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-16
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -390,20 +375,19 @@ spec:
     spec:
       containers:
         - name: orange-16
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-17
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -415,20 +399,19 @@ spec:
     spec:
       containers:
         - name: orange-17
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-18
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -440,20 +423,19 @@ spec:
     spec:
       containers:
         - name: orange-18
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-19
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -465,20 +447,19 @@ spec:
     spec:
       containers:
         - name: orange-19
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-20
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -490,20 +471,19 @@ spec:
     spec:
       containers:
         - name: orange-20
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-21
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -515,20 +495,19 @@ spec:
     spec:
       containers:
         - name: orange-21
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-22
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -540,20 +519,19 @@ spec:
     spec:
       containers:
         - name: orange-22
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-23
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -565,20 +543,19 @@ spec:
     spec:
       containers:
         - name: orange-23
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-24
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -590,20 +567,19 @@ spec:
     spec:
       containers:
         - name: orange-24
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-25
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -615,20 +591,19 @@ spec:
     spec:
       containers:
         - name: orange-25
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-26
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -640,20 +615,19 @@ spec:
     spec:
       containers:
         - name: orange-26
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-27
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -665,20 +639,19 @@ spec:
     spec:
       containers:
         - name: orange-27
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-28
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -690,20 +663,19 @@ spec:
     spec:
       containers:
         - name: orange-28
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-29
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -715,20 +687,19 @@ spec:
     spec:
       containers:
         - name: orange-29
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-30
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -740,20 +711,19 @@ spec:
     spec:
       containers:
         - name: orange-30
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-31
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -765,20 +735,19 @@ spec:
     spec:
       containers:
         - name: orange-31
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-32
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -790,20 +759,19 @@ spec:
     spec:
       containers:
         - name: orange-32
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-33
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -815,20 +783,19 @@ spec:
     spec:
       containers:
         - name: orange-33
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-34
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -840,20 +807,19 @@ spec:
     spec:
       containers:
         - name: orange-34
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-35
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -865,20 +831,19 @@ spec:
     spec:
       containers:
         - name: orange-35
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-36
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -890,20 +855,19 @@ spec:
     spec:
       containers:
         - name: orange-36
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-37
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -915,20 +879,19 @@ spec:
     spec:
       containers:
         - name: orange-37
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-38
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -940,20 +903,19 @@ spec:
     spec:
       containers:
         - name: orange-38
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-39
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -965,20 +927,19 @@ spec:
     spec:
       containers:
         - name: orange-39
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-40
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -990,20 +951,19 @@ spec:
     spec:
       containers:
         - name: orange-40
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-41
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1015,20 +975,19 @@ spec:
     spec:
       containers:
         - name: orange-41
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-42
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1040,20 +999,19 @@ spec:
     spec:
       containers:
         - name: orange-42
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-43
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1065,20 +1023,19 @@ spec:
     spec:
       containers:
         - name: orange-43
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-44
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1090,20 +1047,19 @@ spec:
     spec:
       containers:
         - name: orange-44
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-45
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1115,20 +1071,19 @@ spec:
     spec:
       containers:
         - name: orange-45
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-46
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1140,20 +1095,19 @@ spec:
     spec:
       containers:
         - name: orange-46
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-47
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1165,20 +1119,19 @@ spec:
     spec:
       containers:
         - name: orange-47
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-48
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1190,20 +1143,19 @@ spec:
     spec:
       containers:
         - name: orange-48
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-49
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1215,20 +1167,19 @@ spec:
     spec:
       containers:
         - name: orange-49
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-50
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1240,20 +1191,19 @@ spec:
     spec:
       containers:
         - name: orange-50
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-51
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1265,20 +1215,19 @@ spec:
     spec:
       containers:
         - name: orange-51
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-52
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1290,20 +1239,19 @@ spec:
     spec:
       containers:
         - name: orange-52
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-53
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1315,20 +1263,19 @@ spec:
     spec:
       containers:
         - name: orange-53
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-54
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1340,20 +1287,19 @@ spec:
     spec:
       containers:
         - name: orange-54
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-55
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1365,20 +1311,19 @@ spec:
     spec:
       containers:
         - name: orange-55
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-56
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1390,20 +1335,19 @@ spec:
     spec:
       containers:
         - name: orange-56
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-57
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1415,20 +1359,19 @@ spec:
     spec:
       containers:
         - name: orange-57
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-58
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1440,20 +1383,19 @@ spec:
     spec:
       containers:
         - name: orange-58
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-59
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1465,20 +1407,19 @@ spec:
     spec:
       containers:
         - name: orange-59
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-60
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1490,20 +1431,19 @@ spec:
     spec:
       containers:
         - name: orange-60
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-61
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1515,20 +1455,19 @@ spec:
     spec:
       containers:
         - name: orange-61
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-62
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1540,20 +1479,19 @@ spec:
     spec:
       containers:
         - name: orange-62
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-63
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1565,20 +1503,19 @@ spec:
     spec:
       containers:
         - name: orange-63
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-64
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1590,20 +1527,19 @@ spec:
     spec:
       containers:
         - name: orange-64
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-65
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1615,20 +1551,19 @@ spec:
     spec:
       containers:
         - name: orange-65
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-66
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1640,20 +1575,19 @@ spec:
     spec:
       containers:
         - name: orange-66
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-67
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1665,20 +1599,19 @@ spec:
     spec:
       containers:
         - name: orange-67
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-68
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1690,20 +1623,19 @@ spec:
     spec:
       containers:
         - name: orange-68
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-69
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1715,20 +1647,19 @@ spec:
     spec:
       containers:
         - name: orange-69
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-70
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1740,20 +1671,19 @@ spec:
     spec:
       containers:
         - name: orange-70
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-71
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1765,20 +1695,19 @@ spec:
     spec:
       containers:
         - name: orange-71
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-72
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1790,20 +1719,19 @@ spec:
     spec:
       containers:
         - name: orange-72
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-73
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1815,20 +1743,19 @@ spec:
     spec:
       containers:
         - name: orange-73
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-74
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1840,20 +1767,19 @@ spec:
     spec:
       containers:
         - name: orange-74
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-75
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1865,20 +1791,19 @@ spec:
     spec:
       containers:
         - name: orange-75
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-76
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1890,20 +1815,19 @@ spec:
     spec:
       containers:
         - name: orange-76
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-77
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1915,20 +1839,19 @@ spec:
     spec:
       containers:
         - name: orange-77
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-78
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1940,20 +1863,19 @@ spec:
     spec:
       containers:
         - name: orange-78
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-79
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1965,20 +1887,19 @@ spec:
     spec:
       containers:
         - name: orange-79
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-80
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -1990,20 +1911,19 @@ spec:
     spec:
       containers:
         - name: orange-80
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-81
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2015,20 +1935,19 @@ spec:
     spec:
       containers:
         - name: orange-81
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-82
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2040,20 +1959,19 @@ spec:
     spec:
       containers:
         - name: orange-82
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-83
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2065,20 +1983,19 @@ spec:
     spec:
       containers:
         - name: orange-83
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-84
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2090,20 +2007,19 @@ spec:
     spec:
       containers:
         - name: orange-84
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-85
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2115,20 +2031,19 @@ spec:
     spec:
       containers:
         - name: orange-85
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-86
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2140,20 +2055,19 @@ spec:
     spec:
       containers:
         - name: orange-86
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-87
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2165,20 +2079,19 @@ spec:
     spec:
       containers:
         - name: orange-87
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-88
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2190,20 +2103,19 @@ spec:
     spec:
       containers:
         - name: orange-88
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-89
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2215,20 +2127,19 @@ spec:
     spec:
       containers:
         - name: orange-89
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-90
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2240,20 +2151,19 @@ spec:
     spec:
       containers:
         - name: orange-90
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-91
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2265,20 +2175,19 @@ spec:
     spec:
       containers:
         - name: orange-91
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-92
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2290,20 +2199,19 @@ spec:
     spec:
       containers:
         - name: orange-92
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-93
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2315,20 +2223,19 @@ spec:
     spec:
       containers:
         - name: orange-93
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-94
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2340,20 +2247,19 @@ spec:
     spec:
       containers:
         - name: orange-94
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-95
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2365,20 +2271,19 @@ spec:
     spec:
       containers:
         - name: orange-95
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-96
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2390,20 +2295,19 @@ spec:
     spec:
       containers:
         - name: orange-96
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-97
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2415,20 +2319,19 @@ spec:
     spec:
       containers:
         - name: orange-97
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-98
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2440,20 +2343,19 @@ spec:
     spec:
       containers:
         - name: orange-98
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-99
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2465,20 +2367,19 @@ spec:
     spec:
       containers:
         - name: orange-99
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: orange-100
   annotations:
-    greymatter.io/inject-sidecar-to: "3000"
+    greymatter.io/inject-sidecar-to: "9090"
 spec:
   selector:
     matchLabels:
@@ -2490,11 +2391,1210 @@ spec:
     spec:
       containers:
         - name: orange-100
-          image: python:3
-          command:
-            - python
-          args:
-            - -m
-            - http.server
-            - "3000"
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orange-101
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: orange-101
+  template:
+    metadata:
+      labels:
+        app: orange-101
+    spec:
+      containers:
+        - name: orange-101
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orange-102
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: orange-102
+  template:
+    metadata:
+      labels:
+        app: orange-102
+    spec:
+      containers:
+        - name: orange-102
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orange-103
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: orange-103
+  template:
+    metadata:
+      labels:
+        app: orange-103
+    spec:
+      containers:
+        - name: orange-103
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orange-104
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: orange-104
+  template:
+    metadata:
+      labels:
+        app: orange-104
+    spec:
+      containers:
+        - name: orange-104
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orange-105
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: orange-105
+  template:
+    metadata:
+      labels:
+        app: orange-105
+    spec:
+      containers:
+        - name: orange-105
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orange-106
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: orange-106
+  template:
+    metadata:
+      labels:
+        app: orange-106
+    spec:
+      containers:
+        - name: orange-106
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orange-107
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: orange-107
+  template:
+    metadata:
+      labels:
+        app: orange-107
+    spec:
+      containers:
+        - name: orange-107
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orange-108
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: orange-108
+  template:
+    metadata:
+      labels:
+        app: orange-108
+    spec:
+      containers:
+        - name: orange-108
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orange-109
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: orange-109
+  template:
+    metadata:
+      labels:
+        app: orange-109
+    spec:
+      containers:
+        - name: orange-109
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orange-110
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: orange-110
+  template:
+    metadata:
+      labels:
+        app: orange-110
+    spec:
+      containers:
+        - name: orange-110
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orange-111
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: orange-111
+  template:
+    metadata:
+      labels:
+        app: orange-111
+    spec:
+      containers:
+        - name: orange-111
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orange-112
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: orange-112
+  template:
+    metadata:
+      labels:
+        app: orange-112
+    spec:
+      containers:
+        - name: orange-112
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orange-113
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: orange-113
+  template:
+    metadata:
+      labels:
+        app: orange-113
+    spec:
+      containers:
+        - name: orange-113
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orange-114
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: orange-114
+  template:
+    metadata:
+      labels:
+        app: orange-114
+    spec:
+      containers:
+        - name: orange-114
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orange-115
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: orange-115
+  template:
+    metadata:
+      labels:
+        app: orange-115
+    spec:
+      containers:
+        - name: orange-115
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orange-116
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: orange-116
+  template:
+    metadata:
+      labels:
+        app: orange-116
+    spec:
+      containers:
+        - name: orange-116
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orange-117
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: orange-117
+  template:
+    metadata:
+      labels:
+        app: orange-117
+    spec:
+      containers:
+        - name: orange-117
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orange-118
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: orange-118
+  template:
+    metadata:
+      labels:
+        app: orange-118
+    spec:
+      containers:
+        - name: orange-118
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orange-119
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: orange-119
+  template:
+    metadata:
+      labels:
+        app: orange-119
+    spec:
+      containers:
+        - name: orange-119
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orange-120
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: orange-120
+  template:
+    metadata:
+      labels:
+        app: orange-120
+    spec:
+      containers:
+        - name: orange-120
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orange-121
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: orange-121
+  template:
+    metadata:
+      labels:
+        app: orange-121
+    spec:
+      containers:
+        - name: orange-121
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orange-122
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: orange-122
+  template:
+    metadata:
+      labels:
+        app: orange-122
+    spec:
+      containers:
+        - name: orange-122
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orange-123
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: orange-123
+  template:
+    metadata:
+      labels:
+        app: orange-123
+    spec:
+      containers:
+        - name: orange-123
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orange-124
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: orange-124
+  template:
+    metadata:
+      labels:
+        app: orange-124
+    spec:
+      containers:
+        - name: orange-124
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orange-125
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: orange-125
+  template:
+    metadata:
+      labels:
+        app: orange-125
+    spec:
+      containers:
+        - name: orange-125
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orange-126
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: orange-126
+  template:
+    metadata:
+      labels:
+        app: orange-126
+    spec:
+      containers:
+        - name: orange-126
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orange-127
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: orange-127
+  template:
+    metadata:
+      labels:
+        app: orange-127
+    spec:
+      containers:
+        - name: orange-127
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orange-128
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: orange-128
+  template:
+    metadata:
+      labels:
+        app: orange-128
+    spec:
+      containers:
+        - name: orange-128
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orange-129
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: orange-129
+  template:
+    metadata:
+      labels:
+        app: orange-129
+    spec:
+      containers:
+        - name: orange-129
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orange-130
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: orange-130
+  template:
+    metadata:
+      labels:
+        app: orange-130
+    spec:
+      containers:
+        - name: orange-130
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orange-131
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: orange-131
+  template:
+    metadata:
+      labels:
+        app: orange-131
+    spec:
+      containers:
+        - name: orange-131
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orange-132
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: orange-132
+  template:
+    metadata:
+      labels:
+        app: orange-132
+    spec:
+      containers:
+        - name: orange-132
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orange-133
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: orange-133
+  template:
+    metadata:
+      labels:
+        app: orange-133
+    spec:
+      containers:
+        - name: orange-133
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orange-134
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: orange-134
+  template:
+    metadata:
+      labels:
+        app: orange-134
+    spec:
+      containers:
+        - name: orange-134
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orange-135
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: orange-135
+  template:
+    metadata:
+      labels:
+        app: orange-135
+    spec:
+      containers:
+        - name: orange-135
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orange-136
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: orange-136
+  template:
+    metadata:
+      labels:
+        app: orange-136
+    spec:
+      containers:
+        - name: orange-136
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orange-137
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: orange-137
+  template:
+    metadata:
+      labels:
+        app: orange-137
+    spec:
+      containers:
+        - name: orange-137
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orange-138
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: orange-138
+  template:
+    metadata:
+      labels:
+        app: orange-138
+    spec:
+      containers:
+        - name: orange-138
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orange-139
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: orange-139
+  template:
+    metadata:
+      labels:
+        app: orange-139
+    spec:
+      containers:
+        - name: orange-139
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orange-140
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: orange-140
+  template:
+    metadata:
+      labels:
+        app: orange-140
+    spec:
+      containers:
+        - name: orange-140
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orange-141
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: orange-141
+  template:
+    metadata:
+      labels:
+        app: orange-141
+    spec:
+      containers:
+        - name: orange-141
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orange-142
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: orange-142
+  template:
+    metadata:
+      labels:
+        app: orange-142
+    spec:
+      containers:
+        - name: orange-142
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orange-143
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: orange-143
+  template:
+    metadata:
+      labels:
+        app: orange-143
+    spec:
+      containers:
+        - name: orange-143
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orange-144
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: orange-144
+  template:
+    metadata:
+      labels:
+        app: orange-144
+    spec:
+      containers:
+        - name: orange-144
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orange-145
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: orange-145
+  template:
+    metadata:
+      labels:
+        app: orange-145
+    spec:
+      containers:
+        - name: orange-145
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orange-146
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: orange-146
+  template:
+    metadata:
+      labels:
+        app: orange-146
+    spec:
+      containers:
+        - name: orange-146
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orange-147
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: orange-147
+  template:
+    metadata:
+      labels:
+        app: orange-147
+    spec:
+      containers:
+        - name: orange-147
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orange-148
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: orange-148
+  template:
+    metadata:
+      labels:
+        app: orange-148
+    spec:
+      containers:
+        - name: orange-148
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orange-149
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: orange-149
+  template:
+    metadata:
+      labels:
+        app: orange-149
+    spec:
+      containers:
+        - name: orange-149
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orange-150
+  annotations:
+    greymatter.io/inject-sidecar-to: "9090"
+spec:
+  selector:
+    matchLabels:
+      app: orange-150
+  template:
+    metadata:
+      labels:
+        app: orange-150
+    spec:
+      containers:
+        - name: orange-150
+          image: quay.io/greymatterio/fake-service:v0.24.2
+          env:
+            - name: ERROR_RATE
+              value: "0.1"
+            - name: ERROR_CODE
+              value: "501"
 
