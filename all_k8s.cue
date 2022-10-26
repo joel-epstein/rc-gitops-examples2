@@ -1,5 +1,4 @@
-// run this command to eval this cue and verify
-// cue eval -e all_kiwis_yaml --out text -t number=2 all_k8s.cue
+// cue eval -e everything_yaml --out text -t namespace foobar-1 -t number=100 all_k8s.cue
 
 
 import (
@@ -8,7 +7,7 @@ import (
 	"encoding/yaml"
 )
 
-namespace: string | *"foobar-1" @tag(name)
+namespace: string | *"foobar-1" @tag(namespace)
 number: int | *1 @tag(number,type=int)
 
 _namespace2fruit: {
@@ -32,6 +31,7 @@ everything: list.Concat([
 	all_fruit,
 ])
 
+everything_yaml: yaml.MarshalStream(everything)
 
 
 
@@ -43,7 +43,7 @@ _fruit_template: {
 	kind:       "Deployment"
 	metadata: {
 		name: _name
-		annotations: "greymatter.io/inject-sidecar-to": "3000"
+		annotations: "greymatter.io/inject-sidecar-to": "9090"
 	}
 	spec: {
 		selector: matchLabels: app: _name
@@ -51,13 +51,24 @@ _fruit_template: {
 			metadata: labels: app: _name
 			spec: containers: [{
 				name:  _name
-				image: "python:3"
-				command: ["python"]
-				args: ["-m", "http.server", "3000"]
+				image: "quay.io/greymatterio/fake-service:v0.24.2"
+        env: [
+          {name: "ERROR_RATE", value: "0.1"},
+          {name: "ERROR_CODE", value: "501"},
+        ]
 			}]
 		}
 	}
 }
+
+//         - name: kiwi-1
+//          image: quay.io/greymatterio/fake-service:v0.24.2
+//          env:
+//            - name: ERROR_RATE
+//              value: "0.1"
+//            - name: ERROR_CODE
+//              value: "501"
+
 
 
 all_fruit: [for i in list.Range(1,number+1,1) {
@@ -66,7 +77,6 @@ all_fruit: [for i in list.Range(1,number+1,1) {
 
 }]
 
-all_fruit_yaml: yaml.MarshalStream(all_fruit)
 
 
 
@@ -185,19 +195,19 @@ _sync_template: {
 
 _manifests_template: {
 	_namespace: string
-	_name: strings.Split(_namespace, "-")
+	_num: strings.Split(_namespace, "-")[1]
 	objects: [{
 		apiVersion: "apps/v1"
 		kind:       "Deployment"
 		metadata: {
-			name:      "edge-grocerylist\(_name[1])"
+			name:      "edge-grocerylist\(_num)"
 			namespace: _namespace
 		}
 		spec: {
 			replicas: 1
-			selector: matchLabels: "greymatter.io/cluster": "edge_grocerylist2"
+			selector: matchLabels: "greymatter.io/cluster": "edge_grocerylist\(_num)"
 			template: {
-				metadata: labels: "greymatter.io/cluster": "edge_grocerylist2"
+				metadata: labels: "greymatter.io/cluster": "edge_grocerylist\(_num)"
 				spec: {
 					containers: [{
 						name:            "sidecar"
@@ -209,7 +219,7 @@ _manifests_template: {
 						}]
 						env: [{
 							name:  "XDS_CLUSTER"
-							value: "edge_grocerylist2"
+							value: "edge_grocerylist\(_num)"
 						}, {
 							name:  "ENVOY_ADMIN_LOG_PATH"
 							value: "/dev/stdout"
@@ -247,8 +257,8 @@ _manifests_template: {
 		apiVersion: "v1"
 		kind:       "Service"
 		metadata: {
-			name:      "edge-grocerylist"
-			namespace: "foobar-2"
+			name:      "edge-grocerylist\(_num)"
+			namespace: _namespace
 		}
 		spec: {
 			ports: [{
@@ -257,7 +267,7 @@ _manifests_template: {
 				protocol:   "TCP"
 				targetPort: 10810
 			}]
-			selector: "greymatter.io/cluster": "edge_grocerylist2"
+			selector: "greymatter.io/cluster": "edge_grocerylist\(_num)"
 			type: "LoadBalancer"
 		}
 	}]
