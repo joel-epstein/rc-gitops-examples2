@@ -1,8 +1,9 @@
-// cue eval -e everything_yaml --out text -t namespace foobar-1 -t number=100 all_k8s.cue
+// cue eval all_k8s.cue -e everything_yaml --out text -t number=150 -t namespace=foobar-1
 
 
 import (
 	"strings"
+	"strconv"
 	"list"
 	"encoding/yaml"
 )
@@ -196,6 +197,7 @@ _sync_template: {
 _manifests_template: {
 	_namespace: string
 	_num: strings.Split(_namespace, "-")[1]
+	_port: 10808+strconv.Atoi(_num)
 	objects: [{
 		apiVersion: "apps/v1"
 		kind:       "Deployment"
@@ -214,7 +216,7 @@ _manifests_template: {
 						image:           "quay.io/greymatterio/gm-proxy:1.7.1"
 						imagePullPolicy: "Always"
 						ports: [{
-							containerPort: 10810
+							containerPort: _port
 							name:          "proxy"
 						}]
 						env: [{
@@ -263,9 +265,9 @@ _manifests_template: {
 		spec: {
 			ports: [{
 				name:       "ingress"
-				port:       10810
+				port:       _port
 				protocol:   "TCP"
-				targetPort: 10810
+				targetPort: _port
 			}]
 			selector: "greymatter.io/cluster": "edge_grocerylist\(_num)"
 			type: "LoadBalancer"
