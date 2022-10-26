@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -x
+
 kubectl create secret generic greymatter-sync-secret \
             --from-file=ssh-private-key=$HOME/.ssh/id_ed25519 \
             -n foobar-1

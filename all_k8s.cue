@@ -36,14 +36,23 @@ everything_yaml: yaml.MarshalStream(everything)
 
 
 
+all_fruit: [for i in list.Range(1,number+1,1) {
 
+   _fruit_template & {
+     _name:"\(_namespace2fruit[namespace])-\(i)"
+     _namespace: namespace
+  }
+
+}]
 
 _fruit_template: {
 	_name: string
+  _namespace: string
 	apiVersion: "apps/v1"
 	kind:       "Deployment"
 	metadata: {
 		name: _name
+    namespace: _namespace
 		annotations: "greymatter.io/inject-sidecar-to": "9090"
 	}
 	spec: {
@@ -62,21 +71,6 @@ _fruit_template: {
 	}
 }
 
-//         - name: kiwi-1
-//          image: quay.io/greymatterio/fake-service:v0.24.2
-//          env:
-//            - name: ERROR_RATE
-//              value: "0.1"
-//            - name: ERROR_CODE
-//              value: "501"
-
-
-
-all_fruit: [for i in list.Range(1,number+1,1) {
-
-   _fruit_template & {_name:"\(_namespace2fruit[namespace])-\(i)"}
-
-}]
 
 
 
@@ -146,17 +140,6 @@ _sync_template: {
 							"--redis-db",
 							"0",
 						]
-
-						resources: {
-							limits: {
-								cpu:    "200m"
-								memory: "512Mi"
-							}
-							requests: {
-								cpu:    "50m"
-								memory: "128Mi"
-							}
-						}
 						volumeMounts: [{
 							name:      "ssh-private-key"
 							readOnly:  true
