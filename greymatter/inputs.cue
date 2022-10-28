@@ -1,7 +1,7 @@
 package grocerylist
 
 config: {
-	spire: bool | *true @tag(spire,type=bool) // enable Spire-based mTLS
+	spire: bool | *false @tag(spire,type=bool) // enable Spire-based mTLS
 	operator_namespace: string | *"gm-operator" @tag(operator_namespace, type=string)
 }
 
