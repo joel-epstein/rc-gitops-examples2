@@ -30,6 +30,7 @@ everything: list.Concat([
 	(_sync_template & {_namespace: namespace}).objects,
 	(_manifests_template & {_namespace: namespace}).objects,
 	all_fruit,
+	[_vegeta_template & {_namespace: namespace}],
 ])
 
 everything_yaml: yaml.MarshalStream(everything)
@@ -75,6 +76,45 @@ _fruit_template: {
 
 
 
+/////////
+// vegeta.yaml
+
+_vegeta_template: {
+  _namespace: string
+	_num: strings.Split(_namespace, "-")[1]
+	_port: 10808+strconv.Atoi(_num)
+
+	apiVersion: "apps/v1"
+	kind:       "Deployment"
+	metadata: {
+		name: "vegeta"
+    namespace: _namespace
+	}
+	spec: {
+		selector: matchLabels: app: "vegeta"
+		replicas: 1
+		template: {
+			metadata: labels: app: "vegeta"
+			spec: {
+				imagePullSecrets: [{
+					name: "gm-docker-secret"
+				}]
+				containers: [{
+					name: "vegeta"
+					image: "quay.io/greymatterio/vegeta:latest"
+					env: [
+						{name: "TARGET_FQDN", value: "edge-grocerylist\(_num).\(_namespace).svc.cluster.local:\(_port)"},
+						{name: "TARGET_OBJECT", value: _namespace2fruit[_namespace]},
+						{name: "COUNT", value: "\(number)"},
+						{name: "RATE", value: "50"},
+						{name: "DURATION", value: "0s"},
+						{name: "BLOCK", value: "false"},
+					]
+				}]
+			}
+		}
+	}
+}
 
 
 
