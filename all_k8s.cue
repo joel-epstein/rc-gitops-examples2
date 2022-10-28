@@ -57,6 +57,7 @@ _fruit_template: {
 	}
 	spec: {
 		selector: matchLabels: app: _name
+		replicas: 2
 		template: {
 			metadata: labels: app: _name
 			spec: containers: [{
