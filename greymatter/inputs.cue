@@ -69,4 +69,17 @@ defaults: {
 			}
 		}
 	}
+	spire: {
+		// Namespace of the Spire server
+		namespace: "spire"
+		// Trust domain must match what's configured at the server
+		trust_domain: "greymatter.io"
+		// The mount path of the spire socket for communication with the agent
+		socket_mount_path: "/run/spire/socket"
+		// When config.deploy_spire=true, we inject a secret. This sets the name of that secret
+		ca_secret_name: "server-ca"
+		// should we request a host mount for the socket, or normal volume mount? If true, also requests hostPID permission
+		host_mount_socket: true
+	}
+
 }
