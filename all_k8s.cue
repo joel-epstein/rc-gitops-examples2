@@ -92,7 +92,7 @@ _vegeta_template: {
 	}
 	spec: {
 		selector: matchLabels: app: "vegeta"
-		replicas: 1
+		replicas: 5
 		template: {
 			metadata: labels: app: "vegeta"
 			spec: {
@@ -106,7 +106,7 @@ _vegeta_template: {
 						{name: "TARGET_FQDN", value: "edge-grocerylist\(_num).\(_namespace).svc.cluster.local:\(_port)"},
 						{name: "TARGET_OBJECT", value: _namespace2fruit[_namespace]},
 						{name: "COUNT", value: "\(number)"},
-						{name: "RATE", value: "50"},
+						{name: "RATE", value: "500"},
 						{name: "DURATION", value: "0s"},
 						{name: "BLOCK", value: "false"},
 					]
@@ -215,7 +215,7 @@ _sync_template: {
 
 
 ////////////
-// manifests.yaml
+// edge-grocerylist.yaml
 
 
 _manifests_template: {
@@ -230,7 +230,7 @@ _manifests_template: {
 			namespace: _namespace
 		}
 		spec: {
-			replicas: 1
+			replicas: 15
 			selector: matchLabels: "greymatter.io/cluster": "edge_grocerylist\(_num)"
 			template: {
 				metadata: labels: "greymatter.io/cluster": "edge_grocerylist\(_num)"
@@ -262,16 +262,6 @@ _manifests_template: {
 							name:  "XDS_PORT"
 							value: "50000"
 						}]
-						resources: {
-							limits: {
-								cpu:    "200m"
-								memory: "200Mi"
-							}
-							requests: {
-								cpu:    "100m"
-								memory: "128Mi"
-							}
-						}
 					}]
 					imagePullSecrets: [{
 						name: "gm-docker-secret"
