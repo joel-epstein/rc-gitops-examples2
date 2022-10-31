@@ -27,6 +27,7 @@ _namespace2fruit: {
 
 
 everything: list.Concat([
+	// _pod_security_policy,
 	(_sync_template & {_namespace: namespace}).objects,
 	(_manifests_template & {_namespace: namespace}).objects,
 	all_fruit,
@@ -74,6 +75,17 @@ _fruit_template: {
 }
 
 
+_pod_security_policy: [{
+	apiVersion: "policy/v1beta1"
+	kind: "PodSecurityPolicy"
+	metadata: name: "sysctl-psp"
+	spec:
+		allowedUnsafeSysctls: [
+			"net.ipv4.tcp_fin_timeout",
+			"net.ipv4.tcp_tw_recycle",
+			"net.ipv4.tcp_tw_reuse", 
+		]
+}]
 
 
 /////////
@@ -92,10 +104,17 @@ _vegeta_template: {
 	}
 	spec: {
 		selector: matchLabels: app: "vegeta"
-		replicas: 5
+		replicas: 10
 		template: {
 			metadata: labels: app: "vegeta"
 			spec: {
+				securityContext: sysctls: [
+					{name: "net.ipv4.ip_local_port_range", value: "12000 65000"},
+					// {name: "net.ipv4.tcp_fin_timeout", value: "60"},
+					// {name: "net.ipv4.tcp_tw_recycle", value: "1"},
+					// {name: "net.ipv4.tcp_tw_reuse", value: "1"},
+					// {name: "net.core.somaxconn", value: "512"},
+				]
 				imagePullSecrets: [{
 					name: "gm-docker-secret"
 				}]
@@ -106,7 +125,7 @@ _vegeta_template: {
 						{name: "TARGET_FQDN", value: "edge-grocerylist\(_num).\(_namespace).svc.cluster.local:\(_port)"},
 						{name: "TARGET_OBJECT", value: _namespace2fruit[_namespace]},
 						{name: "COUNT", value: "\(number)"},
-						{name: "RATE", value: "500"},
+						{name: "RATE", value: "840"},
 						{name: "DURATION", value: "0s"},
 						{name: "BLOCK", value: "false"},
 					]
@@ -230,14 +249,21 @@ _manifests_template: {
 			namespace: _namespace
 		}
 		spec: {
-			replicas: 15
+			replicas: 10
 			selector: matchLabels: "greymatter.io/cluster": "edge_grocerylist\(_num)"
 			template: {
 				metadata: labels: "greymatter.io/cluster": "edge_grocerylist\(_num)"
 				spec: {
+					securityContext: sysctls: [
+						{name: "net.ipv4.ip_local_port_range", value: "12000 65000"},
+						// {name: "net.ipv4.tcp_fin_timeout", value: "60"},
+						// {name: "net.ipv4.tcp_tw_recycle", value: "1"},
+						// {name: "net.ipv4.tcp_tw_reuse", value: "1"},
+						// {name: "net.core.somaxconn", value: "512"},
+					]
 					containers: [{
 						name:            "sidecar"
-						image:           "quay.io/greymatterio/gm-proxy:1.7.1"
+						image:           "quay.io/greymatterio/gm-proxy:daniel"
 						imagePullPolicy: "Always"
 						ports: [{
 							containerPort: _port
