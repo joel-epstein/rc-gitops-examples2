@@ -62,14 +62,19 @@ _fruit_template: {
 		replicas: 2
 		template: {
 			metadata: labels: app: _name
-			spec: containers: [{
-				name:  _name
-				image: "quay.io/greymatterio/fake-service:v0.24.2"
-        env: [
-          {name: "ERROR_RATE", value: "0.1"},
-          {name: "ERROR_CODE", value: "501"},
-        ]
-			}]
+			spec: {
+				securityContext: sysctls: [
+						{name: "net.ipv4.ip_local_port_range", value: "12000 65000"},
+				]
+				containers: [{
+					name:  _name
+					image: "quay.io/greymatterio/fake-service:v0.24.2"
+					env: [
+						{name: "ERROR_RATE", value: "0.1"},
+						{name: "ERROR_CODE", value: "501"},
+					]
+				}]
+			}
 		}
 	}
 }
