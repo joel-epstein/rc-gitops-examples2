@@ -126,7 +126,7 @@ _vegeta_template: {
 						{name: "TARGET_OBJECT", value: _namespace2fruit[_namespace]},
 						{name: "COUNT", value: "\(number)"},
 						{name: "RATE", value: "840"},
-						{name: "DURATION", value: "0s"},
+						{name: "DURATION", value: "30m"},
 						{name: "BLOCK", value: "false"},
 					]
 				}]
