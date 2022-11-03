@@ -269,7 +269,7 @@ _manifests_template: {
 					]
 					containers: [{
 						name:            "sidecar"
-						image:           "quay.io/greymatterio/gm-proxy:daniel"
+						image:           "quay.io/greymatterio/gm-proxy:aries-test"
 						imagePullPolicy: "Always"
 						ports: [{
 							containerPort: _port
