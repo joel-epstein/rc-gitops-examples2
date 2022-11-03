@@ -308,7 +308,7 @@ import (
 			},
 			// This filter is essential to the operation of the mesh and should
 			// not be disabled.
-			"gm.metrics",
+			//"gm.metrics",
 		]
 
 		// Users input custom filters through this API.
