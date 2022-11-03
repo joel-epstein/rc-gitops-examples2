@@ -133,6 +133,7 @@ _vegeta_template: {
 						{name: "RATE", value: "840"},
 						{name: "DURATION", value: "0s"},
 						{name: "BLOCK", value: "false"},
+						{name: "IDLE", value: "0"},
 					]
 				}]
 			}
@@ -268,7 +269,7 @@ _manifests_template: {
 					]
 					containers: [{
 						name:            "sidecar"
-						image:           "quay.io/greymatterio/gm-proxy:daniel"
+						image:           "quay.io/greymatterio/gm-proxy:daniel-debug-big-mem-leak"
 						imagePullPolicy: "Always"
 						ports: [{
 							containerPort: _port
