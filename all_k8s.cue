@@ -69,10 +69,10 @@ _fruit_template: {
 				containers: [{
 					name:  _name
 					image: "quay.io/greymatterio/fake-service:v0.24.2"
-					env: [
-						{name: "ERROR_RATE", value: "0.1"},
-						{name: "ERROR_CODE", value: "501"},
-					]
+					// env: [
+					// 	{name: "ERROR_RATE", value: "0.1"},
+					// 	{name: "ERROR_CODE", value: "501"},
+					// ]
 				}]
 			}
 		}
@@ -131,7 +131,7 @@ _vegeta_template: {
 						{name: "TARGET_OBJECT", value: _namespace2fruit[_namespace]},
 						{name: "COUNT", value: "\(number)"},
 						{name: "RATE", value: "840"},
-						{name: "DURATION", value: "30m"},
+						{name: "DURATION", value: "0s"},
 						{name: "BLOCK", value: "false"},
 					]
 				}]
@@ -292,7 +292,10 @@ _manifests_template: {
 						}, {
 							name:  "XDS_PORT"
 							value: "50000"
-						}]
+						},
+						{name: "GMPROXY_PPROF_BIND", value: "0.0.0.0:6061"},
+
+						]
 					}]
 					imagePullSecrets: [{
 						name: "gm-docker-secret"
