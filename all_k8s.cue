@@ -269,7 +269,7 @@ _manifests_template: {
 					]
 					containers: [{
 						name:            "sidecar"
-						image:           "quay.io/greymatterio/gm-proxy:daniel"
+						image:           "quay.io/greymatterio/gm-proxy:daniel-debug-big-mem-leak"
 						imagePullPolicy: "Always"
 						ports: [{
 							containerPort: _port
