@@ -574,7 +574,7 @@ import (
 	max_connections:      int64 | *4096
 	max_pending_requests: int64 | *4096
 	max_requests:         int64 | *4096
-	max_retries:          int64 | *2
+	max_retries:          int64 | *0
 	max_connection_pools: int64 | *4096
 	track_remaining:      bool | *false
 }
