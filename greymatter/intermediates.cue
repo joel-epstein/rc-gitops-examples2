@@ -605,7 +605,6 @@ import (
   "retry_policy": {
 		"retry_on": "connect-failure, refused-stream, gateway-error",
      "num_retries": 0,
-     "per_try_timeout": "60s",
      "host_selection_retry_max_attempts": "3",
      "retriable_status_codes": [
       503
