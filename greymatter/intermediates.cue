@@ -602,6 +602,9 @@ import (
 			envoy_ext_authz: ext_authz.#ExtAuthzPerRoute | *{disabled: true} // example: disable auth for landing page
 		}
 	}
+  retry_policy: {
+    num_retries: 0
+  }
 }
 
 // #proxy represents the sum total of all configurations sent to data plane proxy. This includes listeners,
