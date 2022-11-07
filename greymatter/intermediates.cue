@@ -602,19 +602,18 @@ import (
 			envoy_ext_authz: ext_authz.#ExtAuthzPerRoute | *{disabled: true} // example: disable auth for landing page
 		}
 	}
-  "retry_policy": {
-		"retry_on": "connect-failure, refused-stream, gateway-error",
-     "num_retries": 0,
-     "host_selection_retry_max_attempts": "3",
-     "retriable_status_codes": [
-      503
-     ],
-     "retry_back_off": {
-      "base_interval": "0.025s",
-      "max_interval": "0.250s"
-     }
+  retry_policy: {
+		retry_on: "connect-failure, refused-stream, gateway-error",
+    num_retries": 0,
+    host_selection_retry_max_attempts: 3
+    retriable_status_codes: [
+     503
+    ],
+    retry_back_off: {
+      base_interval: "0.025s",
+      max_interval: "0.250s"
+    }
   }
-
   timeout: "0s"
 }
 
