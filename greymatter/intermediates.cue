@@ -604,7 +604,7 @@ import (
 	}
   retry_policy: {
 		retry_on: "connect-failure, refused-stream, gateway-error",
-    num_retries": 0,
+    num_retries: 0,
     host_selection_retry_max_attempts: 3
     retriable_status_codes: [
      503
