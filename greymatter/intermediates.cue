@@ -605,6 +605,7 @@ import (
   retry_policy: {
     num_retries: 0
   }
+  timeout: "0s"
 }
 
 // #proxy represents the sum total of all configurations sent to data plane proxy. This includes listeners,
